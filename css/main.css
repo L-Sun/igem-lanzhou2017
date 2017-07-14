@@ -16,95 +16,6 @@
 :before {
   box-sizing: border-box;
 }
-a,
-abbr,
-acronym,
-address,
-applet,
-article,
-aside,
-audio,
-b,
-big,
-blockquote,
-body,
-canvas,
-caption,
-center,
-cite,
-code,
-dd,
-del,
-details,
-dfn,
-div,
-dl,
-dt,
-em,
-embed,
-fieldset,
-figcaption,
-figure,
-footer,
-form,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-header,
-hgroup,
-html,
-i,
-iframe,
-img,
-ins,
-kbd,
-label,
-legend,
-li,
-main,
-mark,
-menu,
-nav,
-object,
-ol,
-output,
-p,
-pre,
-q,
-ruby,
-s,
-samp,
-section,
-small,
-span,
-strike,
-strong,
-sub,
-summary,
-sup,
-table,
-tbody,
-td,
-tfoot,
-th,
-thead,
-time,
-tr,
-tt,
-u,
-ul,
-var,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
 article,
 aside,
 details,
@@ -138,6 +49,7 @@ nav ul {
   list-style-type: none;
 }
 li {
+  list-style: none;
   padding-bottom: 8px;
 }
 body {
@@ -236,6 +148,12 @@ body {
   font-weight: 600 !important;
   border-bottom: 1px black solid;
 }
+.page__article__citations {
+  padding: 0;
+}
+.page__article__citation__item {
+  color: #4F4F4F;
+}
 /* Footer */
 .footer {
   font-family: Roboto, sans-serif;
@@ -248,6 +166,9 @@ body {
   background: #fafafa;
   height: 192px;
   margin-top: 144px;
+}
+.footer ul {
+  padding: 0;
 }
 .footer__content {
   display: -webkit-box;
