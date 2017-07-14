@@ -26,11 +26,11 @@
 				</div>
 			</header>
 			<nav class="mdc-temporary-drawer__content mdc-list-group">
-				<a href="http://localhost" class="mdc-list-item mdc-ripple-surface">
-					<i class="material-icons mdc-list-item__start-detail">home</i>
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i class="material-icons mdc-list-item__start-detail" >home</i>
 					Home
 				</a>
-				<a href="http://localhost/project.html" class="mdc-list-item mdc-ripple-surface">
+				<a href="" class="mdc-list-item mdc-ripple-surface">
 					<i class="material-icons mdc-list-item__start-detail">local_florist</i>
 					Project
 				</a>
@@ -59,17 +59,27 @@
 	</aside>
 
 	<main class="page__content">
-		<article class="story page__article">
-			<h1 class="mdc-typography--headline">There is our story</h1>
+		<nav class="page__drawer mdc-persistent-drawer">
+			<ul class="page__drawer-list">
+				<template id="temp-page-list">
+					<li class="page__drawer-list__item">
+						<a href="" class="page__drawer-list__link"></a>
+					</li>
+				</template>
+				<!-- Use template tag to generate these link -->
+				<li class="page__drawer-list__item">
+					<a href="#" class="page__drawer-list__link page__drawer-list__link--active">Title</a>
+				</li>
+			</ul>
+		</nav>
+		<article class="page__article">
+			<h1 class="mdc-typography--headline">Headline h1</h1>
 			<h2 class="mdc-typography--title">
 				Title h2
 				<span class="mdc-typography--caption">Caption.</span>
 			</h2>
 			<h3>Title h3</h3>
 		</article>
-		<div class="story-image page__drawer">
-			<h1 class="mdc-typography--headline">There is our story figure</h1>
-		</div>
 	</main>
 	
 	<footer class="footer">

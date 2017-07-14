@@ -37,12 +37,12 @@ $(function() {
     }
     
 
+    $('.page__drawer-list__link').first().addClass('.page__drawer-list__link--active');
     // Fix article's head link target offset
     $('.page__drawer-list__link').click(function(event) {
         event.preventDefault();
         $('.page__drawer-list__link--active').removeClass('page__drawer-list__link--active');
         $(this).addClass('page__drawer-list__link--active');
-
         let target = $(this).attr('href');
         let top = $(target).offset().top - $('.mdc-toolbar').height();
         $('html, body').animate({scrollTop:top}, 400);

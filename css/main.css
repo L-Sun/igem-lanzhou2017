@@ -137,6 +137,9 @@ a:visited {
 nav ul {
   list-style-type: none;
 }
+li {
+  padding-bottom: 8px;
+}
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -192,13 +195,27 @@ body {
   max-width: 760px;
 }
 .page__drawer {
+  position: fixed;
   width: 304px;
   height: auto;
   margin-right: 24px;
   border: 0;
 }
-.page__drawer + .page__article {
+.page__drawer + .page__article,
+.story {
   width: calc(100% - 328px);
+}
+.page__article {
+  position: relative;
+  left: 328px;
+}
+.story {
+  position: initial;
+  left: 0;
+  max-width: initial;
+}
+.story-image {
+  position: initial;
 }
 .page__drawer-list {
   font-weight: 500;
