@@ -154,6 +154,16 @@ body {
 .page__article__citation__item {
   color: #4F4F4F;
 }
+.team-page {
+  display: block;
+}
+.team-cards {
+  padding: 0;
+}
+.team-cards .mdc-card {
+  min-width: 320px;
+  max-width: 21.875rem;
+}
 /* Footer */
 .footer {
   font-family: Roboto, sans-serif;
