@@ -3,9 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Lanzhou</title>
-	<meta name="HandheldFriendly" content="True">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
 	<link rel="stylesheet" href="material-components-web/dist/material-components-web.css">
 	<link rel="stylesheet" href="css/Material_Icons.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -33,7 +30,7 @@
 					<i class="material-icons mdc-list-item__start-detail" >home</i>
 					Home
 				</a>
-				<a href="" class="mdc-list-item mdc-ripple-surface">
+				<a href="project.html" class="mdc-list-item mdc-ripple-surface">
 					<i class="material-icons mdc-list-item__start-detail">local_florist</i>
 					Project
 				</a>
@@ -60,11 +57,8 @@
 			</nav>
 		</div>
 	</aside>
-
-	<main class="page__content">
-		<div class="surface mdc-card mdc-ripple-surface"></div>
-	</main>
-	
+	{{if isAdmin}}
+	{{/if}}
 	<footer class="footer">
 		<div class="footer__content">
 			<span class="footer__logo">Lanzhou 2017</span>
@@ -85,7 +79,6 @@
 			</ul>
 		</div>
 	</footer>
-
 	<button id="to-top" class="mdc-fab mdc-ripple-surface material-icons" aria-label="Favorite">
 		<span class="mdc-fab__icon">keyboard_arrow_up</span>
 	</button>

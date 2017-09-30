@@ -5,15 +5,43 @@ $(function() {
         mdc.ripple.MDCRipple.attachTo(this);
     });
 
-    $(window).scroll(function() {
+    $('#to-top').click(function(event) {
+        $('html, body').animate({'scrollTop': 0}, 400);
+    });
+
+    let time_line_li = $('.timeline li');
+    function isElementInViewport(el) {
+        var rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+    function callback(){
+        // to-top button
         if($(this).scrollTop()>100){
             $('#to-top').fadeIn("400");
         }else{
             $('#to-top').fadeOut("400");
         }
+        for (var i = 0; i < time_line_li.length; i++) {
+            if (isElementInViewport(time_line_li[i])) {
+                $(time_line_li[i]).addClass('inview');
+            }
+        }
+
+    }
+
+    $(window).scroll(function() {
+        callback();
     });
-    $('#to-top').click(function(event) {
-        $('html, body').animate({'scrollTop': 0}, 400);
+    $(window).resize(function() {
+        callback();
+    });
+    $(window).load(function() {
+        callback();
     });
 
 /* Navigation */
