@@ -3,6 +3,7 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
 // Test
 .surface{
 		display: flex;
@@ -100,7 +101,7 @@ body{
 }
 .page__article{
 	height: auto;
-	max-width: 760px;
+	// max-width: 760px;
 }
 .page__drawer{
 	position: fixed;
@@ -111,6 +112,25 @@ body{
 }
 .page__drawer+.page__article, .story{
 	width: calc(~"100% - 328px");
+}
+#page__drawer-mobile-container{
+	display: none;
+	position: fixed;
+	top: 56px;
+	width: 100%;
+	z-index: 1;
+	background-color: #3f51b5;
+	nav{
+		justify-content: center;
+
+		a{
+			padding-top: 1em;
+			padding-bottom: 1em;
+			letter-spacing: 0.04em;
+			line-height: 1.5rem;
+			font-weight: 700;
+		}
+	}
 }
 .page__article{
 	position: relative;
@@ -125,6 +145,7 @@ body{
 	position: initial;
 }
 .page__drawer-list{
+	padding: 0;
 	font-weight: 500;
 }
 .page__drawer-list__link{
@@ -144,6 +165,7 @@ body{
 	padding: 0;
 }
 .page__article__citation__item{
+	margin-bottom: 1em;
 	color: #4F4F4F;
 }
 
@@ -408,6 +430,10 @@ body{
 	-ms-flex:1;
 	flex: 1;
 	text-align: right;
+
+	a{
+		padding-right: 0;
+	}
 }
 .footer__made-with-desktop{
 	display: initial;   // When device is mobile, the property wil change to none
@@ -432,7 +458,18 @@ body{
 	}
 }
 
-@media (max-width: 720px){
+@media (max-width: 768px){
+	.page__drawer{
+		width: 100px;
+		margin-right: 12px;
+	}
+	.page__article {
+		position: relative;
+		left: 112px;
+	}
+	.page__drawer+.page__article, .story{
+		width: calc(~"100% - 112px");
+	}
 	.footer {
 		height: 114px;
 		margin-top: 120px;
@@ -455,6 +492,13 @@ body{
 		display: inline-block;
 	}
 
+
+	#to-top{
+		bottom: 3rem;
+		right: 2rem;
+	}
+}
+@media(max-width: 660px) {
 	.timeline{
 		li{
 			margin-left: 22px;
@@ -472,24 +516,36 @@ body{
 					&::before{
 						left: -16px;
 						border-width: 8px 16px 8px 0;
-						border-color: transparent #757de8 transparent transparent;                    
+						border-color: transparent #757de8 transparent transparent;
 					}
 				}
 			}
 		}
 	}
-
-	#to-top{
-		bottom: 3rem;
-		right: 2rem;
+	.page__drawer{
+		display: none;
+	}
+	.page__article{
+		width: 100% !important;
+		left: 0;
+	}
+	#page__drawer-mobile-container{
+		display: table;
 	}
 }
 @media(max-width: 360px){
-	.page__content, .footer__content {
-		padding-left: 0px;
-		padding-right: 0px;
+	.page__content, .footer__content{
+		padding-left: 12px;
+		padding-right: 12px;
 	}
-	.footer__made-with-mobile{
-		display: none;
+	.footer__links li{
+		margin-left: 6px;
+	}
+	.timeline{
+		li{
+			.mdc-card{
+				min-width: 240px - 12px;
+			}
+		}
 	}
 }

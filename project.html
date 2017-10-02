@@ -3,9 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Lanzhou</title>
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<link rel="stylesheet" href="material-components-web/dist/material-components-web.css">
 	<link rel="stylesheet" href="css/Material_Icons.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
 </head>
 <body class="page">
 	<header class="mdc-toolbar mdc-toolbar--fixed">
@@ -61,18 +65,23 @@
 			</nav>
 		</div>
 	</aside>
-
+	<div id="page__drawer-mobile-container">
+		<nav id="mdc-tab-bar" class="mdc-tab-bar-scroller mdc-theme--dark page__drawer-mobile">
+			<template id="temp-page-list-mobile">
+				<a href="" class="mdc-tab mdc-ripple-surface"></a>
+			</template>
+			<span class="mdc-tab-bar__indicator"></span>
+		</nav>
+	</div>
 	<main class="page__content">
 		<nav class="page__drawer mdc-persistent-drawer">
 			<ul class="page__drawer-list">
-				<template id="temp-page-list">
+				<template id="temp-page-list-desktop">
 					<li class="page__drawer-list__item">
 						<a href="" class="page__drawer-list__link"></a>
 					</li>
 				</template>
 				<!-- Use template tag to generate these link -->
-				<li class="page__drawer-list__item">
-				</li>
 			</ul>
 		</nav>
 		<article class="page__article">
@@ -119,7 +128,7 @@
 				<li class="footer__link-container--right">
 					<a href="http://lawliet.pw" class="footer__link">
 						<span class="footer__made-with-desktop">Made by L. with Material Components for the web</span>
-						<span class="footer__made-with-mobile">Made by L. with MDC Web</span>
+						<span class="footer__made-with-mobile">Made by L.</span>
 					</a>
 				</li>
 			</ul>
