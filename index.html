@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="mdc-typography">
 <head>
 	<meta charset="UTF-8">
 	<title>Lanzhou</title>
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<link rel="stylesheet" href="material-components-web/dist/material-components-web.css">
 	<link rel="stylesheet" href="css/Material_Icons.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
 </head>
 <body class="page">
 	<header class="mdc-toolbar mdc-toolbar--fixed">
@@ -17,7 +21,7 @@
 		</div>
 	</header>
 
-	<aside class="mdc-temporary-drawer mdc-typography">
+	<aside class="mdc-temporary-drawer">
 		<div class="mdc-temporary-drawer__drawer">
 			<header class="mdc-temporary-drawer__header">
 				<div class="mdc-temporary-drawer__header-content mdc-theme--primary-bg mdc-theme--text-primaryon-primary">
@@ -33,31 +37,84 @@
 				<a href="project.html" class="mdc-list-item mdc-ripple-surface">
 					<i class="material-icons mdc-list-item__start-detail">local_florist</i>
 					Project
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
 				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Bacground
+					</a>
+					<a href="design.html" class="mdc-list-item mdc-ripple-surface">
+						Design
+					</a>
+					<a href="application.html" class="mdc-list-item mdc-ripple-surface">
+						Application
+					</a>
+					<a href="safety.html" class="mdc-list-item mdc-ripple-surface">
+						Safety
+					</a>
+					<a href="results.html" class="mdc-list-item mdc-ripple-surface">
+						results
+					</a>
+				</nav>
 				<a href="" class="mdc-list-item mdc-ripple-surface">
-					<i class="material-icons mdc-list-item__start-detail">build</i>
-					Part
+					<i style="font-size: 24px;" class="fa fa-flask material-icons mdc-list-item__start-detail"></i>
+					Wet Lab
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
 				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Notebook
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Protocols
+					</a>
+				</nav>
 				<a href="" class="mdc-list-item mdc-ripple-surface">
-					<i class="material-icons mdc-list-item__start-detail">security</i>
-					Safty
+					<i style="font-size: 24px;" class="fa fa-cube material-icons mdc-list-item__start-detail"></i>
+					Modelling
 				</a>
 				<a href="" class="mdc-list-item mdc-ripple-surface">
 					<i class="material-icons mdc-list-item__start-detail">face</i>
 					Human Pratice
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
 				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Education
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Public engagement
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Consulting
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Questionnaire  
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Handbook
+					</a>
+				</nav>
 				<a href="" class="mdc-list-item mdc-ripple-surface">
 					<i class="material-icons mdc-list-item__start-detail">group</i>
 					Team
 				</a>
 				<a href="" class="mdc-list-item mdc-ripple-surface">
-					<i class="material-icons mdc-list-item__start-detail">content_paste</i>
-					Atrribution
-				</a>
-				<a href="" class="mdc-list-item mdc-ripple-surface">
 					<i class="material-icons mdc-list-item__start-detail">star</i>
-					Award
+					Achievements
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
 				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Parts
+					</a>
+					<a href="interlab.html" class="mdc-list-item mdc-ripple-surface">
+						Interlab
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Medal requirements 
+					</a>
+				</nav>
 			</nav>
 		</div>
 	</aside>

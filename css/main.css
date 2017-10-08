@@ -1,3 +1,4 @@
+/* Variable */
 /* Function */
 .surface {
   display: flex;
@@ -93,6 +94,24 @@ body {
   color: white;
   font-size: 16px;
 }
+.mdc-temporary-drawer .multi-nav-icon {
+  position: absolute;
+  right: 16px;
+  top: 0.5em;
+  transition: 0.5s;
+}
+.mdc-temporary-drawer .multi-nav-icon-rotate {
+  transform: rotate(180deg);
+}
+.mdc-temporary-drawer .sub-nav {
+  display: none;
+}
+.mdc-temporary-drawer .sub-nav .mdc-list-item {
+  background-color: #F7F7F7;
+  padding-left: 3em;
+  font-size: 0.8em;
+  line-height: 1em;
+}
 /* Page */
 .page__content {
   width: 100%;
@@ -102,7 +121,7 @@ body {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  margin-top: 150px;
+  margin-top: 120px;
 }
 .page__article {
   height: auto;
@@ -122,6 +141,7 @@ body {
   display: none;
   position: fixed;
   top: 56px;
+  left: 0;
   width: 100%;
   z-index: 1;
   background-color: #3f51b5;
@@ -139,6 +159,20 @@ body {
 .page__article {
   position: relative;
   left: 328px;
+}
+.page__article .mdc-typography--headline {
+  border-style: solid;
+  border-width: 0 0 0 8px;
+  border-color: #3f51b5;
+  padding-left: 0.5em;
+}
+.page__article .page__article__list {
+  max-width: 700px;
+  padding: 1em 1em 1em 3em;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.page__article .page__article__list li {
+  list-style: inherit;
 }
 .story {
   position: initial;
