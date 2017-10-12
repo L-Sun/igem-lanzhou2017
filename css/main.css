@@ -143,6 +143,7 @@ body {
   top: 56px;
   left: 0;
   width: 100%;
+  font-size: 0.8em;
   z-index: 1;
   background-color: #3f51b5;
 }
@@ -155,6 +156,7 @@ body {
   letter-spacing: 0.04em;
   line-height: 1.5rem;
   font-weight: 700;
+  font-size: 1em;
 }
 .page__article {
   position: relative;
@@ -173,6 +175,64 @@ body {
 }
 .page__article .page__article__list li {
   list-style: inherit;
+}
+.page__article figure {
+  min-width: 300px;
+  max-width: 600px;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page__article figure div,
+.page__article figure table {
+  max-width: 100%;
+  max-height: 400px;
+}
+.page__article figure table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+}
+.page__article figure table * {
+  word-wrap: break-word;
+  word-break: keep-all;
+}
+.page__article figure table tr,
+.page__article figure table th {
+  border-bottom: 1px solid #ccc;
+  font-weight: 400;
+}
+.page__article figure table th,
+.page__article figure table td {
+  padding: 0.5em 1em;
+}
+.page__article figure table th {
+  font-size: 0.9em;
+}
+.page__article figure table th[rowspan] {
+  border-right: 1px solid #ccc;
+}
+.page__article figure table thead {
+  border-top: 1px solid #111;
+}
+.page__article figure table thead th {
+  border-bottom: 1px solid #111;
+  padding: 1em;
+}
+.page__article figure table tbody td {
+  font-size: 0.8em;
+}
+.page__article figure .td-highlight {
+  background: #ffeb3b;
+}
+.page__article figure p {
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  font-weight: 500;
+  text-align: center;
 }
 .story {
   position: initial;
@@ -517,6 +577,10 @@ body {
   }
 }
 @media (max-width: 660px) {
+  .page__article figure table th,
+  .page__article figure table td {
+    padding: 0.5em 0.3em;
+  }
   .timeline li {
     margin-left: 22px;
   }
