@@ -5,6 +5,16 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+.color-block(){
+	border-style: solid;
+	border-width: 0 0 0 8px;
+	border-color: @main_color;
+}
+.maskeed(@x, @y){
+	filter: brightness(@x) invert(@y);
+	-webkit-filter: brightness(@x) invert(@y);
+	-ms-filter: brightness(@x) invert(@y);
+}
 
 // Test
 .surface{
@@ -21,14 +31,14 @@
 
 
 /* General */
-*, :after, :before {
+*, :after, :before{
 	box-sizing: border-box;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section{
 	display: block;
 }
-a, a:active, a:hover, a:link, a:visited {
+a, a:active, a:hover, a:link, a:visited{
 	font-family: Roboto,sans-serif;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
@@ -39,10 +49,10 @@ a, a:active, a:hover, a:link, a:visited {
 	color: rgba(0,0,0,.87);
 	font-family: Roboto Mono;
 }
-nav ul {
+nav ul{
 	list-style-type: none;
 }
-li {
+li{
 	list-style: none;
 	padding-bottom: 0;
 }
@@ -162,9 +172,7 @@ body{
 	left: 328px;
 
 	.mdc-typography--headline{
-		border-style: solid;
-		border-width: 0 0 0 8px;
-		border-color: @main_color;
+		.color-block();
 		padding-left: 0.5em;
 	}
 	.page__article__list{
@@ -183,7 +191,7 @@ body{
 		margin-bottom: 3em;
 		.center();
 
-		div, table{
+		div, table, img{
 			max-width: 100%;
 			max-height:400px;
 		}
@@ -254,6 +262,10 @@ body{
 	&, &:hover, &:link, &:active, &:visited{
 		text-decoration: none;
 	}
+	&:hover{
+		border-bottom: 2px solid @main_color;
+		padding-bottom: 6px;
+	}
 }
 .page__drawer-list__link--active{
 	color: black;
@@ -271,6 +283,17 @@ body{
 // Team
 .team-page{
 	display: block;
+	.page__article{
+		.mdc-typography--headline{
+			.color-block();
+			padding-left: 0.5em;
+		}
+		.page__article__list{
+			padding-left: 1em;
+			border: none;
+			max-width: 100%;
+		}
+	}
 }
 .team-cards{
 	display: -webkit-flex;
@@ -353,7 +376,7 @@ body{
 						width: 100%;
 						height: 100%;
 						color: white;
-						font-size: 1em;
+						font-size: 0.9em;
 						line-height: 2em;
 						text-decoration: none;
 						text-align: center;
@@ -471,7 +494,7 @@ body{
 	letter-spacing: .04em;
 	line-height: 1.25rem;
 	background: #fafafa;
-	height: 192px;
+	min-height: 192px;
 	margin-top: 144px;
 
 	ul{
@@ -492,11 +515,50 @@ body{
 	padding-top: 32px;
 	height: 100%;
 }
-.footer__logo{
+.footer__title{
 	display: inline-block;
 	font-size: 1.5em;
 	font-weight: 400;
 	opacity: .5;
+	margin-bottom: 1em;
+}
+.footer__container{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: wrap;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	align-items: center;
+	div{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		align-items: center;
+
+		img{
+			.maskeed(0, 0.5);
+			transition: 0.3s;
+
+			&:hover{
+				.maskeed(1, 0);
+			}
+		}
+	}
+}
+.footer__logo{
+	-ms-flex-direction: row;
+	flex-direction: row;
+	width: 50%;
+	border-right: 1px solid rgba(0, 0, 0, 0.1);
+	.no_maskeed{
+		.maskeed(0.8, 0);
+	}
+}
+.footer__sponsors{
+	width: 50%;
+	-ms-flex-direction: row-reverse;
+	flex-direction: row-reverse;
 }
 .footer__links{
 	display: -webkit-box;
@@ -505,6 +567,7 @@ body{
 	position: relative;
 	left: -8px;
 	list-style-type: none;
+	margin-top: 1em;
 	margin-left: 0;
 
 	li{
@@ -542,14 +605,14 @@ body{
 }
 
 /* Media */
-@media (min-width: 1200px) {
+@media (min-width: 1200px){
 	#to-top{
 		bottom: 3rem;
 		right: 5rem;
 	}
 }
 @media (max-width: 1312px) and (min-width: 721px){
-	.page__content, .footer__content {
+	.page__content, .footer__content{
 		max-width: 1400px;
 		width: 100%;
 		padding-left: 60px;
@@ -562,20 +625,34 @@ body{
 		width: 100px;
 		margin-right: 12px;
 	}
-	.page__article {
+	.page__article{
 		position: relative;
 		left: 112px;
 	}
 	.page__drawer+.page__article, .story{
 		width: calc(~"100% - 112px");
 	}
-	.footer {
-		height: 114px;
+	.footer{
 		margin-top: 120px;
 	}
 	.footer__content{
 		padding-bottom: 12px;
 		padding-top: 24px;
+	}
+	.footer__container{
+		div{
+			width: 100%;
+			flex-direction: row;
+			img{
+				max-height: 70px;
+			}
+		}
+	}
+	.footer__logo{
+		border-right: none;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+		margin-bottom: 1em;
+		padding-bottom: 1em;
 	}
 	.footer__link{
 		font-size: .75rem;
@@ -597,7 +674,7 @@ body{
 		right: 2rem;
 	}
 }
-@media(max-width: 660px) {
+@media(max-width: 660px){
 	.page__article{
 		figure{
 			table{
