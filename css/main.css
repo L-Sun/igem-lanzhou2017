@@ -129,12 +129,6 @@ body {
 }
 .page__content {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
   margin-top: 120px;
 }
 .page__article {

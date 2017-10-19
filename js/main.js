@@ -42,7 +42,7 @@ $(function() {
                     'top': $('.mdc-toolbar').height() + $('.mdc-toolbar').position().top +  'px'
                 });
                 $('.page__article').css({
-                    'left': '260px',
+                    'left': '265px',
                 });
             }else{
                 $('.page__drawer').css({
