@@ -10,6 +10,11 @@
 	<link rel="stylesheet" href="css/Material_Icons.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+	<script src="material-components-web/dist/material-components-web.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script>window.mdc.autoInit()</script>
+	<script src="js/main.js"></script>
 </head>
 <body class="page">
 	<header class="mdc-toolbar mdc-toolbar--fixed">
@@ -131,6 +136,14 @@
 		</div>
 	</aside>
 
+	<div class="page__header" style="background-image: url();">
+		<h1 class="mdc-typography--display2"></h1>
+	</div>
+
+	<script>
+		$('.page__header h1').text('Human Pratice');
+	</script>
+
 	<main class="page__content">
 		<ul class="timeline">
 			<li>
@@ -199,8 +212,4 @@
 		<span class="mdc-fab__icon">keyboard_arrow_up</span>
 	</button>
 </body>
-	<script src="material-components-web/dist/material-components-web.js"></script>
-	<script src="js/jquery.min.js"></script>
-	<script>window.mdc.autoInit()</script>
-	<script src="js/main.js"></script>
 </html>

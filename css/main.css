@@ -113,6 +113,20 @@ body {
   line-height: 1em;
 }
 /* Page */
+.page__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #000000;
+  min-height: 50vh;
+}
+.page__header h1 {
+  color: white;
+  text-align: center;
+}
 .page__content {
   width: 100%;
   display: -webkit-box;
@@ -125,17 +139,19 @@ body {
 }
 .page__article {
   height: auto;
+  display: inline-block;
 }
 .page__drawer {
-  position: fixed;
-  width: 304px;
+  display: inline-block;
+  position: relative;
+  width: 260px;
   height: auto;
-  margin-right: 24px;
   border: 0;
+  vertical-align: top;
 }
 .page__drawer + .page__article,
 .story {
-  width: calc(100% - 328px);
+  width: calc(100% - 275px);
 }
 #page__drawer-mobile-container {
   display: none;
@@ -160,7 +176,6 @@ body {
 }
 .page__article {
   position: relative;
-  left: 328px;
 }
 .page__article .mdc-typography--headline {
   border-style: solid;
@@ -169,7 +184,7 @@ body {
   padding-left: 0.5em;
 }
 .page__article .page__article__list {
-  max-width: 700px;
+  max-width: 800px;
   padding: 1em 1em 1em 3em;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -274,9 +289,6 @@ body {
   margin-bottom: 1em;
   color: #4F4F4F;
 }
-.team-page {
-  display: block;
-}
 .team-page .page__article .mdc-typography--headline {
   border-style: solid;
   border-width: 0 0 0 8px;
@@ -287,6 +299,13 @@ body {
   padding-left: 1em;
   border: none;
   max-width: 100%;
+}
+.team-page .page__article ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+.team-page .page__article ul li {
+  margin: 1em 0;
 }
 .team-cards {
   display: -webkit-flex;
@@ -649,9 +668,16 @@ body {
   }
 }
 @media (max-width: 660px) {
+  .page__header {
+    height: 60vh;
+    padding-top: 100px;
+  }
+  .page__header h1 {
+    font-size: 2em;
+  }
   .page__article figure table th,
   .page__article figure table td {
-    padding: 0.5em 0.3em;
+    padding: 0.5em 0.3em !important;
   }
   .timeline li {
     margin-left: 22px;

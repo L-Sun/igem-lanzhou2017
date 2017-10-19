@@ -1,4 +1,12 @@
 $(function() {
+/* Clear defualt */
+    // $('link[rel="stylesheet"]').first().remove();
+    // $('#sideMenu').remove();
+    // $('.pop_why_cover').remove();
+    // $('.pop_why_box').remove()
+    // $("p:last").remove()
+
+
 /* General */
 
     $('#to-top').click(function(event) {
@@ -27,7 +35,25 @@ $(function() {
                 $(time_line_li[i]).addClass('inview');
             }
         }
-
+        if($('#page__drawer-mobile-container').css('display') == 'none') {
+            if ($('.page__content').offset().top - $(this).scrollTop() < $('.mdc-toolbar').height() + $('.mdc-toolbar').position().top) {
+                $('.page__drawer').css({
+                    'position': 'fixed',
+                    'top': $('.mdc-toolbar').height() + $('.mdc-toolbar').position().top +  'px'
+                });
+                $('.page__article').css({
+                    'left': '260px',
+                });
+            }else{
+                $('.page__drawer').css({
+                    'position': 'relative',
+                    'top': 0
+                });
+                $('.page__article').css({
+                    'left': '0',
+                });
+            }
+        }
     }
 
     $(window).scroll(function() {
