@@ -13,6 +13,7 @@
 
 	<script src="material-components-web/dist/material-components-web.js"></script>
 	<script src="js/highcharts.js"></script>
+	<script src="js/highmaps.js"></script>
 	<script src="js/highcharts-more.js"></script>
 	<script src="js/jquery.min.js"></script>
 	<script>window.mdc.autoInit()</script>
@@ -143,7 +144,7 @@
 	</div>
 
 	<script>
-		$('.page__header h1').text('Collaboration and Meet up');
+		$('.page__header h1').text('Background');
 	</script>
 
 	<div id="page__drawer-mobile-container">
@@ -156,13 +157,6 @@
 	</div>
 
 	<main class="page__content">
-		<div class="tabs">
-			<ul>
-				<li><a href="#article_1">Collaboration</a></li>
-				<li><a href="#article_2">Meet up</a></li>
-			</ul>
-		</div>
-
 		<nav class="page__drawer mdc-persistent-drawer">
 			<ul class="page__drawer-list">
 				<template id="temp-page-list-desktop">
@@ -174,72 +168,278 @@
 			</ul>
 		</nav>
 
-		<article id="article_1" class="page__article">
-			<h1 class="mdc-typography--headline">
-				NEU-China
-				<!-- <span class="mdc-typography--caption">Caption.</span> -->
-			</h1>
+		<article class="page__article">
+			<h1 class="mdc-typography--display1">Background</h1>
 			<p class="mdc-typography--body2">
-				The cooperation with Northeastern University has begun since the summer vocation. We helped them complete a receptor and Working as a very kind and helpful team, they asked helping us in verifying one fuctional protein expression.
+				Weeds and pests are the most important damages to agronomy system, which resulted in agriculture economic losses of more than $20.4 billion in 1972. Merely taking the United States as an example, the damage is $8.4 billion a year, while pests account for 40% and weeds account for 60%. In our country, China, the crop yield loss is almost fifty million kilogram per year.
+			</p>
+			<div class="page__article__picture">
+				<img src="http://2017.igem.org/wiki/images/5/58/Lanzhou_wiki_Background_bg_1.png" alt="">
+				<img src="http://2017.igem.org/wiki/images/b/b9/Lanzhou_wiki_Background_bg_2.jpg" alt="">
+			</div>
+			<p class="mdc-typography--body2">
+				Therefore, the prevention and management of weeds & pests are indispensable to guarantee the agricultural production. The common way to control them is spraying the chemicals termed herbicides and pesticides. 
 			</p>
 			<p class="mdc-typography--body2">
-				We helped NEU-China construct an olfactory receptor Rho-OR1A1.  The 64th base pair from the initiation codon of OR1A1 contains an illegal enzyme site (EcoRI), which didn't meet up RFC10 standard. So we designed the primer with synonymous codon and successfully mutated the GAA to GAG.
+				The first pesticide DDT appeared in 1939, which widely spread after the Second World War. People saw its tremendous potential through its high efficiency and lethality rate. Then synthetic organic pesticides quickly covered almost all fields where dedicates to controlling weeds and pests.
+			</p>
+			<div class="page__article__picture">
+				<img src="http://2017.igem.org/wiki/images/thumb/b/b0/Lanzhou_wiki_Background_bg_3.jpg/800px-Lanzhou_wiki_Background_bg_3.jpg" alt="">
+				<img src="http://2017.igem.org/wiki/images/thumb/4/41/Lanzhou_wiki_Background_bg_4.jpg/800px-Lanzhou_wiki_Background_bg_4.jpg" alt="">
+			</div>
+			<p class="mdc-typography--body2" style="text-align: center; color:red;">
+				<b>But problems gradually showed up.</b>
+			</p>
+			
+			<h1 class="mdc-typography--headline">Resistance problem</h1>
+			<p class="mdc-typography--body2">
+				At first, unprepared pest insects and weeds were easily killed, but this situation didn't last long because of the resistance occurrence.
+			</p>
+			<p class="mdc-typography--body2">
+				According to history, <font color="red">in 1989, there were 432 kinds of resistant insects in the world, and in 2008,</font> the number updated to 589, of which 392 kinds were agricultural pests. What’s worse, beneficial insects, insect-eating birds, frogs and snakes are suffering as well from low selectivity chemicals.
+			</p>
+			<p class="mdc-typography--body2">
+				As for wild grass, since the first one anti-2, 4-D wild carrots were found in the 1950s, weeds resistance problem has been always accompanying global agriculture development. Declared by Herbicide Resistance Committee (<i>belongs to Weed Society Of America</i>), as of May 21, 2014, resistant weeds occupied nearly 55% in total resistant organisms and they distributed among 65 countries, 82 kinds of crops.
 			</p>
 			<figure>
-				<img src="image/lab/neu-1.png" alt="">
-				<p><b>Figure 1. standardized Rho-OR1A1.</b></p>
-			</figure>
-			<figure>
-				<img src="image/lab/neu-2.png" alt="">
-				<p><b>Figure 2. PstI, EcoRI double enzyme digestion.</b></p>
+				<div id="container-1"></div>
+				<p><b>Figure 1. International distribution of anti-herbicide weeds </b></p>
 			</figure>
 			<p class="mdc-typography--body2">
-				In our project, we need various functional vectors for dsRNA production，but the gene sequence complementarity will cause secondary structure, which is impossible to synthsize gene for one time. The task of constructing vectors is heavy. 
+				Through figure 2, we can find that in the first 20 years, the occurrence of resistant weeds was very slow. But when getting into the mid and late-1980s, the number increased in a stunning speed and the growth rate shows a trend of nearly straitening up.
+			</p>
+			<figure>
+				<img src="http://2017.igem.org/wiki/images/d/dd/Lanzhou_wiki_Background_bg_5.jpg" alt="">
+				<p><b>Figure 2. Statistic of global resistant weeds</b></p>
+			</figure>
+			<p class="mdc-typography--body2">
+				In the meantime, it is proved that these malignant weeds resist to 155 different herbicides and 22 of the 25 known herbicide acting spots became no effective. So they are too hard to manage.
+			</p>
 
-			</p>
-			<p class="mdc-typography--body2">
-				So NEU-China students helped us construct a hpRNA producing vector ecrL, which speeded up our vectors construction progress. 
-			</p>
-			<p class="mdc-typography--body2">
-				<b>Really appreciate their support.</b>
-			</p>
+			<h1 class="mdc-typography--headline">Pollution & Poisoning</h1>
 
-			<h1 class="mdc-typography--headline">BIT-China</h1>
+			<div class="page__article__picture">
+				<img src="http://2017.igem.org/wiki/images/9/99/Lanzhou_wiki_Background_bg_6.jpg" alt="">
+			</div>
 			<p class="mdc-typography--body2">
-				After we meet up through vedio conference with BIT-China, We exchanged ideas and confirmed our collaboration relationship. 
+				All serious situations above indicate that human is in need of a new cure for weeds and pests damage. For the sake of addressing this challenge, this year Lanzhou iGEM team aims at creating a kind of Bio-pesticides which is harmless, eco-friendly and without resistance problem.
 			</p>
-			<p class="mdc-typography--body2">
-				In the light of helping each other, we assisted them to build a new type of promoter.
-			</p>
-			<p class="mdc-typography--body2">
-				At the same time, they helped us verify one functional protein expression.
-			</p>
-			<figure>
-				<img src="image/lab/bit-1.png" alt="">
-				<p><b>Figure 3. Mutant gene Pfus.</b></p>
-			</figure>
-			<p class="mdc-typography--body2">
-				BIT-China project requires mRFP to characterize the size of the sweetness. Different sweeteners have different gradients of sweetness, they need to get mutations of the inducible promoter Pfus and change its strength. 
-			</p>
-			<p class="mdc-typography--body2">
-				So we helped them  build a mutant gene of Pfus to make their project more responsive.
-			</p>
-			<figure>
-				<img src="image/lab/bit-2.png" alt="">
-				<p><b>Figure 4. SDS-PAGE of pectinase.</b></p>
-			</figure>
-			<p class="mdc-typography--body2">
-				In our project,  pectinase and celluse play an important role in  downstream circuits and we want to combine functional dsRNA with these two proteins and let them work together, which will make great sense to our subsequent appllication design.
-			</p>
-			<p class="mdc-typography--body2">
-				They successfully verified the expression of pectinase. With their help,  our project progress has been promoted.
-			</p>
-		</article>
-		<article  id="article_2" class="page__article">
-			<h1 class="mdc-typography--headline">Test</h1>
 		</article>
 	</main>
 
+	<script>
+		$.getJSON('js/world.json', function(mapdata) {
+			var map = new Highcharts.Map('container-1', {
+				title: {
+					text: ''
+				},
+				colorAxis: {
+					min: 0,
+					minColor: '#f9f9f9',
+					maxColor: '#006cee'
+				},
+				series: [{
+					mapData: mapdata,
+					name: 'resistant weeds distribution',
+					data: [{
+						name: 'United States of America',
+						value: 145,
+					},{
+						name: 'Australia',
+						value: 69,
+					},{
+						name: 'Canada',
+						value: 60,
+					},{
+						name: 'China',
+						value: 37,
+					},{
+						name: 'France',
+						value: 35,
+					},{
+						name: 'Jpan',
+						value: 33,
+					},{
+						name: 'Spain',
+						value: 33,
+					},{
+						name: 'Brazil',
+						value: 32,
+					},{
+						name: 'Germany',
+						value: 32,
+					},{
+						name: 'Italy',
+						value: 30,
+					},{
+						name: 'Israel',
+						value: 29,
+					},{
+						name: 'United Kingdom',
+						value: 27,
+					},{
+						name: 'Malaysia',
+						value: 20,
+					},{
+						name: 'Belgium',
+						value: 19,
+					},{
+						name: 'Poland',
+						value: 19,
+					},{
+						name: 'Czech',
+						value: 18,
+					},{
+						name: 'Chile',
+						value: 16,
+					},{
+						name: 'South Korea',
+						value: 16,
+					},{
+						name: 'Turkey',
+						value: 16,
+					},{
+						name: 'New Zealand',
+						value: 15,
+					},{
+						name: 'South Africa14',
+						value: 14,
+					},{
+						name: 'Switzerland',
+						value: 14,
+					},{
+						name: 'Iran',
+						value: 11,
+					},{
+						name: 'Greece',
+						value: 10,
+					},{
+						name: 'Venezuela',
+						value: 10,
+					},{
+						name: 'Denmark',
+						value: 9,
+					},{
+						name: 'Bolivia',
+						value: 8,
+					},{
+						name: 'Serbia',
+						value: 8,
+					},{
+						name: 'Costa Rica',
+						value: 7,
+					},{
+						name: 'Netherlands',
+						value: 7,
+					},{
+						name: 'Colombia',
+						value: 6,
+					},{
+						name: 'Sweden',
+						value: 6,
+					},{
+						name: 'Austria',
+						value: 5,
+					},{
+						name: 'Mexico',
+						value: 5,
+					},{
+						name: 'Norway',
+						value: 5,
+					},{
+						name: 'Portugal',
+						value: 5,
+					},{
+						name: 'Thailand',
+						value: 5,
+					},{
+						name: 'Bulgaria',
+						value: 4,
+					},{
+						name: 'Egypt',
+						value: 3,
+					},{
+						name: 'India',
+						value: 3,
+					},{
+						name: 'Philippines',
+						value: 3,
+					},{
+						name: 'Cyprus',
+						value: 2,
+					},{
+						name: 'Paraguay',
+						value: 2,
+					},{
+						name: 'Sri Lanka',
+						value: 2,
+					},{
+						name: 'Uruguay',
+						value: 2,
+					},{
+						name: 'Ecuador',
+						value: 1,
+					},{
+						name: 'El Salvador',
+						value: 1,
+					},{
+						name: 'Ethiopia',
+						value: 1,
+					},{
+						name: 'Fiji',
+						value: 1,
+					},{
+						name: 'Guatemala',
+						value: 1,
+					},{
+						name: 'Honduras',
+						value: 1,
+					},{
+						name: 'Hungary',
+						value: 1,
+					},{
+						name: 'Indonesia',
+						value: 1,
+					},{
+						name: 'Ireland',
+						value: 1,
+					},{
+						name: 'Jordan',
+						value: 1,
+					},{
+						name: 'Kenya',
+						value: 1,
+					},{
+						name: 'Lithuania',
+						value: 1,
+					},{
+						name: 'Nicaragua',
+						value: 1,
+					},{
+						name: 'Panama',
+						value: 1,
+					},{
+						name: 'Russia',
+						value: 1,
+					},{
+						name: 'Saudi Arabia',
+						value: 1,
+					},{
+						name: 'Slovenia',
+						value: 1,
+					},{
+						name: 'Taiwan',
+						value: 1,
+					},{
+						name: 'Tunisia',
+						value: 1,
+					},],
+					joinBy: 'name',
+				}],
+				
+			});
+		});
+	</script>
 	
 	<footer class="footer">
 		<div class="footer__content">
@@ -276,5 +476,6 @@
 	<button id="to-top" class="mdc-fab mdc-ripple-surface material-icons" aria-label="Favorite">
 		<span class="mdc-fab__icon">keyboard_arrow_up</span>
 	</button>
+
 </body>
 </html>
