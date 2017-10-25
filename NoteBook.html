@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en" class="mdc-typography">
+<head>
+	<meta charset="UTF-8">
+	<title>Lanzhou</title>
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="material-components-web/dist/material-components-web.css">
+	<link rel="stylesheet" href="css/Material_Icons.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+	<script src="material-components-web/dist/material-components-web.js"></script>
+	<script src="js/highcharts.js"></script>
+	<script src="js/highcharts-more.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script>window.mdc.autoInit()</script>
+	<script src="js/main.js"></script>
+</head>
+<body class="page">
+	<header class="mdc-toolbar mdc-toolbar--fixed">
+		<div class="mdc-toolbar__row">
+			<section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+				<button class="menu material-icons mdc-toolbar__icon--menu mdc-ripple-surface">menu</button>
+				<span class="mdc-toolbar__title">Lanzhou2017</span>
+			</section>
+		</div>
+	</header>
+
+	<aside class="mdc-temporary-drawer">
+		<div class="mdc-temporary-drawer__drawer">
+			<header class="mdc-temporary-drawer__header">
+				<div class="mdc-temporary-drawer__header-content mdc-theme--primary-bg mdc-theme--text-primaryon-primary">
+					<img class="logo" src="image/logo.jpg" alt="Lanzhou 2017">
+					<div class="logo-name">Lanzhou 2017</div class="logo-name">
+				</div>
+			</header>
+			<nav class="mdc-temporary-drawer__content mdc-list-group">
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i class="material-icons mdc-list-item__start-detail" >home</i>
+					Home
+				</a>
+				<a href="project.html" class="mdc-list-item mdc-ripple-surface">
+					<i class="material-icons mdc-list-item__start-detail">local_florist</i>
+					Project
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
+				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Bacground
+					</a>
+					<a href="design.html" class="mdc-list-item mdc-ripple-surface">
+						Design
+					</a>
+					<a href="application.html" class="mdc-list-item mdc-ripple-surface">
+						Application
+					</a>
+					<a href="safety.html" class="mdc-list-item mdc-ripple-surface">
+						Safety
+					</a>
+					<a href="results.html" class="mdc-list-item mdc-ripple-surface">
+						results
+					</a>
+				</nav>
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i style="font-size: 24px;" class="fa fa-flask material-icons mdc-list-item__start-detail"></i>
+					Wet Lab
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
+				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Notebook
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Protocols
+					</a>
+				</nav>
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i style="font-size: 24px;" class="fa fa-cube material-icons mdc-list-item__start-detail"></i>
+					Modelling
+				</a>
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i class="material-icons mdc-list-item__start-detail">face</i>
+					Human Pratice
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
+				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Education
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Public engagement
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Consulting
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Questionnaire  
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Handbook
+					</a>
+				</nav>
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i class="material-icons mdc-list-item__start-detail">group</i>
+					Team
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
+				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						About us
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Attributions
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Collaborations & Meet up
+					</a>
+				</nav>
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i class="material-icons mdc-list-item__start-detail">star</i>
+					Achievements
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
+				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Parts
+					</a>
+					<a href="interlab.html" class="mdc-list-item mdc-ripple-surface">
+						Interlab
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Medal requirements 
+					</a>
+				</nav>
+			</nav>
+		</div>
+	</aside>
+
+	<div class="page__header" style="background-image: url();">
+		<h1 class="mdc-typography--display2"></h1>
+	</div>
+
+	<script>
+		$('.page__header h1').text('Notebook');
+	</script>
+
+	<main class="page__content notebook">
+		<section class="mdc-theme--dark mdc-elevation--z1">
+			<h3>April</h3>
+			<ul class="mdc-list mdc-list--two-line">
+				<li class="mdc-list-item mdc-ripple-surface mdc-list-item--opened">
+					<span class="mdc-list-item__text">
+						Week 1
+						<span class="mdc-list-item__text__secondary">Apr 1</span>
+					</span>
+					<i class="mdc-list-item__end-detail material-icons">keyboard_arrow_down</i>
+				</li>
+				<div style="display: inherit;" class="detail mdc-elevation--z1">
+					•	Establish research project in group meeting.
+				</div>
+				<li class="mdc-list-item mdc-ripple-surface">
+					<span class="mdc-list-item__text">
+						Week 2
+						<span class="mdc-list-item__text__secondary">Apr 2 ~ Apr 8</span>
+					</span>
+					<i class="mdc-list-item__end-detail material-icons">keyboard_arrow_down</i>
+				</li>
+				<div class="detail mdc-elevation--z1">
+					•	Prepare for experiment and confirm members of the division of labor.
+					<li>Antibiotic(Amp,Kana,Chl,Tet).</li>
+					<li>prepare 5M IPTG.</li>
+					<li>prepare double distilled water, centrifuge tube, PCR tube sterilization, of alcohol cotton.</li>
+					<li>Preparation of competent state.</li>
+				</div>
+				<li class="mdc-list-item mdc-ripple-surface">
+					<span class="mdc-list-item__text">
+						Week 3
+						<span class="mdc-list-item__text__secondary">Apr 9 ~ Apr 15</span>
+					</span>
+					<i class="mdc-list-item__end-detail material-icons">keyboard_arrow_down</i>
+				</li>
+				<div class="detail mdc-elevation--z1">
+					•	New members acquaint the laboratory,and do some basic experimental to prepare for the IGEM.
+				</div>
+				<li class="mdc-list-item mdc-ripple-surface">
+					<span class="mdc-list-item__text">
+						Week 4
+						<span class="mdc-list-item__text__secondary">Apr 16 ~ Apr 22</span>
+					</span>
+					<i class="mdc-list-item__end-detail material-icons">keyboard_arrow_down</i>
+				</li>
+				<div class="detail mdc-elevation--z1">
+					•	Verify the plasmids and primer in group meeting.
+				</div>
+				<li class="mdc-list-item mdc-ripple-surface">
+					<span class="mdc-list-item__text">
+						Week 5
+						<span class="mdc-list-item__text__secondary">Apr 23 ~ Apr 29</span>
+					</span>
+					<i class="mdc-list-item__end-detail material-icons">keyboard_arrow_down</i>
+				</li>
+				<div class="detail mdc-elevation--z1">
+					•	Gene synthesis
+				</div>
+			</ul>
+			<hr class="mdc-list-divider">
+			<h3>May</h3>
+			<ul class="mdc-list mdc-list--two-line">
+				<li class="mdc-list-item mdc-ripple-surface">
+					<span class="mdc-list-item__text">
+						Week 1
+						<span class="mdc-list-item__text__secondary">Apr 30 ~ May 6</span>
+					</span>
+					<i class="mdc-list-item__end-detail material-icons">keyboard_arrow_down</i>
+				</li>
+				<div class="detail mdc-elevation--z1">
+					•	Direct mutagenesis
+					<li>Site-directed mutagenesis Lon1, Lon2.and run the gel to proving the verification of the mutation.</li>
+					•	Extract plasmids<br>
+					•	Digestion
+					<li>Digested pUC19 (EcoRI, PstI), LacI and gel extraction.</li>
+				</div>
+				<li class="mdc-list-item mdc-ripple-surface">
+					<span class="mdc-list-item__text">
+						Week 2
+						<span class="mdc-list-item__text__secondary">May 7 ~ May 13</span>
+					</span>
+					<i class="mdc-list-item__end-detail material-icons">keyboard_arrow_down</i>
+				</li>
+				<div class="detail mdc-elevation--z1">
+					•	Site-directed mutagenesis Lon1, Lon2.
+					<li>make bacterium Lon1, Lon2, pET28a (+), pUc19, pETDuet amplified.</li>
+					•	Transformation
+					<li>Transform the plasmids into E.Coli DH5a.</li>
+					•	Culture
+					<li>pick a single clone on the transformed plate and culture in fluid culture medium.</li>
+				</div>
+				<li class="mdc-list-item mdc-ripple-surface">
+					<span class="mdc-list-item__text">
+						Week 3
+						<span class="mdc-list-item__text__secondary">May 14 ~ May 20</span>
+					</span>
+					<i class="mdc-list-item__end-detail material-icons">keyboard_arrow_down</i>
+				</li>
+				<div class="detail mdc-elevation--z1">
+					•	Ligation
+					<li>Use protocol of the Quick Connect Enzyme Kit to connect pUC19+GFP，pUC19+LacI.</li>
+					•	Transformation 
+					<li>Transform the mutation,connect product and L4440 plasmids.</li>
+				</div>
+				<li class="mdc-list-item mdc-ripple-surface">
+					<span class="mdc-list-item__text">
+						Week 4
+						<span class="mdc-list-item__text__secondary">May 21 ~ May 27</span>
+					</span>
+					<i class="mdc-list-item__end-detail material-icons">keyboard_arrow_down</i>
+				</li>
+				<div class="detail mdc-elevation--z1">
+					•	Plasmids extraction
+					<li>Extract the plasmids of Gmix and P with plasmids Mini Kit,then run the gel electrophoresis (Figure 1).</li>
+					Gel electrophoresis
+					<li>run the gel electrophoresis of Ga(1~5) (Figure2).</li>
+					<li>run the gel electrophoresis of Gb (1~5) (Figure3).</li>
+					•	Gel purification of Ga（Figure4）and Gb (Figure4).
+					<div class="figure">
+						<figure>
+							<img src="http://2017.igem.org/wiki/images/1/1c/Lanzhou_wiki_Notebook_figure1.png" alt="">
+							<p><b>Figure 1.</b></p>
+						</figure>
+						<figure>
+							<img src="http://2017.igem.org/wiki/images/3/35/Lanzhou_wiki_Notebook_figure2.png" alt="">
+							<p><b>Figure 2.</b></p>
+						</figure>
+						<figure>
+							<img src="http://2017.igem.org/wiki/images/0/09/Lanzhou_wiki_Notebook_figure3.png" alt="">
+							<p><b>Figure 3.</b></p>
+						</figure>
+						<figure>
+							<img src="http://2017.igem.org/wiki/images/4/4a/Lanzhou_wiki_Notebook_figure4.png" alt="">
+							<p><b>Figure 4.</b></p>
+						</figure>
+					</div>
+				</div>
+				<li class="mdc-list-item mdc-ripple-surface">
+					<span class="mdc-list-item__text">
+						Week 5
+						<span class="mdc-list-item__text__secondary">May 28 ~ Jun 3</span>
+					</span>
+					<i class="mdc-list-item__end-detail material-icons">keyboard_arrow_down</i>
+				</li>
+				<div class="detail mdc-elevation--z1">
+					•	Digestion
+					<li>digest Gain E/S,Gbin E/S.</li>
+					•	Ligation 
+					<li>Ligate Ga with pUC19,Gb with pUC19,Ga+Gb with pUC19.</li>
+					•	Transformation
+					<li>Transform Ga+pUC19 into DH5a,Gb+pUC19 into DH5a,Ga+Gb+pUC19 into DH5a.</li>
+					•	Run gel
+					<li>Extract pUC19 into 6 tubes.</li>
+					<li>Gel purification of puc19 (Figure 6&7), analyse the failure of digestion.</li>`
+					<div class="figure">
+						<figure>
+							<img src="http://2017.igem.org/wiki/images/5/5f/Lanzhou_wiki_Notebook_figure6.png" alt="">
+							<p><b>Figure 6.</b></p>
+						</figure>
+						<figure>
+							<img src="http://2017.igem.org/wiki/images/3/3c/Lanzhou_wiki_Notebook_figure7.png" alt="">
+							<p><b>Figure 7.</b></p>
+						</figure>
+					</div>
+					•	Ligation
+					<li>Ligated GaE/P with Puc19 E/P, GbE/P with pUC19 E/P, GaE/S+GbX/P with pUC19 E/P.then Transfer ligated product into the plate,and Cultivate them overnight.</li>
+				</div>
+			</ul>
+			<hr class="mdc-list-divider">
+			<h3>June</h3>
+			<ul class="mdc-list mdc-list--two-line">
+				<li class="mdc-list-item mdc-ripple-surface">
+					<span class="mdc-list-item__text">
+						Week 1
+						<span class="mdc-list-item__text__secondary">Jun 4 ~ Jun 10</span>
+					</span>
+					<i class="mdc-list-item__end-detail material-icons">keyboard_arrow_down</i>
+				</li>
+				<div class="detail mdc-elevation--z1">
+					•	PCR
+					<li>PCR Ga, Gb, P, then gel purification (Figure 8&9).</li>
+					<li>PCR protocol</li>
+					<img src="http://2017.igem.org/wiki/images/a/a7/Lanzhou_wiki_Notebook_table1.png" alt="">
+					<div class="figure">
+						<figure>
+							<img src="http://2017.igem.org/wiki/images/0/09/Lanzhou_wiki_Notebook_figure8.png" alt="">
+							<p><b>Figure 8.</b></p>
+						</figure>
+						<figure>
+							<img src="http://2017.igem.org/wiki/images/e/e5/Lanzhou_wiki_Notebook_figure9.png" alt="">
+							<p><b>Figure 9.</b></p>
+						</figure>
+					</div>
+					•	Plasmids extraction
+					<li>Plasmids extraction of pUC19+Ga，pUC19+Gb.</li>
+				</div>
+				<li class="mdc-list-item mdc-ripple-surface">
+					<span class="mdc-list-item__text">
+						Week 2
+						<span class="mdc-list-item__text__secondary">Jun 11 ~ Jun 17</span>
+					</span>
+					<i class="mdc-list-item__end-detail material-icons">keyboard_arrow_down</i>
+				</li>
+				<div class="detail mdc-elevation--z1">
+					•	Repeat-ligation 
+					<li>Ligate GaE/P with Puc19 E/P,GbE/P with pUC19 E/P,GaE/S+GbX/P with pUC19 E/P.
+					<!-- then Transfer ligated product into the plate,and Cultivate them overnight. </li> -->
+					•	Gel purification<br>
+					•	Repeat digestion 
+					<li>Repeat pUC19+Ga.E/S,pUC19+Gb.X/P. (Figure10)</li>
+					•	Digestion 
+					<li>Restriction digest P+EP6,ECR+EP10,ECR+EP6,SHT+EP6,SHT+EP8 (Figure11&12&13).</li>
+					<div class="figure">
+						<figure>
+							<img src="http://2017.igem.org/wiki/images/4/40/Lanzhou_wiki_Notebook_figure10.png" alt="">
+							<p><b>Figure 10.</b></p>
+						</figure>
+						<figure>
+							<img src="http://2017.igem.org/wiki/images/2/2a/Lanzhou_wiki_Notebook_figure11.png" alt="">
+							<p><b>Figure 11.</b></p>
+						</figure>
+						<figure>
+							<img src="http://2017.igem.org/wiki/images/c/c5/Lanzhou_wiki_Notebook_figure12.png" alt="">
+							<p><b>Figure 12.</b></p>
+						</figure>
+						<figure>
+							<img src="http://2017.igem.org/wiki/images/f/f6/Lanzhou_wiki_Notebook_figure13.png" alt="">
+							<p><b>Figure 13.</b></p>
+						</figure>
+					</div>
+					•	Repeat PCR
+					<li>Repeat Gb PCR then gel purification</li>
+				</div>
+				<li class="mdc-list-item mdc-ripple-surface">
+					<span class="mdc-list-item__text">
+						Week 3
+						<span class="mdc-list-item__text__secondary">Jun 18 ~ Jun 24</span>
+					</span>
+					<i class="mdc-list-item__end-detail material-icons">keyboard_arrow_down</i>
+				</li>
+				<div class="detail mdc-elevation--z1">
+					•	Transformation 
+					<li>Transform ECR+L4440 and SHT+L4440into DH5a.</li>
+					•	Repeat PCR
+					<li>repeat Gb PCR and P digest (Figure14&15).</li>
+					<div class="figure">
+						<figure>
+							<img src="http://2017.igem.org/wiki/images/3/37/Lanzhou_wiki_Notebook_figure14.png" alt="">
+							<p><b>Figure 14.</b></p>
+						</figure>
+						<figure>
+							<img src="http://2017.igem.org/wiki/images/4/4b/Lanzhou_wiki_Notebook_figure15.png" alt="">
+							<p><b>Figure 15.</b></p>
+						</figure>
+					</div>
+					•	Ligation
+					<li>ligate ECR+pUC19 (Figure16)</li>
+					<div class="figure">
+						<figure>
+							<img src="http://2017.igem.org/wiki/images/a/aa/Lanzhou_wiki_Notebook_figure16.png" alt="">
+							<p><b>Figure 16.</b></p>
+						</figure>
+					</div>
+				</div>
+				<li class="mdc-list-item mdc-ripple-surface">
+					<span class="mdc-list-item__text">
+						Week 4
+						<span class="mdc-list-item__text__secondary">Jun 25 ~ Jul 1</span>
+					</span>
+					<i class="mdc-list-item__end-detail material-icons">keyboard_arrow_down</i>
+				</li>
+				<div class="detail mdc-elevation--z1">
+					•	Culture 
+					<li>Culture bacterium in glycerol:MIX,GMIX, B1.</li>
+					•	plasmids extraction 
+					<li>MIX,GMIX, B1.</li>
+					•	Digestion
+					<li>Digest MIX in P/E product and gel purification.</li>
+					•	Transformation 
+					<li>Transform the produce into puC19,then pick the positive.</li>
+				</div>
+			</ul>
+			<hr class="mdc-list-divider">
+			<h3>July</h3>
+			<ul class="mdc-list mdc-list--two-line">
+				<li class="mdc-list-item mdc-ripple-surface">
+					<span class="mdc-list-item__text">
+						Week 1
+						<span class="mdc-list-item__text__secondary">Jul 2 ~ Jul 8</span>
+					</span>
+					<i class="mdc-list-item__end-detail material-icons">keyboard_arrow_down</i>
+				</li>
+				<div class="detail mdc-elevation--z1">
+					•	PCR
+					<li>Do GMIX PCR </li>
+					•	Transformation 
+					<li>Transform PCR GMIX and into puC19.</li>
+					<li>Tansform RcsA，RBS，pUC19 into BL21.</li>
+					•	Digestion 
+					<li>L4440，GbEXSP，GaEXSP and B1EXSP pick the positive and digest.</li>
+					<li>GbEXSP，GaEXSP and B1EXSP.</li>
+					•	Plasmids extraction 
+					<li>GbEXSP，GaEXSP and B1EXSP extract plasmids.</li>
+					<li>Kil，GFP，RBS，OmpT.</li>
+				</div>
+				<li class="mdc-list-item mdc-ripple-surface">
+					<span class="mdc-list-item__text">
+						Week 2
+						<span class="mdc-list-item__text__secondary">Jul 9 ~ Jul 15</span>
+					</span>
+					<i class="mdc-list-item__end-detail material-icons">keyboard_arrow_down</i>
+				</li>
+				<div class="detail mdc-elevation--z1">
+					•	Transformation:OmpT，pUC19.
+					<li>Culture 17P: 06 (0.47), Ga, Ga2, Gb, Gb2, B1, B2, SHT, Ecr, Terminator, pUC19, RcsA, pSB3K3, pSB4K5.</li>
+					<li>PCR loop120</li>
+					•	plasmids extraction 
+					<li>17P: 06 (0.47), Ga, Ga2, Gb, Gb2, B1, B2, SHT, Ecr, Terminator, pUC19, RcsA, pSB3K3, pSB4K5.</li>
+					•	Digestion 
+					<li>Ga, Ga2, Gb, Gb2, B1, B2, SHT, SHT2, Ecr, Ecr2, RcsA, pUC19，pSB3K3, pSB4K5, Loop120, Lysis1, lysis2, Terminator.</li>
+				</div>
+				<li class="mdc-list-item mdc-ripple-surface">
+					<span class="mdc-list-item__text">
+						Week 3
+						<span class="mdc-list-item__text__secondary">Jul 16 ~ Jul 22</span>
+					</span>
+					<i class="mdc-list-item__end-detail material-icons">keyboard_arrow_down</i>
+				</li>
+				<div class="detail mdc-elevation--z1">
+					•	Ligation 
+					<li>Ga2+T——Ga2T</li>
+					<li>Gb2+T——Gb2T</li>
+					<li>B2+T——B2T</li>
+					<li>SHT2+T——S2T</li>
+					<li>Ecr2+T——E2T</li>
+					<li>Loop120+pUC19——Loop120</li>
+					<li>BBa_B0030+17P: 06 (0.47)——0.47x0.6</li>
+					<li>BBa_B0064+17P: 06 (0.47)——0.47x0.35</li>
+					<li>RcsA+T——RcsAT</li>
+					<li>Lysis1+pUC19——lysis1</li>
+					<li>Lysis2+pUC19——lysis2</li>
+					•	Plasmids extraction 
+					<li>Extract plasmids of pSB1T3，pSB1K3，pSB1C3，pSB1A3，SHT.</li>
+				</div>
+				<li class="mdc-list-item mdc-ripple-surface">
+					<span class="mdc-list-item__text">
+						Week 4
+						<span class="mdc-list-item__text__secondary">Jul 23 ~ Jul 29</span>
+					</span>
+					<i class="mdc-list-item__end-detail material-icons">keyboard_arrow_down</i>
+				</li>
+				<div class="detail mdc-elevation--z1">
+					•	PCR
+					<li>Ga2T,Gb2T,B2T,S2T,E2T,Loop120,RcsAT,lysis1,lysis2.</li>
+					<li>Prepare the transform cell of M bacterium,and all the plasmids need to transform would be gone and well.</li>
+				</div>
+			</ul>
+			<hr class="mdc-list-divider">
+			<h3>August</h3>
+			<ul class="mdc-list mdc-list--two-line">
+				<li class="mdc-list-item mdc-ripple-surface">
+					<span class="mdc-list-item__text">
+						Week 1
+						<span class="mdc-list-item__text__secondary">Jul 30 ~ Aug 5</span>
+					</span>
+					<i class="mdc-list-item__end-detail material-icons">keyboard_arrow_down</i>
+				</li>
+				<div class="detail mdc-elevation--z1">
+					•	Human practice 
+					<li>Confirm the form for human practice in group meeting.</li>
+				</div>
+				<li class="mdc-list-item mdc-ripple-surface">
+					<span class="mdc-list-item__text">
+						Week 2
+						<span class="mdc-list-item__text__secondary">Aug 6 ~ Aug 12</span>
+					</span>
+					<i class="mdc-list-item__end-detail material-icons">keyboard_arrow_down</i>
+				</li>
+				<div class="detail mdc-elevation--z1">
+					•	Human practice
+					<li>Design a questionnaire of transgenosis in public.</li>
+				</div>
+				<li class="mdc-list-item mdc-ripple-surface">
+					<span class="mdc-list-item__text">
+						Week 3
+						<span class="mdc-list-item__text__secondary">Aug 13 ~ Aug 19</span>
+					</span>
+					<i class="mdc-list-item__end-detail material-icons">keyboard_arrow_down</i>
+				</li>
+				<div class="detail mdc-elevation--z1">
+					•	Human practice
+					<li>Go to some schools advertise our work.</li>
+				</div>
+				<li class="mdc-list-item mdc-ripple-surface">
+					<span class="mdc-list-item__text">
+						Week 4
+						<span class="mdc-list-item__text__secondary">Aug 20 ~ Aug 26</span>
+					</span>
+					<i class="mdc-list-item__end-detail material-icons">keyboard_arrow_down</i>
+				</li>
+				<div class="detail mdc-elevation--z1">
+					•	We went to FAFU for CCIC.
+				</div>
+				<li class="mdc-list-item mdc-ripple-surface">
+					<span class="mdc-list-item__text">
+						Week 5
+						<span class="mdc-list-item__text__secondary">Aug 27 ~ Sep 2</span>
+					</span>
+					<i class="mdc-list-item__end-detail material-icons">keyboard_arrow_down</i>
+				</li>
+				<div class="detail mdc-elevation--z1">
+					•	Gene synthesis
+					<li>Synthesize the gene sequence act on arabidopsis thaliana.</li>
+					•	Vector construction
+					<li>Construct 3hree vectors producing dsRNA (Ecr-L4440, ECRL, ECRN)</li>
+					•	Experiment on aphids.
+				</div>
+			</ul>
+			<hr class="mdc-list-divider">
+			<h3>September</h3>
+			<ul class="mdc-list mdc-list--two-line">
+				<li class="mdc-list-item mdc-ripple-surface">
+					<span class="mdc-list-item__text">
+						Week 1
+						<span class="mdc-list-item__text__secondary">Sep 3 ~ Sep 9</span>
+					</span>
+					<i class="mdc-list-item__end-detail material-icons">keyboard_arrow_down</i>
+				</li>
+				<div class="detail mdc-elevation--z1">
+					•	Transformation 	
+					<li>Transform carrier(Ecr-L4440, ECRL, ECRN) into E.coli M-JLAC19 (Dicer deficit type).</li>
+					•	Induce expression<br>
+					•	Try to express dsRNA form trxzDP.
+				</div>
+				<li class="mdc-list-item mdc-ripple-surface">
+					<span class="mdc-list-item__text">
+						Week 2
+						<span class="mdc-list-item__text__secondary">Sep 10 ~ Sep 16</span>
+					</span>
+					<i class="mdc-list-item__end-detail material-icons">keyboard_arrow_down</i>
+				</li>
+				<div class="detail mdc-elevation--z1">
+					•	Induce expression
+					<li>trxzDP:product dsRNA by T7 bi-directional promoter.</li>
+					<li>trxzL: product hpRNA by normal loop construction.</li>
+					<li>trxzN: product hpRNA by intron loop construction.</li>
+				</div>
+				<li class="mdc-list-item mdc-ripple-surface">
+					<span class="mdc-list-item__text">
+						Week 3
+						<span class="mdc-list-item__text__secondary">Sep 17 ~ Sep 23</span>
+					</span>
+					<i class="mdc-list-item__end-detail material-icons">keyboard_arrow_down</i>
+				</li>
+				<div class="detail mdc-elevation--z1">
+					•	Induce expression
+					<li>Ecr-L4440:product dsRNA by T7 bi-directional promoter.</li>
+					<li>ECRL:product hpRNA by normal loop construction.</li>
+				</div>
+				<li class="mdc-list-item mdc-ripple-surface">
+					<span class="mdc-list-item__text">
+						Week 4
+						<span class="mdc-list-item__text__secondary">Sep 24 ~ Sep 30</span>
+					</span>
+					<i class="mdc-list-item__end-detail material-icons">keyboard_arrow_down</i>
+				</li>
+				<div class="detail mdc-elevation--z1">
+					•	Express of dsRNA and hpRNA.
+				</div>
+			</ul>
+			<hr class="mdc-list-divider">
+			<h3>October</h3>
+			<ul class="mdc-list mdc-list--two-line">
+				<li class="mdc-list-item mdc-ripple-surface">
+					<span class="mdc-list-item__text">
+						Week 1
+						<span class="mdc-list-item__text__secondary">Oct 1 ~ Oct 7</span>
+					</span>
+					<i class="mdc-list-item__end-detail material-icons">keyboard_arrow_down</i>
+				</li>
+				<div class="detail mdc-elevation--z1">
+					•	Culture arabidopsis thaliana (Col 0)<br>
+					•	Vector construction
+					<li>Construct vectors of dsRNA which act on arabidopsis thaliana.</li>
+					•	Transformation
+					<li>Transform carrier(trxzDP, trxzL, trxzN) into E.coli M-JLAC19 (Dicer deficit type).</li>
+					•	Induce expression
+					<li>induce the M-JLAC19 express dsRNA.</li>
+				</div>
+				<li class="mdc-list-item mdc-ripple-surface">
+					<span class="mdc-list-item__text">
+						Week 2
+						<span class="mdc-list-item__text__secondary">Oct 8 ~ Oct 14</span>
+					</span>
+					<i class="mdc-list-item__end-detail material-icons">keyboard_arrow_down</i>
+				</li>
+				<div class="detail mdc-elevation--z1">
+					•	Express dsRNA and hpRNA.<br>
+					•	Prepare for the macro experiments validation.
+				</div>
+				<li class="mdc-list-item mdc-ripple-surface">
+					<span class="mdc-list-item__text">
+						Week 3
+						<span class="mdc-list-item__text__secondary">Oct 15 ~ Oct 21</span>
+					</span>
+					<i class="mdc-list-item__end-detail material-icons">keyboard_arrow_down</i>
+				</li>
+				<div class="detail mdc-elevation--z1">
+					•	Improve parts<br>
+					•	Modelling work
+				</div>
+				<li class="mdc-list-item mdc-ripple-surface">
+					<span class="mdc-list-item__text">
+						Week 4
+						<span class="mdc-list-item__text__secondary">Oct 22 ~ Oct 28</span>
+					</span>
+					<i class="mdc-list-item__end-detail material-icons">keyboard_arrow_down</i>
+				</li>
+				<div class="detail mdc-elevation--z1">
+					•	Modelling work<br>
+					•	Presentation work
+				</div>
+				<li class="mdc-list-item mdc-ripple-surface">
+					<span class="mdc-list-item__text">
+						Week 5
+						<span class="mdc-list-item__text__secondary">Oct 29 ~ Sep 31</span>
+					</span>
+					<i class="mdc-list-item__end-detail material-icons">keyboard_arrow_down</i>
+				</li>
+				<div class="detail mdc-elevation--z1">
+					•	Modelling work<br>
+					•	Wiki & design work<br>
+					•	Presentation work
+				</div>
+			</ul>
+		  </section>
+	</main>
+	<script>
+		$(function() {
+			$('#to-top').after('<button id="openAll" class="mdc-fab mdc-ripple-surface material-icons"><span class="mdc-fab__icon">fullscreen</span></button>');
+			$('#openAll').on('click', function() {
+				if ($(this).children('span').text() == "fullscreen_exit") {
+					$('.detail').slideUp(400);
+					$('.mdc-list-item').removeClass('mdc-list-item--opened')
+					$(this).children('span').text('fullscreen')
+				} else {
+					$('.detail').slideDown(400);
+					$('.mdc-list-item').addClass('mdc-list-item--opened')
+					$(this).children('span').text('fullscreen_exit');
+				}
+			});
+		});
+
+	</script>
+	
+	<footer class="footer">
+		<div class="footer__content">
+			<div class="footer__title">Lanzhou 2017</div>
+			<div class="footer__container">
+				<div class="footer__logo">
+					<a href="http://www.lzu.edu.cn"><img height="100px" src="image/sponsors/LZU.png"></a>
+					<a href="http://lifesc.lzu.edu.cn/"><img class="no_maskeed" height="118px" style="margin-left: 24px" src="image/sponsors/LZU_bio.png"></a>
+				</div>
+				<div class="footer__sponsors">
+					<a href="http://www.agilent.com"><img height="100px" src="image/sponsors/Agilent.png"></a>
+					<a href="https://www.genscript.com/"><img height="100px" src="image/sponsors/GenScript.png"></a>
+					<a href="https://www.idtdna.com/"><img height="80px" src="image/sponsors/IDT.png"></a>
+				</div>
+			</div>
+			<ul class="footer__links">
+				<li>
+					<a href="" class="footer__link">About Lanzhou 2017</a>
+				</li>
+				<!-- 需要改动 -->
+				<li>
+					<a href="" class="footer__link">copyright</a>
+				</li>
+				<li class="footer__link-container--right">
+					<a href="http://lawliet.pw" class="footer__link">
+						<span class="footer__made-with-desktop">Made by L. with Material Components for the web</span>
+						<span class="footer__made-with-mobile">Made by L.</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+	<button id="to-top" class="mdc-fab mdc-ripple-surface material-icons" aria-label="Favorite">
+		<span class="mdc-fab__icon">keyboard_arrow_up</span>
+	</button>
+</body>
+</html>
