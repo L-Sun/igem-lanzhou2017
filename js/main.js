@@ -79,20 +79,17 @@ $(function() {
         drawer.open = !drawer.open;
     });
 
+    $('.sub-nav').prev('a').click(function(event) {
+        event.preventDefault();
+        $(this).children('.multi-nav-icon').toggleClass('multi-nav-icon-rotate');
+        $(this).next('nav').slideToggle();
+    });
+
+
 /* NoteBook */
     $('.notebook .mdc-list-item').click(function() {
         $(this).next('.detail').slideToggle(400);
         $(this).toggleClass('mdc-list-item--opened');
-    });
-    $('.openAll').on('click', function() {
-        alert('as');
-        if ($(this).children('span').text() == "fullscreen_exit") {
-            $('.detail').slideUp(400);
-            $(this).children('span').text('fullscreen')
-        } else {
-            $('.detail').slideDown(400);
-            $(this).children('span').text('fullscreen_exit');
-        }
     });
 
 /* Page */
@@ -103,7 +100,7 @@ $(function() {
     // Generate article's head link
     if($('.tabs').length > 0) {
         $('.tabs a:eq(0)').addClass('tab_actived');
-        $('.page__article:gt(0)').hide();
+        $('.page__article:gt(0)').slideUp(800);
     }
     page_drawer();
     
@@ -112,8 +109,8 @@ $(function() {
         $('.tab_actived').removeClass('tab_actived');
         $(this).addClass('tab_actived');
         let target = $(this).attr('href');
-        $(target).siblings('article').hide(400);
-        $(target).show(400, () => page_drawer());
+        $(target).siblings('article').slideUp(800);
+        $(target).slideDown(800, () => page_drawer());
         
     });
     function page_drawer() {
@@ -145,18 +142,6 @@ $(function() {
         }
     }
     
-
-    $('.sub-nav').prev('a').click(function(event) {
-        event.preventDefault();
-        let arrow = $(this).children('.multi-nav-icon');
-        if (arrow.hasClass('multi-nav-icon-rotate')) {
-            arrow.removeClass('multi-nav-icon-rotate')
-        } else {
-            arrow.addClass('multi-nav-icon-rotate');
-        }
-        $(this).next('nav').slideToggle();
-    });
-
 
     $('.page__drawer-list__link').first().addClass('page__drawer-list__link--active');
 

@@ -144,6 +144,10 @@
 
 	<script>
 		$('.page__header h1').text('Notebook');
+		let index = [2, 0];
+		let nav_list_item = $('.mdc-temporary-drawer__content:not(".sub-nav")').children('.mdc-list-item');
+		$(nav_list_item[index[0]]).children('.material-icons').eq(0).addClass('mdc-list-item__start-detail-color');
+		$(nav_list_item[index[0]]).next().find('.mdc-list-item').eq(index[1]).css('color', '#ff4081');
 	</script>
 
 	<main class="page__content notebook">
@@ -267,19 +271,19 @@
 					<div class="figure">
 						<figure>
 							<img src="http://2017.igem.org/wiki/images/1/1c/Lanzhou_wiki_Notebook_figure1.png" alt="">
-							<p><b>Figure 1.</b></p>
+							<figcaption>Figure 1.</figcaption>
 						</figure>
 						<figure>
 							<img src="http://2017.igem.org/wiki/images/3/35/Lanzhou_wiki_Notebook_figure2.png" alt="">
-							<p><b>Figure 2.</b></p>
+							<figcaption>Figure 2.</figcaption>
 						</figure>
 						<figure>
 							<img src="http://2017.igem.org/wiki/images/0/09/Lanzhou_wiki_Notebook_figure3.png" alt="">
-							<p><b>Figure 3.</b></p>
+							<figcaption>Figure 3.</figcaption>
 						</figure>
 						<figure>
 							<img src="http://2017.igem.org/wiki/images/4/4a/Lanzhou_wiki_Notebook_figure4.png" alt="">
-							<p><b>Figure 4.</b></p>
+							<figcaption>Figure 4.</figcaption>
 						</figure>
 					</div>
 				</div>
@@ -303,11 +307,11 @@
 					<div class="figure">
 						<figure>
 							<img src="http://2017.igem.org/wiki/images/5/5f/Lanzhou_wiki_Notebook_figure6.png" alt="">
-							<p><b>Figure 6.</b></p>
+							<figcaption>Figure 6.</figcaption>
 						</figure>
 						<figure>
 							<img src="http://2017.igem.org/wiki/images/3/3c/Lanzhou_wiki_Notebook_figure7.png" alt="">
-							<p><b>Figure 7.</b></p>
+							<figcaption>Figure 7.</figcaption>
 						</figure>
 					</div>
 					•	Ligation
@@ -332,11 +336,11 @@
 					<div class="figure">
 						<figure>
 							<img src="http://2017.igem.org/wiki/images/0/09/Lanzhou_wiki_Notebook_figure8.png" alt="">
-							<p><b>Figure 8.</b></p>
+							<figcaption>Figure 8.</figcaption>
 						</figure>
 						<figure>
 							<img src="http://2017.igem.org/wiki/images/e/e5/Lanzhou_wiki_Notebook_figure9.png" alt="">
-							<p><b>Figure 9.</b></p>
+							<figcaption>Figure 9.</figcaption>
 						</figure>
 					</div>
 					•	Plasmids extraction
@@ -361,19 +365,19 @@
 					<div class="figure">
 						<figure>
 							<img src="http://2017.igem.org/wiki/images/4/40/Lanzhou_wiki_Notebook_figure10.png" alt="">
-							<p><b>Figure 10.</b></p>
+							<figcaption>Figure 10.</figcaption>
 						</figure>
 						<figure>
 							<img src="http://2017.igem.org/wiki/images/2/2a/Lanzhou_wiki_Notebook_figure11.png" alt="">
-							<p><b>Figure 11.</b></p>
+							<figcaption>Figure 11.</figcaption>
 						</figure>
 						<figure>
 							<img src="http://2017.igem.org/wiki/images/c/c5/Lanzhou_wiki_Notebook_figure12.png" alt="">
-							<p><b>Figure 12.</b></p>
+							<figcaption>Figure 12.</figcaption>
 						</figure>
 						<figure>
 							<img src="http://2017.igem.org/wiki/images/f/f6/Lanzhou_wiki_Notebook_figure13.png" alt="">
-							<p><b>Figure 13.</b></p>
+							<figcaption>Figure 13.</figcaption>
 						</figure>
 					</div>
 					•	Repeat PCR
@@ -394,11 +398,11 @@
 					<div class="figure">
 						<figure>
 							<img src="http://2017.igem.org/wiki/images/3/37/Lanzhou_wiki_Notebook_figure14.png" alt="">
-							<p><b>Figure 14.</b></p>
+							<figcaption>Figure 14.</figcaption>
 						</figure>
 						<figure>
 							<img src="http://2017.igem.org/wiki/images/4/4b/Lanzhou_wiki_Notebook_figure15.png" alt="">
-							<p><b>Figure 15.</b></p>
+							<figcaption>Figure 15.</figcaption>
 						</figure>
 					</div>
 					•	Ligation
@@ -406,7 +410,7 @@
 					<div class="figure">
 						<figure>
 							<img src="http://2017.igem.org/wiki/images/a/aa/Lanzhou_wiki_Notebook_figure16.png" alt="">
-							<p><b>Figure 16.</b></p>
+							<figcaption>Figure 16.</figcaption>
 						</figure>
 					</div>
 				</div>
@@ -671,7 +675,7 @@
 				<li class="mdc-list-item mdc-ripple-surface">
 					<span class="mdc-list-item__text">
 						Week 5
-						<span class="mdc-list-item__text__secondary">Oct 29 ~ Sep 31</span>
+						<span class="mdc-list-item__text__secondary">Oct 29 ~ Oct 31</span>
 					</span>
 					<i class="mdc-list-item__end-detail material-icons">keyboard_arrow_down</i>
 				</li>

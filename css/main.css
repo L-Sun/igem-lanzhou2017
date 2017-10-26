@@ -105,6 +105,16 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+.mdc-typography--body1,
+.mdc-typography--body2 {
+  font-size: 1rem;
+}
+.mdc-typography--body1 {
+  font-weight: 300;
+}
+.mdc-typography--body2 {
+  font-weight: 500;
+}
 /* Navigation */
 .mdc-drawer-scroll-lock {
   overflow: initial;
@@ -120,6 +130,12 @@ body {
   color: white;
   font-size: 16px;
 }
+.mdc-temporary-drawer .mdc-list-item__start-detail {
+  transiton: 0.5s;
+}
+.mdc-temporary-drawer .mdc-list-item__start-detail-color {
+  color: #ff4081;
+}
 .mdc-temporary-drawer .multi-nav-icon {
   position: absolute;
   right: 16px;
@@ -128,6 +144,7 @@ body {
 }
 .mdc-temporary-drawer .multi-nav-icon-rotate {
   transform: rotate(180deg);
+  color: #ff4081;
 }
 .mdc-temporary-drawer .sub-nav {
   display: none;
@@ -168,12 +185,13 @@ body {
   flex-direction: row;
   justify-content: center;
   padding: 0;
+  flex-wrap: wrap;
 }
 .tabs ul li {
   min-width: 100px;
   margin-left: 24px;
   margin-right: 24px;
-  display: inline-block;
+  margin-bottom: 2em;
 }
 .tabs ul li a {
   display: block;
@@ -330,10 +348,19 @@ body {
 .page__article figure .td-highlight {
   background: #ffeb3b;
 }
-.page__article figure p {
+.page__article figure img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page__article figure figcaption {
   margin-top: 0.5em;
   margin-bottom: 0;
-  font-weight: 500;
+  font-weight: 600;
+  text-align: center;
+}
+.page__article figure span {
+  display: block;
   text-align: center;
 }
 .story {
@@ -351,6 +378,7 @@ body {
 .page__drawer-list__link {
   display: inline-block;
   padding: 8px 0;
+  max-width: 70%;
 }
 .page__drawer-list__link,
 .page__drawer-list__link:hover,
@@ -553,11 +581,12 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-.notebook .figure figure p {
+.notebook .figure figure figcaption {
   margin-top: 0.5em;
   margin-bottom: 0;
   text-align: center;
   font-size: 0.9em;
+  font-weight: 600;
 }
 /* HP */
 .timeline {

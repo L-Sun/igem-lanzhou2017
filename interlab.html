@@ -144,6 +144,10 @@
 
 	<script>
 		$('.page__header h1').text('Inter Lab');
+		let index = [6, 1];
+		let nav_list_item = $('.mdc-temporary-drawer__content:not(".sub-nav")').children('.mdc-list-item');
+		$(nav_list_item[index[0]]).children('.material-icons').eq(0).addClass('mdc-list-item__start-detail-color');
+		$(nav_list_item[index[0]]).next().find('.mdc-list-item').eq(index[1]).css('color', '#ff4081');
 	</script>
 
 	<div id="page__drawer-mobile-container">
@@ -322,15 +326,15 @@
 						</tr>
 					</tbody>
 				</table>
-				<p><b>Table 1. OD600 Reference Point.</b></p>
+				<figcaption>Table 1. OD600 Reference Point.</figcaption>
 			</figure>
 			<figure>
 				<div id="container-1"></div>
-				<p><b>Figure 1. FITC standard curve.</b> There is an approximate linear trend for increased fluorescence as [FITC] increases.</p>
+				<figcaption>Figure 1. FITC standard curve.</figcaption><span> There is an approximate linear trend for increased fluorescence as [FITC] increases.</span>>
 			</figure>
 			<figure>
 				<div id="container-2"></div>
-				<p><b>Figure 2. FITC standard curve (log scale).</b> After changing the curve into log scale, the linear trend becomes more remarkable and reliable.</p>
+				<figcaption>Figure 2. FITC standard curve (log scale).</figcaption><span> After changing the curve into log scale, the linear trend becomes more remarkable and reliable.</span>
 			</figure>
 			<figure>
 				<table>
@@ -351,7 +355,7 @@
 						</tr>
 					</tbody>
 				</table>
-				<p><b>Table 4. Normalization of initial concentration of colony.</b> In order to unify the initial concentration before , we use Varioskan Flash to measure the OD600 after incubating overnight.</p>
+				<figcaption>Table 4. Normalization of initial concentration of colony.</figcaption><span> In order to unify the initial concentration before , we use Varioskan Flash to measure the OD600 after incubating overnight.</span>
 			</figure>
 
 			<h2 class="mdc-typography--headline">Cell Measurement</h2>
@@ -491,7 +495,7 @@
 						</tr>
 					</tbody>
 				</table>
-				<p><b>Tablet5. Raw Abs600 measurement.</b></p>
+				<figcaption>Tablet5. Raw Abs600 measurement.</figcaption>
 			</figure>
 
 			<figure>
@@ -629,11 +633,11 @@
 						</tr>
 					</tbody>
 				</table>
-				<p><b>Table 6. Abs600 measurement after blank subtraction and correction.</b></p>
+				<figcaption>Table 6. Abs600 measurement after blank subtraction and correction.</figcaption>
 			</figure>
 			<figure>
 				<div id="container-3"></div>
-				<p><b>Figure 3. Abs600 measurement after blank subtraction and correction.</b> We can find that two colony of device 1 are very different with other colonies.</p>
+				<figcaption>Figure 3. Abs600 measurement after blank subtraction and correction.</figcaption><span> We can find that two colony of device 1 are very different with other colonies.</span>>
 			</figure>
 			<figure>
 				<table>
@@ -770,7 +774,7 @@
 						</tr>
 					</tbody>
 				</table>
-				<p><b>Table 7. Raw data of fluorescence measurement.</b></p>
+				<figcaption>Table 7. Raw data of fluorescence measurement.</figcaption>
 			</figure>
 			<figure>
 				<table>
@@ -907,16 +911,16 @@
 						</tr>
 					</tbody>
 				</table>
-				<p><b>Table 8. Fluorescence measurement after blank subtraction and correction.</b></p>
+				<figcaption>Table 8. Fluorescence measurement after blank subtraction and correction.</figcaption>
 			</figure>
 			<figure>
 				<div id="container-4"></div>
-				<p><b>Figure 4. Fluorescence measurement after blank subtraction and correction.</b></p>
+				<figcaption>Figure 4. Fluorescence measurement after blank subtraction and correction.</figcaption>
 			</figure>
 			<figure>
 				<div id="container-5"></div>
 				<p>You can select area to zoom it.</p>
-				<p><b>Figure 5. Average level of devices.</b> In this figure, we find that the FI/Abs600 in device 1 is obviously higher than positive control,device 2,4 and 5. And another is that negative control and device 3,6 seems didn’t express GFP, or the expression is too low to observe.</p>
+				<figcaption>Figure 5. Average level of devices.</figcaption><span> In this figure, we find that the FI/Abs600 in device 1 is obviously higher than positive control,device 2,4 and 5. And another is that negative control and device 3,6 seems didn’t express GFP, or the expression is too low to observe.</span>>
 			</figure>
 
 			<h1 class="mdc-typography--display1">Discussion</h1>

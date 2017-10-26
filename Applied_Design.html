@@ -13,6 +13,7 @@
 
 	<script src="material-components-web/dist/material-components-web.js"></script>
 	<script src="js/highcharts.js"></script>
+	<script src="js/highmaps.js"></script>
 	<script src="js/highcharts-more.js"></script>
 	<script src="js/jquery.min.js"></script>
 	<script>window.mdc.autoInit()</script>
@@ -143,8 +144,8 @@
 	</div>
 
 	<script>
-		$('.page__header h1').text('Collaboration and Meet up');
-		let index = [5, 2];
+		$('.page__header h1').text('Applied Design');
+		let index = [1, 2];
 		let nav_list_item = $('.mdc-temporary-drawer__content:not(".sub-nav")').children('.mdc-list-item');
 		$(nav_list_item[index[0]]).children('.material-icons').eq(0).addClass('mdc-list-item__start-detail-color');
 		$(nav_list_item[index[0]]).next().find('.mdc-list-item').eq(index[1]).css('color', '#ff4081');
@@ -162,8 +163,8 @@
 	<main class="page__content">
 		<div class="tabs">
 			<ul>
-				<li><a href="#article_1">Collaboration</a></li>
-				<li><a href="#article_2">Meet up</a></li>
+				<li><a href="#article_1">Crops Guardian</a></li>
+				<li><a href="#article_2">Dev2</a></li>
 			</ul>
 		</div>
 
@@ -179,71 +180,87 @@
 		</nav>
 
 		<article id="article_1" class="page__article">
-			<h1 class="mdc-typography--headline">
-				NEU-China
-				<!-- <span class="mdc-typography--caption">Caption.</span> -->
-			</h1>
+			<h1 class="mdc-typography--headline">Overview</h1>
 			<p class="mdc-typography--body2">
-				The cooperation with Northeastern University has begun since the summer vocation. We helped them complete a receptor and Working as a very kind and helpful team, they asked helping us in verifying one fuctional protein expression.
+				Can you imagine an application which could water and fertilize crops accurately under the soil ? Our team’s watering device dose!
 			</p>
 			<p class="mdc-typography--body2">
-				We helped NEU-China construct an olfactory receptor Rho-OR1A1.  The 64th base pair from the initiation codon of OR1A1 contains an illegal enzyme site (EcoRI), which didn't meet up RFC10 standard. So we designed the primer with synonymous codon and successfully mutated the GAA to GAG.
-			</p>
-			<figure>
-				<img src="image/lab/neu-1.png" alt="">
-				<figcaption>Figure 1. standardized Rho-OR1A1.</figcaption>
-			</figure>
-			<figure>
-				<img src="image/lab/neu-2.png" alt="">
-				<figcaption>Figure 2. PstI, EcoRI double enzyme digestion.</figcaption>
-			</figure>
-			<p class="mdc-typography--body2">
-				In our project, we need various functional vectors for dsRNA production，but the gene sequence complementarity will cause secondary structure, which is impossible to synthsize gene for one time. The task of constructing vectors is heavy. 
-
+				Traditional irrigation technology depends on water permeation from soil surface to the plant roots, this process will lose much water and fertilizer, besides lead soil hardening. 
 			</p>
 			<p class="mdc-typography--body2">
-				So NEU-China students helped us construct a hpRNA producing vector ecrL, which speeded up our vectors construction progress. 
+				And our device, an improvement of micro-irrigation, perfectly solve this problem. It aims at target irrigation, supplying water and fertilizer for plant roots directly and precisely, with the advantages of multifunctional, more energy-saving and higher water transport efficiency.
 			</p>
 			<p class="mdc-typography--body2">
-				<b>Really appreciate their support.</b>
+				Weeds and pests are the most important damages to agronomy system, which resulted in agriculture economic losses of more than $20.4 billion in 1972. Merely taking the United States as an example, the damage is $8.4 billion a year, while pests account for 40% and weeds account for 60%. In our country, China, the crop yield loss is almost fifty million kilogram per year.
+			</p>
+			<p class="mdc-typography--body1">
+				Note : Micro-irrigation system is the most advanced irrigation system right now, through transporting the pressure water to the fields, it can irrigate the soil near the root of the plant by only a small flow of water permeation. The main superiority of micro-irrigation are energy saving, evenly irrigation and the strong adaptability to soil and topography, which can increase crop production and field salt tolerance.
 			</p>
 
-			<h1 class="mdc-typography--headline">BIT-China</h1>
+			<h1 class="mdc-typography--headline">Principle</h1>
 			<p class="mdc-typography--body2">
-				After we meet up through vedio conference with BIT-China, We exchanged ideas and confirmed our collaboration relationship. 
+				Our device can not only provide nutrients and water for crops, but also take the herbicides to weed roots and kill weeds. So we call it“Crops Guardian”.
 			</p>
 			<p class="mdc-typography--body2">
-				In the light of helping each other, we assisted them to build a new type of promoter.
+				During the design, we aimed at one of the most widely distributed weeds family, Gramineae , whose roots locate about 10cm under the ground. According to this character, we determined our device parameters available for it.
 			</p>
-			<p class="mdc-typography--body2">
-				At the same time, they helped us verify one functional protein expression.
-			</p>
+
+			<h1 class="mdc-typography--headline">Components</h1>
 			<figure>
-				<img src="image/lab/bit-1.png" alt="">
-				<figcaption>Figure 3. Mutant gene Pfus.</figcaption>
+				<img src="http://2017.igem.org/wiki/images/9/97/Lanzhou_wiki_app_figure1.png" alt="">
+				<figcaption>Figure 1. Sketch and model.</figcaption>
 			</figure>
-			<p class="mdc-typography--body2">
-				BIT-China project requires mRFP to characterize the size of the sweetness. Different sweeteners have different gradients of sweetness, they need to get mutations of the inducible promoter Pfus and change its strength. 
-			</p>
-			<p class="mdc-typography--body2">
-				So we helped them  build a mutant gene of Pfus to make their project more responsive.
-			</p>
 			<figure>
-				<img src="image/lab/bit-2.png" alt="">
-				<figcaption>Figure 4. SDS-PAGE of pectinase.</figcaption>
+				<img src="http://2017.igem.org/wiki/images/thumb/6/6c/Lanzhou_wiki_app_figure2.png/800px-Lanzhou_wiki_app_figure2.png" alt="">
+				<figcaption>Figure 2. Real product.</figcaption>
 			</figure>
+			<p class="mdc-typography--boyd2">1. The ground part contains two joints for connecting water pipes, which could firmly link with PE hose. And the annular groove can prevent the soil from entering device.</p>
+			<p class="mdc-typography--boyd2">2. A connector between the water pipe and the PE hose.</p>
+			<p class="mdc-typography--boyd2">3. PE hose which is high strength, corrosion resistance, non-toxic and low cost.</p>
+			<p class="mdc-typography--boyd2">4. The underground part consists of 10 centimeter device body and a sprinkler head.</p>
+			<p class="mdc-typography--boyd2">5. Spray part and spherical bottom. The spray part is made up of eight holes, which could supply water evenly. And the large spherical bottom can prevent the clogging or destruction during the insertion.</p>
+			<p class="mdc-typography--boyd2">6. Complete device</p>
+
+			<h1 class="mdc-typography--headline">Materials & Cost</h1>
+			<p class="mdc-typography--boyd2">We use 3D printing technology to produce this precise nozzle. The material is photosensitive resin -Somos GP Plus, which is a low viscosity photosensitive polymer, with the advantages of excellent waterproof, durability and hardness. It could be used for making solid, precision parts. Other part of the water pipe is PE texture, which has the characteristics of high strength, corrosion resistance, non-toxic and low-cost.</p>
+			<p class="mdc-typography--boyd2">3D printing is not suitable for the volume production. If our device use the mold to produce in batches, the unit price will drop to a very low level.</p>
+			<figure>
+				<img src="http://2017.igem.org/wiki/images/0/0c/Lanzhou_wiki_app_figure3.png" alt="">
+				<figcaption>Figure 3. A working 3D printer: Union Tech-RS Prp 600.</figcaption>
+			</figure>
+
+			<h1 class="mdc-typography--headline">Usage</h1>
+			<p class="mdc-typography--body2">1<sup>st</sup> Connect the composite device between the ends of two pipes.</p>
+			<p class="mdc-typography--body2">2<sup>nd</sup> Punch the pipe wall with a puncher.</p>
+			<p class="mdc-typography--body2">3<sup>rd</sup> Then link the device to the water pipe through the connecting head. </p>
+			<p class="mdc-typography--body2">4<sup>th</sup> Insert the head into the soil, open the tap water to irrigate.</p>
+			<p class="mdc-typography--body2">5<sup>th</sup> Add pesticides and fertilizers to the Mixing device.</p>
+			<figure>
+				<img src="http://2017.igem.org/wiki/images/1/18/Lanzhou_wiki_app_figure4.png" alt="">
+				<figcaption>Figure 4. Installation complete.</figcaption>
+				<span>The crops guardian will start working</span>
+			</figure>
+
+			<h1 class="mdc-typography--headline">Actual test and user feedback</h1>
 			<p class="mdc-typography--body2">
-				In our project,  pectinase and celluse play an important role in  downstream circuits and we want to combine functional dsRNA with these two proteins and let them work together, which will make great sense to our subsequent appllication design.
+				We put the device in the soil to test it performance. And we got conclusion that the effective watering radius of our device can up to 25cm, which is equivalent to the moisture that 20 - 30 wheat individuals are needed. Moreover, the water saving effect of this device is far more than traditional irrigation and sprinkler irrigation system.
 			</p>
-			<p class="mdc-typography--body2">
-				They successfully verified the expression of pectinase. With their help,  our project progress has been promoted.
-			</p>
+			<p class="mdc-typography--body2">Meanwhile, for gaining real user experience, we found some voluntary farmers to let them use our product for a while. We gave them instructions and helped them with installation. After a week, we got the feedback, which strengthened our confidence to perfect it and finally bring it to the market in the near future. </p>
+			<figure>
+				<img src="http://2017.igem.org/wiki/images/thumb/2/2d/Lanzhou_wiki_app_figure5.png/800px-Lanzhou_wiki_app_figure5.png" alt="">
+				<figcaption>Figure 5. Feed from farmers.</figcaption>
+			</figure>
+			<h2 class="mdc-typography--title">The positive side:</h2>
+			<p class="mdc-typography--body2">Most of them think the watering device is novel and easy to use, which is very convenient. In the northwestern China, areas are always arid, so they praised that the water-saving effects of our system are much better than any other irrigation methods. Also, they are touched by the integration of watering, fertilization and weeding of our device.</p>
+			<h2 class="mdc-typography--title">Areas for improvement:</h2>
+			<p class="mdc-typography--body2">Of course, as a preliminary design, our device also has some shortcomings. Like, for some deeper roots plants, the watering effect is not as good as to the shallow ones. And may be one field need several different size pipes to work together.</p>
+
+			<h1 class="mdc-typography--headline">Conclusion</h1>
+			<p class="mdc-typography--body2">On the whole, they think this is a great invention. And they hope that our devices can be put into production in the near future and bring convenience to other farmers. </p>
 		</article>
-		<article  id="article_2" class="page__article">
-			<h1 class="mdc-typography--headline">Test</h1>
-		</article>
+
+		<article id="article_2" class="page__article"></article>
 	</main>
-
 	
 	<footer class="footer">
 		<div class="footer__content">
@@ -280,5 +297,6 @@
 	<button id="to-top" class="mdc-fab mdc-ripple-surface material-icons" aria-label="Favorite">
 		<span class="mdc-fab__icon">keyboard_arrow_up</span>
 	</button>
+
 </body>
 </html>

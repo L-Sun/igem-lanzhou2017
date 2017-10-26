@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en" class="mdc-typography">
+<head>
+	<meta charset="UTF-8">
+	<title>Lanzhou</title>
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="material-components-web/dist/material-components-web.css">
+	<link rel="stylesheet" href="css/Material_Icons.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+	<script src="http://2017.igem.org/common/MathJax-2.5-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+  			tex2jax: {inlineMath: [['\\(','\\)']]}
+		});
+	</script>
+
+	<script src="material-components-web/dist/material-components-web.js"></script>
+	<script src="js/highcharts.js"></script>
+	<script src="js/highmaps.js"></script>
+	<script src="js/highcharts-more.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script>window.mdc.autoInit()</script>
+	<script src="js/main.js"></script>
+</head>
+<body class="page">
+	<header class="mdc-toolbar mdc-toolbar--fixed">
+		<div class="mdc-toolbar__row">
+			<section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+				<button class="menu material-icons mdc-toolbar__icon--menu mdc-ripple-surface">menu</button>
+				<span class="mdc-toolbar__title">Lanzhou2017</span>
+			</section>
+		</div>
+	</header>
+
+	<aside class="mdc-temporary-drawer">
+		<div class="mdc-temporary-drawer__drawer">
+			<header class="mdc-temporary-drawer__header">
+				<div class="mdc-temporary-drawer__header-content mdc-theme--primary-bg mdc-theme--text-primaryon-primary">
+					<img class="logo" src="image/logo.jpg" alt="Lanzhou 2017">
+					<div class="logo-name">Lanzhou 2017</div class="logo-name">
+				</div>
+			</header>
+			<nav class="mdc-temporary-drawer__content mdc-list-group">
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i class="material-icons mdc-list-item__start-detail" >home</i>
+					Home
+				</a>
+				<a href="project.html" class="mdc-list-item mdc-ripple-surface">
+					<i class="material-icons mdc-list-item__start-detail">local_florist</i>
+					Project
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
+				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Bacground
+					</a>
+					<a href="design.html" class="mdc-list-item mdc-ripple-surface">
+						Design
+					</a>
+					<a href="application.html" class="mdc-list-item mdc-ripple-surface">
+						Application
+					</a>
+					<a href="safety.html" class="mdc-list-item mdc-ripple-surface">
+						Safety
+					</a>
+					<a href="results.html" class="mdc-list-item mdc-ripple-surface">
+						results
+					</a>
+				</nav>
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i style="font-size: 24px;" class="fa fa-flask material-icons mdc-list-item__start-detail"></i>
+					Wet Lab
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
+				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Notebook
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Protocols
+					</a>
+				</nav>
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i style="font-size: 24px;" class="fa fa-cube material-icons mdc-list-item__start-detail"></i>
+					Modeling
+				</a>
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i class="material-icons mdc-list-item__start-detail">face</i>
+					Human Pratice
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
+				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Education
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Public engagement
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Consulting
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Questionnaire  
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Handbook
+					</a>
+				</nav>
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i class="material-icons mdc-list-item__start-detail">group</i>
+					Team
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
+				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						About us
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Attributions
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Collaborations & Meet up
+					</a>
+				</nav>
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i class="material-icons mdc-list-item__start-detail">star</i>
+					Achievements
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
+				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Parts
+					</a>
+					<a href="interlab.html" class="mdc-list-item mdc-ripple-surface">
+						Interlab
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Medal requirements 
+					</a>
+				</nav>
+			</nav>
+		</div>
+	</aside>
+
+	<div class="page__header" style="background-image: url();">
+		<h1 class="mdc-typography--display2"></h1>
+	</div>
+
+	<script>
+		$('.page__header h1').text('Modeling');
+		let index = [3, 2];
+		let nav_list_item = $('.mdc-temporary-drawer__content:not(".sub-nav")').children('.mdc-list-item');
+		$(nav_list_item[index[0]]).children('.material-icons').eq(0).addClass('mdc-list-item__start-detail-color');
+	</script>
+
+	<div id="page__drawer-mobile-container">
+		<nav id="mdc-tab-bar" class="mdc-tab-bar-scroller mdc-theme--dark page__drawer-mobile">
+			<template id="temp-page-list-mobile">
+				<a href="" class="mdc-tab mdc-ripple-surface"></a>
+			</template>
+			<span class="mdc-tab-bar__indicator"></span>
+		</nav>
+	</div>
+
+	<main class="page__content">
+		<p class="mdc-typography--subheading2">Our model has two branches – prediction model and statistical model. The aim of both is to help further characterize our system. </p>
+		<p class="mdc-typography--subheading2">First model is to predict how much dsRNA should be used in real field. And the statistic models is to figure out which type dsRNA is the most ideal inhibitor to suppress target gene (We constructed three types of dsRNA) and the better way to sustain dsRNA by using Bio-clay or water as storage medium under the normal circumstance. </p>
+		<p class="mdc-typography--subheading2">These models guided us to revise and optimize our experiments.</p>
+		<br><hr><br>
+
+		<div class="tabs">
+			<ul>
+				<li><a href="#article_1">Model 1</a></li>
+				<li><a href="#article_2">Model 2</a></li>
+			</ul>
+		</div>
+
+		<nav class="page__drawer mdc-persistent-drawer">
+			<ul class="page__drawer-list">
+				<template id="temp-page-list-desktop">
+					<li class="page__drawer-list__item">
+						<a href="" class="page__drawer-list__link"></a>
+					</li>
+				</template>
+				<!-- Use template tag to generate these link -->
+			</ul>
+		</nav>
+
+		<article id="article_1" class="page__article">
+			<h1 class="mdc-typography--headline">Background and motivation</h1>
+			<p class="mdc-typography--body2">
+				We wish our Bio-pesticide project could be applied in the real crop field one day. And for this vision, we want to know the possible efficiency and cost of our Bio-pesticide to optimize our project and make it closer to the application.
+			</p>
+			<p class="mdc-typography--body2">
+				Different fields vary in acreage and weeds amount, based on these variates, we predicted proper dsRNA dosage in certain area fields and the cost of it.
+			</p>
+			
+			<h1 class="mdc-typography--headline">Methodology</h1>
+			<p class="mdc-typography--body2">
+				We use a formula to describe relationship between area and dsRNA dosage: 
+				\[ W_{dsRNA} = S_{field}\frac{V_{plant}}{V_{field}} \times P \times \vartheta \]
+			</p>
+			<ul>Where
+				<li>\( W_{dsRNA} = \) total mass of dsRNA should be used</li>
+				<li>\( S_{field} = \) area of land</li>
+				<li>\( V_{plant} = \) water consumption of per plant</li>
+				<li>\( P = \) the amount of weeds in unit area</li>
+				<li>\( \vartheta = \) the minimum dosage of dsRNA to kill weed</li>
+			</ul>
+			<p class="mdc-typography--body2">
+				Thanks to our human practice work, we got many useful data, like the plant water consumption and the total number of weeds per mu (0.0667 hectares)
+			</p>
+			<p class="mdc-typography--body2">
+				By the assumption that 133pg/L dsRNA can effectively suppress the expression of target gene confidence interval [2].
+			</p>
+			<figure>
+				<div id="container-1"></div>
+				<figcaption>Figure 1. Water consumption among different crops and different irrigation method.</figcaption>
+			</figure>
+			<p class="mdc-typography--body2">
+				Meanwhile, water absorption of each plant can be represented by this formula:
+				\[ V_{plant} = ET_c + C_w \]
+			</p>
+			<ul>Where
+				<li>\( ET_c = \) Crop transpiration rate</li>
+				<li>\( C_w = \) Plant water consumption</li>
+			</ul>
+			<p class="mdc-typography--body2">
+				What known is plant water consumption \( C_w \) is much less than RCE, so we simplify the formula to: 
+				\[ V_{plant} = ET_c \]
+				Based on the Penman computing method and the data from China Meteorological Observatory (CMO), we use equation set to compute the \( ET_c \) in China.
+			</p>
+			<p class="mdc-typography--body2">
+				Plant transpiration, ETc, can be determined by transpiration of reference plant, ET0 and transpiration coefficient, Kc. The method of calculating ETc is following:
+				\[ ET_c = ET_0 \times K_c \]
+				We use Penman-Monteith formula to calculate transpiration of reference plant. 
+				\[ ET_0 = \frac{0.408\Delta (R_n-G)+\gamma \frac{37}{T_{day}}u_2(e_s-e_a)}{\Delta + \gamma(1+0.34u_2)} \]
+			</p>
+			<ul>Where
+				<li>\( ET_0 = \) Transpiration of reference plant in one day</li>
+				<li>\( R_n = \) Average net radiation in one day</li>
+				<li>\( G = \) Soil heat flux</li>
+				<li>\( T_{day} = \) Average temperature in one day</li>
+				<li>\( u_2 = \) Average wind speed at the height of meters</li>
+				<li>\( E_s = \) Saturated vapor pressure</li>
+				<li>\( e_a = \) Actual vapor pressure</li>
+				<li>\( \Delta = \) Slope of saturation vapour pressure curve at air temperature</li>
+				<li>\( \gamma = \) Psychrometric constant</li>
+			</ul>
+			<p class="mdc-typography--body2">
+				In formula, \( T \) and \( u_2 \) can be determined by mesure, \( (e_s-e_a), \gamma, \Delta, G \) can be calculated by parameter. \( G \) , in general, is considered to be 0.5 times \( R_n \) in the evening, 0.1 times \( R_n \) in the day. 
+			</p>
+			<p class="mdc-typography--body2">
+				\( \gamma \) is related to atmospheric pressure. We can get it by following equation:
+				\[ \gamma = 0.665 \times 10^{-3} \times 101.3(\frac{293-0.0065z}{293})^{5.26} \]
+				where \( z \) is Altitude.
+			</p>
+			<p class="mdc-typography--body2">
+				Saturated vapor pressure, \( e_s \), can be get by the following equatiin:
+				\[ e_s = e^0(T_{day})=0.6108exp[\frac{17.27T_{day}}{T_{day}+237.3}] \]
+			</p>
+			<p class="mdc-typography--body2">
+				Actual vapor pressure, \( e_a \), can be get by the following equation:
+				\[ e_a=e^0(T_{day})\frac{RH_{mean}}{100} \]
+				Where \( H_{mean} \) is average air humidity in one day
+			</p>
+			<p class="mdc-typography--body2">
+				Slope of saturation vapour pressure curve at air temperature, \( \Delta \), can be get bu the following equation:
+				\[ \Delta=\frac{4098[0.6108exp(\frac{17.27T_{day}}{T_{day}+237.3})]}{(T_{day}+237.3)^2} \]
+			</p>
+			<p class="mdc-typography--body2">
+				Average net radiation in one day, Rn, is the difference between the incoming net shortwave radiation (\(R_{ns}\)) and the outgoing net longwave radiation (\(R_{nl}\)):
+				\[ R_n=R_{ns}-R_{nl} \]
+			</p>
+			<p class="mdc-typography--body2">
+				Net shortwave radiation, \(R_{ns}\) and net longwave radiation, \(R_{nl}\), can be calculated by the following equation:
+				\[ R_{ns}=(1-\alpha)R_s \]
+				\[ R_{nl}=\sigma[\frac{T_{day}^4}{2}](0.34-0.14\sqrt{e_a})(1.35\frac{R_s}{(0.75+2\times 10^{-5})R_a} - 0.35) \]
+				\[ R_a=\frac{12(60)}{\pi}G_{sc}d_r[(\omega_2-\omega_1)sin(\varphi)sin(\delta)+cos(\varphi)cons(\delta)(sin(\omega_2)-sin(\omega_1))] \]
+			</p>
+			<ul>Where
+				<li>\(R_a = \) Extraterrestrial radiation</li>
+				<li>\( G_{sc} = \) Solar constant</li>
+				<li>\( d_r = \) Inverse relative distance Earth-Sun</li>
+				<li>\( d = \) Solar declination [rad]</li>
+				<li>\( j = \) Latitude [rad]</li>
+				<li>\( \omega_1 = \) Solar time angle at beginning of period [rad]</li>
+				<li>\( \omega_2 = \) Solar time angle at end of period [rad]</li>
+			</ul>
+
+			<h1 class="mdc-typography--headline">Results</h1>
+			<p class="mdc-typography--body2">
+				Through modelling, we got the application amount of dsRNA in different areas of China. 
+			</p>
+			<p class="mdc-typography--body2">
+				So farmers could use this data to decide the water need, and the real dosage of certain plant rely on crop kinds.
+			</p>
+			<figure>
+				<img src="http://2017.igem.org/wiki/images/thumb/8/88/Lanzhou_wiki_model_figure2.jpg/800px-Lanzhou_wiki_model_figure2.jpg" alt="">
+				<figcaption>Figure 2. dsRNA application dosage in China</figcaption>
+			</figure>
+
+			<h1 class="mdc-typography--headline">Discussion</h1>
+			<p class="mdc-typography--body2">
+				It could be clearly seen the usage of dsRNA in major grain producing areas of China (North China Plain, Northeast China Plain and Yangtze Plain, Middle and Lower) are maximum about 10.16-15.77mg/mu. This result has a guiding significance to our experiments and improved our application design.
+			</p>
+
+			<hr>
+			<h1 class="mdc-typography--headline">Reference</h1>
+			<ul class="page__article__citations">
+				<li class="page__article__citation__item">
+					[1] S Tabor, CC Richardson. T7 DNA polymerase 1990 
+				</li>
+				<li class="page__article__citation__item">
+					[2] Joga et al. - 2016 - RNAi Efficiency , Systemic Properties , and Novel Delivery Methods for Pest Insect Control What We Know So Far
+				</li>
+				<li class="page__article__citation__item">
+					[3] H huang et al -1957-2012- The reference crop evapotranspiration quantity of space analysis 
+				</li>
+			</ul>
+		</article>
+
+		<article id="article_2" class="page__article"></article>
+	</main>
+	<script>
+		let chart_4 = new Highcharts.Chart('container-1', {
+			title: {
+				text: '',
+			},
+			xAxis: {
+				categories: [
+					'vegetables',
+					'rice',
+					'spring wheat',
+					'winter wheat'
+				],
+			},
+			series: [{
+				type: 'column',
+				name: 'Flooding irrigation',
+				data: [0.625, 0.4, 0.5, 0.4],
+			},{
+				type: 'column',
+				name: 'Sprinkling irrigation',
+				data: [0.3, 0.25, 0.32, 0.25],
+			},{
+				type: 'column',
+				name: 'Trickle irrigation',
+				data: [0.2, 0.2, 0.24, 0.2],
+			},]
+		});
+	</script>
+	
+	<footer class="footer">
+		<div class="footer__content">
+			<div class="footer__title">Lanzhou 2017</div>
+			<div class="footer__container">
+				<div class="footer__logo">
+					<a href="http://www.lzu.edu.cn"><img height="100px" src="image/sponsors/LZU.png"></a>
+					<a href="http://lifesc.lzu.edu.cn/"><img class="no_maskeed" height="118px" style="margin-left: 24px" src="image/sponsors/LZU_bio.png"></a>
+				</div>
+				<div class="footer__sponsors">
+					<a href="http://www.agilent.com"><img height="100px" src="image/sponsors/Agilent.png"></a>
+					<a href="https://www.genscript.com/"><img height="100px" src="image/sponsors/GenScript.png"></a>
+					<a href="https://www.idtdna.com/"><img height="80px" src="image/sponsors/IDT.png"></a>
+				</div>
+			</div>
+			<ul class="footer__links">
+				<li>
+					<a href="" class="footer__link">About Lanzhou 2017</a>
+				</li>
+				<!-- 需要改动 -->
+				<li>
+					<a href="" class="footer__link">copyright</a>
+				</li>
+				<li class="footer__link-container--right">
+					<a href="http://lawliet.pw" class="footer__link">
+						<span class="footer__made-with-desktop">Made by L. with Material Components for the web</span>
+						<span class="footer__made-with-mobile">Made by L.</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+
+	<button id="to-top" class="mdc-fab mdc-ripple-surface material-icons" aria-label="Favorite">
+		<span class="mdc-fab__icon">keyboard_arrow_up</span>
+	</button>
+
+</body>
+</html>

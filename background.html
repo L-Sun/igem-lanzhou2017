@@ -145,6 +145,10 @@
 
 	<script>
 		$('.page__header h1').text('Background');
+		let index = [1, 0];
+		let nav_list_item = $('.mdc-temporary-drawer__content:not(".sub-nav")').children('.mdc-list-item');
+		$(nav_list_item[index[0]]).children('.material-icons').eq(0).addClass('mdc-list-item__start-detail-color');
+		$(nav_list_item[index[0]]).next().find('.mdc-list-item').eq(index[1]).css('color', '#ff4081');
 	</script>
 
 	<main class="page__content">
@@ -184,14 +188,14 @@
 			</p>
 			<figure>
 				<div id="container-1"></div>
-				<p><b>Figure 1. International distribution of anti-herbicide weeds </b></p>
+				<figcaption>Figure 1. International distribution of anti-herbicide weeds </figcaption>
 			</figure>
 			<p class="mdc-typography--body2">
 				Through figure 2, we can find that in the first 20 years, the occurrence of resistant weeds was very slow. But when getting into the mid and late-1980s, the number increased in a stunning speed and the growth rate shows a trend of nearly straitening up.
 			</p>
 			<figure>
 				<img src="http://2017.igem.org/wiki/images/d/dd/Lanzhou_wiki_Background_bg_5.jpg" alt="">
-				<p><b>Figure 2. Statistic of global resistant weeds</b></p>
+				<figcaption>Figure 2. Statistic of global resistant weeds</figcaption>
 			</figure>
 			<p class="mdc-typography--body2">
 				In the meantime, it is proved that these malignant weeds resist to 155 different herbicides and 22 of the 25 known herbicide acting spots became no effective. So they are too hard to manage.

@@ -144,6 +144,10 @@
 
 	<script>
 		$('.page__header h1').text('Attributions');
+		let index = [5, 1];
+		let nav_list_item = $('.mdc-temporary-drawer__content:not(".sub-nav")').children('.mdc-list-item');
+		$(nav_list_item[index[0]]).children('.material-icons').eq(0).addClass('mdc-list-item__start-detail-color');
+		$(nav_list_item[index[0]]).next().find('.mdc-list-item').eq(index[1]).css('color', '#ff4081');
 	</script>
 
 	<div id="page__drawer-mobile-container">
