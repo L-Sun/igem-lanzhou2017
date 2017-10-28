@@ -100,17 +100,22 @@ $(function() {
     // Generate article's head link
     if($('.tabs').length > 0) {
         $('.tabs a:eq(0)').addClass('tab_actived');
-        $('.page__article:gt(0)').slideUp(800);
+        $('.page__article:gt(0)').slideUp(0,function() {
+            page_drawer();
+        });
     }
-    page_drawer();
+    
     
     $('.tabs a').click(function(e) {
         e.preventDefault();
         $('.tab_actived').removeClass('tab_actived');
         $(this).addClass('tab_actived');
         let target = $(this).attr('href');
-        $(target).siblings('article').slideUp(800);
-        $(target).slideDown(800, () => page_drawer());
+        $(target).siblings('article:visible').slideUp(400, function () {
+            $(target).slideDown(800);
+            page_drawer();
+        });
+        
         
     });
     function page_drawer() {

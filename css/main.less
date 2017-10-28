@@ -121,12 +121,13 @@ body{
 
 .mdc-typography--body1, .mdc-typography--body2{
 	font-size: 1rem;
+	letter-spacing: 0.01em;
 }
 .mdc-typography--body1{
 	font-weight: 300;
 }
 .mdc-typography--body2{
-	font-weight: 500;
+	font-weight: 400;
 }
 
 /* Navigation */
@@ -251,6 +252,7 @@ body{
 .page__article{
 	height: auto;
 	display: inline-block;
+	right: 0px;
 	// max-width: 760px;
 }
 .page__drawer{
@@ -375,7 +377,6 @@ body{
 		figcaption{
 			margin-top: 0.5em;
 			margin-bottom: 0;
-			font-weight: 600;
 			text-align: center;
 		}
 		span{
@@ -609,7 +610,37 @@ body{
 				margin-bottom: 0;
 				text-align: center;
 				font-size: 0.9em;
-				font-weight: 600;
+			}
+		}
+	}
+}
+/* Background */
+.bg{
+	.figure{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		width: 100%;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		.center();
+		figure{
+			margin: 0.5em;
+			// max-width: 70%;
+			min-width: 250px;
+			img{
+				display: block;
+				height: 100%;
+				// width: 100%;
+				.center();
+			}
+			figcaption{
+				margin-top: 0.5em;
+				margin-bottom: 0;
+				text-align: center;
+				font-size: 0.9em;
 			}
 		}
 	}
