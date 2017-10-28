@@ -405,6 +405,23 @@ body {
   margin-bottom: 1em;
   color: #4F4F4F;
 }
+.collaboration-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+}
+.collaboration-cards .mdc-card {
+  width: 320px;
+  margin: 1em;
+}
+.collaboration-cards .mdc-card .mdc-card__media {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 12.313rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
 .team-page .page__article .mdc-typography--headline {
   border-style: solid;
   border-width: 0 0 0 8px;
@@ -464,6 +481,8 @@ body {
   height: 278px;
 }
 .team-cards .mdc-card:hover {
+  -webkit-box-shadow: 0px 8px 9px -5px rgba(0, 0, 0, 0.2), 0px 15px 22px 2px rgba(0, 0, 0, 0.14), 0px 6px 28px 5px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 8px 9px -5px rgba(0, 0, 0, 0.2), 0px 15px 22px 2px rgba(0, 0, 0, 0.14), 0px 6px 28px 5px rgba(0, 0, 0, 0.12);
   padding-top: 20px;
 }
 .team-cards .mdc-card:hover section {
@@ -618,6 +637,48 @@ body {
   font-size: 0.9em;
 }
 /* HP */
+.hp-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 16px;
+  padding: 0;
+}
+.hp-cards .mdc-layout-grid__cell {
+  height: 21.875rem;
+  max-width: 360px;
+  min-width: 360px;
+  flex-grow: 1;
+  padding-bottom: 16px;
+}
+.hp-cards a,
+.hp-cards a:hover,
+.hp-cards a:link,
+.hp-cards a:active,
+.hp-cards a:visited {
+  text-decoration: none;
+}
+.hp-cards .mdc-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 240px;
+  background-size: cover;
+  background-color: #CACACA;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: flex-start;
+  transition: .5s;
+}
+.hp-cards .mdc-card .mdc-card__supporting-text {
+  height: 278px;
+}
+.hp-cards .mdc-card:hover {
+  -webkit-box-shadow: 0px 8px 9px -5px rgba(0, 0, 0, 0.2), 0px 15px 22px 2px rgba(0, 0, 0, 0.14), 0px 6px 28px 5px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 8px 9px -5px rgba(0, 0, 0, 0.2), 0px 15px 22px 2px rgba(0, 0, 0, 0.14), 0px 6px 28px 5px rgba(0, 0, 0, 0.12);
+}
 .timeline {
   width: 100%;
   padding: 0;
@@ -638,11 +699,18 @@ body {
   left: 50%;
   width: 36px;
   height: 36px;
-  background-color: #757de8;
+  background-color: #3f51b5;
   border: 18px solid #ff4081;
   border-radius: 50%;
   transform: translate(-50%, -50%);
-  transition: 1s;
+  transition: .4s;
+}
+.timeline li a,
+.timeline li a:hover,
+.timeline li a:link,
+.timeline li a:active,
+.timeline li a:visited {
+  text-decoration: none;
 }
 .timeline li .mdc-card {
   position: relative;
@@ -653,6 +721,10 @@ body {
   background-color: #757de8;
   opacity: 0;
   transition: 1s;
+}
+.timeline li .mdc-card:hover {
+  -webkit-box-shadow: 0px 8px 9px -5px rgba(0, 0, 0, 0.2), 0px 15px 22px 2px rgba(0, 0, 0, 0.14), 0px 6px 28px 5px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 8px 9px -5px rgba(0, 0, 0, 0.2), 0px 15px 22px 2px rgba(0, 0, 0, 0.14), 0px 6px 28px 5px rgba(0, 0, 0, 0.12);
 }
 .timeline li .mdc-card::before {
   position: absolute;
@@ -668,26 +740,40 @@ body {
 .timeline li .mdc-card h2 {
   color: white;
 }
-.timeline li:nth-child(odd) .mdc-card {
+.timeline li:nth-of-type(odd) .mdc-card {
   left: calc(100% + 36px);
   transform: translateX(200px);
 }
-.timeline li:nth-child(odd) .mdc-card::before {
+.timeline li:nth-of-type(odd) .mdc-card::before {
   left: -16px;
   border-width: 8px 16px 8px 0;
   border-color: transparent #757de8 transparent transparent;
 }
-.timeline li:nth-child(even) .mdc-card {
+.timeline li:nth-of-type(even) .mdc-card {
   right: 316px;
   transform: translateX(-200px);
 }
-.timeline li:nth-child(even) .mdc-card::before {
+.timeline li:nth-of-type(even) .mdc-card::before {
   right: -16px;
   border-width: 8px 0 8px 16px;
   border-color: transparent transparent transparent #757de8;
 }
-.timeline .inview::after {
-  border-width: 0px;
+.timeline .detail {
+  display: none;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+  background-color: #fbfbfb;
+  border: 0px solid #ff4081;
+  overflow: hidden;
+  transition: border .4s;
+}
+.timeline .detail-opened + .detail {
+  border: 8px solid #ff4081;
+}
+.timeline .detail-opened::after {
+  border: 18px solid #757de8;
 }
 .timeline .inview .mdc-card {
   transform: none !important;

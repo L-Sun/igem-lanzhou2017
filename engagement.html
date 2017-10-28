@@ -12,8 +12,6 @@
 	<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
 
 	<script src="material-components-web/dist/material-components-web.js"></script>
-	<script src="js/highcharts.js"></script>
-	<script src="js/highcharts-more.js"></script>
 	<script src="js/jquery.min.js"></script>
 	<script>window.mdc.autoInit()</script>
 	<script src="js/main.js"></script>
@@ -143,111 +141,170 @@
 	</div>
 
 	<script>
-		$('.page__header h1').text('Collaboration and Meet up');
-		let index = [5, 2];
-		let nav_list_item = $('.mdc-temporary-drawer__content:not(".sub-nav")').children('.mdc-list-item');
-		$(nav_list_item[index[0]]).children('.material-icons').eq(0).addClass('mdc-list-item__start-detail-color');
-		$(nav_list_item[index[0]]).next().find('.mdc-list-item').eq(index[1]).css('color', '#ff4081');
+		$('.page__header').css('background-image', '');
+		$('.page__header h1').text('Engagement');
 	</script>
 
 	<main class="page__content">
+		<p class="mdc-typography--subheading2">
+			We’ve done a lot of practices during this year, including various forms like consulting, survey, field investigation, public engagement etc. 
+		</p>
+		<p class="mdc-typography--subheading2">
+			And we have gained a lot of valuable information about the society, the advice and feedback which offered a positive effect on our project and optimized our design.
+		</p>
+		<p class="mdc-typography--subheading2">At the same time, with social responsibility, we also contributed a lot to the society, whatever in education or popularization of science because we want to change the situation and make the world a better place through our efforts. Especially, we did a special work among Chinese iGEM teams and hope</p>
+		<p class="mdc-typography--subheading2">We really appreciated all the support we have received from the society and relevant communities in our HP work.</p>
+		<br>
+		<hr>
+		<br>
+
 		<div class="tabs">
 			<ul>
-				<li><a href="#article_1">NEU-China</a></li>
-				<li><a href="#article_2">BIT-China</a></li>
+				<li><a href="#article_1">Public engagement</a></li>
+				<li><a href="#article_2">Education</a></li>
+				<li><a href="#article_3">Special work</a></li>
 			</ul>
 		</div>
 
-		<article style="width: 100%" id="article_1" class="page__article">
-			<h1 class="mdc-typography--headline">
-				NEU-China
-				<a class="collaboration-link" href="http://2017.igem.org/Team:NEU-China/Collaborations"><span class="mdc-typography--caption">Visit their wiki</span></a>
-			</h1>
-			<p class="mdc-typography--body2">
-				The cooperation with Northeastern University has begun since the summer vocation. We helped them complete a receptor and Working as a very kind and helpful team, they asked helping us in verifying one fuctional protein expression.
-			</p>
-			<p class="mdc-typography--body2">
-				We helped NEU-China construct an olfactory receptor Rho-OR1A1.  The 64th base pair from the initiation codon of OR1A1 contains an illegal enzyme site (EcoRI), which didn't meet up RFC10 standard. So we designed the primer with synonymous codon and successfully mutated the GAA to GAG.
-			</p>
-			<figure>
-				<img src="image/lab/neu-1.png" alt="">
-				<figcaption>Figure 1. standardized Rho-OR1A1.</figcaption>
-			</figure>
-			<figure>
-				<img src="image/lab/neu-2.png" alt="">
-				<figcaption>Figure 2. PstI, EcoRI double enzyme digestion.</figcaption>
-			</figure>
-			<p class="mdc-typography--body2">
-				In our project, we need various functional vectors for dsRNA production，but the gene sequence complementarity will cause secondary structure, which is impossible to synthsize gene for one time. The task of constructing vectors is heavy. 
-
-			</p>
-			<p class="mdc-typography--body2">
-				So NEU-China students helped us construct a hpRNA producing vector ecrL, which speeded up our vectors construction progress. 
-			</p>
-			<p class="mdc-typography--body2">
-				<b>Really appreciate their support.</b>
-			</p>
+		<article id="article_1" style="width: 100%;" class="page__article">
+			<ul class="timeline">
+				<li>
+					<a href="">
+						<div class="mdc-card">
+							<sectiom class="mdc-card__primary">
+								<h1 class="mdc-card__title mdc-card__title--large">Create</h1>
+								<h2 class="mdc-card__subtitle">2018-09-30</h2>
+							</sectiom>
+							<section class="mdc-card__supporting-text">The first time-line card</section>
+						</div>
+					</a>
+				</li>
+				<div class="detail">
+					<h1 class="mdc-typography--display">There is text container</h1>
+				</div>
+				<li>
+					<a href="">
+						<div class="mdc-card">
+							<sectiom class="mdc-card__primary">
+								<h1 class="mdc-card__title mdc-card__title--large">Name</h1>
+								<h2 class="mdc-card__subtitle">Time</h2>
+							</sectiom>
+							<section class="mdc-card__supporting-text">Test</section>
+						</div>
+					</a>
+				</li>
+				<div class="detail">
+					<h1 class="mdc-typography--display">There is text container</h1>
+				</div>
+				<li>
+					<a href="">
+						<div class="mdc-card">
+							<sectiom class="mdc-card__primary">
+								<h1 class="mdc-card__title mdc-card__title--large">Name</h1>
+								<h2 class="mdc-card__subtitle">Time</h2>
+							</sectiom>
+							<section class="mdc-card__supporting-text">Test</section>
+						</div>
+					</a>
+				</li>
+				<div class="detail">
+					<h1 class="mdc-typography--display">There is text container</h1>
+				</div>
+			</ul>
 		</article>
-		<article style="width: 100%;"  id="article_2" class="page__article">
-			<h1 class="mdc-typography--headline">
-				BIT-China
-				<a class="collaboration-link" href="http://2017.igem.org/Team:BIT-China/Collaborations"><span class="mdc-typography--caption">Visit their wiki</span></a>
-			</h1>
-			<p class="mdc-typography--body2">
-				After we meet up through vedio conference with BIT-China, We exchanged ideas and confirmed our collaboration relationship. 
-			</p>
-			<p class="mdc-typography--body2">
-				In the light of helping each other, we assisted them to build a new type of promoter.
-			</p>
-			<p class="mdc-typography--body2">
-				At the same time, they helped us verify one functional protein expression.
-			</p>
-			<figure>
-				<img src="image/lab/bit-1.png" alt="">
-				<figcaption>Figure 1. Mutant gene Pfus.</figcaption>
-			</figure>
-			<p class="mdc-typography--body2">
-				BIT-China project requires mRFP to characterize the size of the sweetness. Different sweeteners have different gradients of sweetness, they need to get mutations of the inducible promoter Pfus and change its strength. 
-			</p>
-			<p class="mdc-typography--body2">
-				So we helped them  build a mutant gene of Pfus to make their project more responsive.
-			</p>
-			<figure>
-				<img src="image/lab/bit-2.png" alt="">
-				<figcaption>Figure 2. SDS-PAGE of pectinase.</figcaption>
-			</figure>
-			<p class="mdc-typography--body2">
-				In our project,  pectinase and celluse play an important role in  downstream circuits and we want to combine functional dsRNA with these two proteins and let them work together, which will make great sense to our subsequent appllication design.
-			</p>
-			<p class="mdc-typography--body2">
-				They successfully verified the expression of pectinase. With their help,  our project progress has been promoted.
-			</p>
+		<article id="article_2" style="display: none; width: 100%;" class="page__article">
+			<ul class="timeline">
+				<li>
+					<a href="">
+						<div class="mdc-card">
+							<sectiom class="mdc-card__primary">
+								<h1 class="mdc-card__title mdc-card__title--large">Create</h1>
+								<h2 class="mdc-card__subtitle">2018-09-30</h2>
+							</sectiom>
+							<section class="mdc-card__supporting-text">The first time-line card</section>
+						</div>
+					</a>
+				</li>
+				<div class="detail">
+					<h1 class="mdc-typography--display">There is text container</h1>
+				</div>
+				<li>
+					<a href="">
+						<div class="mdc-card">
+							<sectiom class="mdc-card__primary">
+								<h1 class="mdc-card__title mdc-card__title--large">Name</h1>
+								<h2 class="mdc-card__subtitle">Time</h2>
+							</sectiom>
+							<section class="mdc-card__supporting-text">Test</section>
+						</div>
+					</a>
+				</li>
+				<div class="detail">
+					<h1 class="mdc-typography--display">There is text container</h1>
+				</div>
+				<li>
+					<a href="">
+						<div class="mdc-card">
+							<sectiom class="mdc-card__primary">
+								<h1 class="mdc-card__title mdc-card__title--large">Name</h1>
+								<h2 class="mdc-card__subtitle">Time</h2>
+							</sectiom>
+							<section class="mdc-card__supporting-text">Test</section>
+						</div>
+					</a>
+				</li>
+				<div class="detail">
+					<h1 class="mdc-typography--display">There is text container</h1>
+				</div>
+			</ul>
 		</article>
-		<br><hr><br>
-		<div class="collaboration-cards">
-			<div class="mdc-card">
-				<section style="background-image: url('http://2017.igem.org/wiki/images/f/f0/Lanzhou_wiki_Lab_neu_logo.png');" class="mdc-card__media"></section>
-				<section class="mdc-card__primary">
-					<h1 class="mdc-card__title mdc-card__title--large">NEU-China</h1>
-				</section>
-				<section class="mdc-card__actions">
-					<button onclick="location.href='http://2017.igem.org/Team:NEU-China/Collaborations'" class="mdc-button mdc-button--compact mdc-card__action">
-						Visit their wiki
-					</button>
-			</div>
-			<div class="mdc-card">
-				<section style="background-image: url('http://2017.igem.org/wiki/images/d/d3/T--BIT-China--2017collaboration_pic11.jpg');" class="mdc-card__media"></section>
-				<section class="mdc-card__primary">
-					<h1 class="mdc-card__title mdc-card__title--large">BIT-China</h1>
-				</section>
-				<section class="mdc-card__actions">
-					<button onclick="location.href='http://2017.igem.org/Team:BIT-China/Collaborations'" class="mdc-button mdc-button--compact mdc-card__action">
-						Visit their wiki
-					</button>
-			</div>
-		</div>
+		<article id="article_3" style="display: none; width: 100%;" class="page__article">
+			<ul class="timeline">
+				<li>
+					<a href="">
+						<div class="mdc-card">
+							<sectiom class="mdc-card__primary">
+								<h1 class="mdc-card__title mdc-card__title--large">Create</h1>
+								<h2 class="mdc-card__subtitle">2018-09-30</h2>
+							</sectiom>
+							<section class="mdc-card__supporting-text">The first time-line card</section>
+						</div>
+					</a>
+				</li>
+				<div class="detail">
+					<h1 class="mdc-typography--display">There is text container</h1>
+				</div>
+				<li>
+					<a href="">
+						<div class="mdc-card">
+							<sectiom class="mdc-card__primary">
+								<h1 class="mdc-card__title mdc-card__title--large">Name</h1>
+								<h2 class="mdc-card__subtitle">Time</h2>
+							</sectiom>
+							<section class="mdc-card__supporting-text">Test</section>
+						</div>
+					</a>
+				</li>
+				<div class="detail">
+					<h1 class="mdc-typography--display">There is text container</h1>
+				</div>
+				<li>
+					<a href="">
+						<div class="mdc-card">
+							<sectiom class="mdc-card__primary">
+								<h1 class="mdc-card__title mdc-card__title--large">Name</h1>
+								<h2 class="mdc-card__subtitle">Time</h2>
+							</sectiom>
+							<section class="mdc-card__supporting-text">Test</section>
+						</div>
+					</a>
+				</li>
+				<div class="detail">
+					<h1 class="mdc-typography--display">There is text container</h1>
+				</div>
+			</ul>
+		</article>
 	</main>
-
 	
 	<footer class="footer">
 		<div class="footer__content">
@@ -280,7 +337,6 @@
 			</ul>
 		</div>
 	</footer>
-
 	<button id="to-top" class="mdc-fab mdc-ripple-surface material-icons" aria-label="Favorite">
 		<span class="mdc-fab__icon">keyboard_arrow_up</span>
 	</button>
