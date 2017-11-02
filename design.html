@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" class="mdc-typography">
+<head>
+	<meta charset="UTF-8">
+	<title>Lanzhou</title>
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="material-components-web/dist/material-components-web.css">
+	<link rel="stylesheet" href="css/Material_Icons.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+	<script src="material-components-web/dist/material-components-web.js"></script>
+	<script src="js/highcharts.js"></script>
+	<script src="js/highmaps.js"></script>
+	<script src="js/highcharts-more.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script>window.mdc.autoInit()</script>
+	<script src="js/main.js"></script>
+</head>
+<body class="page">
+	<header class="mdc-toolbar mdc-toolbar--fixed">
+		<div class="mdc-toolbar__row">
+			<section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+				<button class="menu material-icons mdc-toolbar__icon--menu mdc-ripple-surface">menu</button>
+				<span class="mdc-toolbar__title">Lanzhou2017</span>
+			</section>
+		</div>
+	</header>
+
+	<aside class="mdc-temporary-drawer">
+		<div class="mdc-temporary-drawer__drawer">
+			<header class="mdc-temporary-drawer__header">
+				<div class="mdc-temporary-drawer__header-content mdc-theme--primary-bg mdc-theme--text-primaryon-primary">
+					<img class="logo" src="image/logo.jpg" alt="Lanzhou 2017">
+					<div class="logo-name">Lanzhou 2017</div class="logo-name">
+				</div>
+			</header>
+			<nav class="mdc-temporary-drawer__content mdc-list-group">
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i class="material-icons mdc-list-item__start-detail" >home</i>
+					Home
+				</a>
+				<a href="project.html" class="mdc-list-item mdc-ripple-surface">
+					<i class="material-icons mdc-list-item__start-detail">local_florist</i>
+					Project
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
+				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Bacground
+					</a>
+					<a href="design.html" class="mdc-list-item mdc-ripple-surface">
+						Design
+					</a>
+					<a href="application.html" class="mdc-list-item mdc-ripple-surface">
+						Application
+					</a>
+					<a href="safety.html" class="mdc-list-item mdc-ripple-surface">
+						Safety
+					</a>
+					<a href="results.html" class="mdc-list-item mdc-ripple-surface">
+						results
+					</a>
+				</nav>
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i style="font-size: 24px;" class="fa fa-flask material-icons mdc-list-item__start-detail"></i>
+					Wet Lab
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
+				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Notebook
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Protocols
+					</a>
+				</nav>
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i style="font-size: 24px;" class="fa fa-cube material-icons mdc-list-item__start-detail"></i>
+					Modelling
+				</a>
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i class="material-icons mdc-list-item__start-detail">face</i>
+					Human Pratice
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
+				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Education
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Public engagement
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Consulting
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Questionnaire  
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Handbook
+					</a>
+				</nav>
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i class="material-icons mdc-list-item__start-detail">group</i>
+					Team
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
+				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						About us
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Attributions
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Collaborations & Meet up
+					</a>
+				</nav>
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i class="material-icons mdc-list-item__start-detail">star</i>
+					Achievements
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
+				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Parts
+					</a>
+					<a href="interlab.html" class="mdc-list-item mdc-ripple-surface">
+						Interlab
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Medal requirements 
+					</a>
+				</nav>
+			</nav>
+		</div>
+	</aside>
+
+	<div class="page__header" style="background-image: url();">
+		<h1 class="mdc-typography--display2"></h1>
+	</div>
+
+	<script>
+		$('.page__header h1').text('Design');
+		let index = [1, 1];
+		let nav_list_item = $('.mdc-temporary-drawer__content:not(".sub-nav")').children('.mdc-list-item');
+		$(nav_list_item[index[0]]).children('.material-icons').eq(0).addClass('mdc-list-item__start-detail-color');
+		$(nav_list_item[index[0]]).next().find('.mdc-list-item').eq(index[1]).css('color', '#ff4081');
+	</script>
+
+	<div id="page__drawer-mobile-container">
+		<nav id="mdc-tab-bar" class="mdc-tab-bar-scroller mdc-theme--dark page__drawer-mobile">
+			<template id="temp-page-list-mobile">
+				<a href="" class="mdc-tab mdc-ripple-surface"></a>
+			</template>
+			<span class="mdc-tab-bar__indicator"></span>
+		</nav>
+	</div>
+
+	<main class="page__content">
+		<div class="tabs">
+			<ul>
+				<li><a href="#article_1">Construction</a></li>
+				<li><a href="#article_2">Target selection</a></li>
+				<li><a href="#article_3">Bioclay</a></li>
+			</ul>
+		</div>
+
+		<nav class="page__drawer mdc-persistent-drawer">
+			<ul class="page__drawer-list">
+				<template id="temp-page-list-desktop">
+					<li class="page__drawer-list__item">
+						<a href="" class="page__drawer-list__link"></a>
+					</li>
+				</template>
+				<!-- Use template tag to generate these link -->
+			</ul>
+		</nav>
+
+		<article id="article_1" class="page__article">
+			<h1 class="mdc-typography--headline">Functional biobrick</h1>
+			<h2 class="mdc-typography--title">1. dsRNA</h2>
+			<p class="mdc-typography--body2">
+				we construced a vector with two promoters are constructed in one plasmid but their directions are reversed, double-stranded RNA will be produced during the transcription period.
+			</p>
+			<figure>
+					<img src="http://2017.igem.org/wiki/images/thumb/b/bd/Lanzhou_wiki_Design_figure1.png/800px-Lanzhou_wiki_Design_figure1.png" alt="" data-action="zoom">
+			</figure>
+			
+			<h2 class="mdc-typography--title">2. hpRNA construct</h2>
+			<p class="mdc-typography--body2">
+				We found that the hairpin RNA actually possess higher stability and higher efficiency in gene silencing in living organisms including higher plants like Arabidopsis thaliana. In general, the hairpin RNA harbor similar effect with double-stranded RNA, what is different is that there is a loop inserted between the sense arm and anti-sense arm.  
+			</p>
+			<figure>
+				<img src="http://2017.igem.org/wiki/images/4/48/Lanzhou_wiki_Design_figure2.png" alt="" data-action="zoom">
+			</figure>
+
+			<h3 class="mdc-typography--subheading2">① Hairpin RNA with normal loop</h3>
+			<figure>
+				<img src="http://2017.igem.org/wiki/images/thumb/7/7a/Lanzhou_wiki_Design_figure3.png/800px-Lanzhou_wiki_Design_figure3.png" alt="" data-action="zoom">
+			</figure>
+
+			<h3 class="mdc-typography--subheading2">② Hairpin RNA with intron loop</h3>
+			<p class="mdc-typography--body2">
+				As the intron sequence will be sliced during the pre-mRNA processing and the stability is much higher than the previous two methods according to a relevant paper, it will be a better option for us to silence the target sequene.
+			</p>
+			<p class="mdc-typography--body2">
+				In Our experiment，we selected 120 base-pair-long noncoding sequence from Chloramphenicol as normal loop.
+			</p>
+			<figure>
+				<img src="http://2017.igem.org/wiki/images/thumb/f/f7/Lanzhou_wiki_Design_figure4.png/800px-Lanzhou_wiki_Design_figure4.png" alt="" data-action="zoom">
+			</figure>
+			<figure>
+				<img src="http://2017.igem.org/wiki/images/thumb/c/cc/Lanzhou_wiki_Design_figure5.png/800px-Lanzhou_wiki_Design_figure5.png" alt="" data-action="zoom">
+			</figure>
+			
+			<h1 class="mdc-typography--headline">Strain select</h1>
+			<p class="mdc-typography--body2">
+				We use the M-JM109LacY (dicer deficit type, can’t degrade dsRNA), as a manufactory to produce dsRNA.
+			</p>
+			<hr>
+			<h1 class="mdc-typography--headline">Reference</h1>
+			<ul class="page__article__citations">
+				<li class="page__article__citation__item">
+					[1] Total silencing by intronspliced hairpin RNAs.
+				</li>
+				<li class="page__article__citation__item">
+					[2] Young Sik Lee and Richard W. Carthew, Making a better RNAi vector for Drosophila: use of intron spacers
+				</li>
+				<li class="page__article__citation__item">
+					[3] Molecular cloning（the 4th edition
+				</li>
+			</ul>
+		</article>
+
+		<article id="article_2" class="page__article">
+			<h1 class="mdc-typography--headline">Target organism</h1>
+			<h2 class="mdc-typography--title">Plant</h2>
+			<p class="mdc-typography--body2">
+				At first, we aimed at setaria virids, a kind of maliganant weed resistant to pesticide glyphosate.
+			</p>
+			<p class="mdc-typography--body2">
+				But we met an huge obstacle : select vital gene fragments with high specificity in purpose of decreasing RNAi off-taget rate. But the truth is existing genome data of weeds is deficient right now and there are rare gene notes for sequencing species. Also,many malignant weeds are homologous from the victim crops they do harm to, the gene discrepancies is too less.
+			</p>
+			<p class="mdc-typography--body2">
+				We felt hopeless after doing a lot of work then we paid attention to an easier one—Arabidopsis , which has clear genetic background. It is an ideal candidate for tandem RNAi verification.
+			</p>
+
+			<h2 class="mdc-typography--title">Pest</h2>
+			<p class="mdc-typography--body2">
+				In consideration，we chose aphids as experiment materials. First, It is a kind of worldwide pests, creating great impact in agriculture fields. Second, studies towards on aphids are relatively mature. And the materials is easy to get form nature.
+			</p>
+
+			<h1 class="mdc-typography--headline">Target gene </h1>
+			<h2 class="mdc-typography--title">Arabidopsis</h2>
+			<p class="mdc-typography--body2">
+				We find a target gene—trxz, whose deficiency will result in complete albino phenotype , it’s very easy to observe. 
+			</p>
+			<p class="mdc-typography--body2">
+				TRX z is a branch of plastidial thioredoxin (TRX), lying between x- and y-type TRXs thus was named TRX z, which is a likely candidate for mediating thiol-modifications in chloroplasts.
+			</p>
+			<p class="mdc-typography--body2">
+				Recently, several independent studies could demonstrate that TRX z constitutes a subunit of the plastid-encoded RNA polymerase (PEP). Meanwhile the generation of the full PEP complement is an essential early step during chloroplast bio-genesis and its disturbance cannot be reversed if a certain time point in the program has been passed. 
+			</p>
+			<p class="mdc-typography--body2">
+				The <i>Arabidopsis</i> knockout mutant lines of TRX z exhibit a complete albino phenotype and was inhibited in chloroplast development.
+			</p>
+			<figure>
+				<img src="http://2017.igem.org/wiki/images/c/cb/Lanzhou_wiki_Design_figure6.png" alt="">
+			</figure>
+			<p class="mdc-typography--body2">
+				What’s more, we noticed that a analysis of promoter-GUS indicated that TRX z is expressed in young tissues with decreasing expression during leaf maturation.
+			</p>
+			<p class="mdc-typography--body2">
+				So our verification need to be at the young stage of the otherwise the phenotype maybe not so obvious.
+			</p>
+			<h2 class="mdc-typography--title">Aphid</h2>
+			<p class="mdc-typography--body2">
+				Theoretically, any genes necessary for insects survival, growth, development, reproduction or feeding can be used as RNAi targets(Vilcinskas 2011). The ecdysone receptor (ECR) is a such kind of gene, which could up-regulate the vital genes expression through the interaction with ultra-stable protein (USP) under the existence of ecdysteroid hormone.
+			</p>
+			<p class="mdc-typography--body2">
+				Therefore, Ecr gene silencing can effectively increasing the insects mortality and reducing the reproduction rate. Studies have shown when fed <i>aphids</i> with 7.5 ng / ul dsRNA Ecr, the mortality rate up to 70% after 8 days. 
+			</p>
+			<p class="mdc-typography--body2">
+				According to the literature, the similarity of Ecr gene sequence between pea aphid and grain aphid was 98.4% and with more than 90% similarity in other kind of aphids, so we chose ECR as the target sequence of RNAi. So Ecr is an Ideal RNAi target site to kill aphids with a broad spectrum destruction effect.
+			</p>
+		</article>
+
+		<article id="article_3" class="page__article">
+			<h1 class="mdc-typography--headline">Background</h1>
+			<p class="mdc-typography--body2">
+				Through papers we knew that dsRNA can sustain for more than 2 weeks in soil (Jeffrey G. Scott, et al, 2013), but which is still too short to guarantee enough RNAi efficiency for weeding. Fortunately, we found a kind of special material—bio-clay, which could storage dsRNA as shelters. 
+			</p>
+			<h1 class="mdc-typography--headline">What is Bioclay?</h1>
+			<p class="mdc-typography--body2">
+				Bioclay is a complex combining dsRNA(double-stranded RNA) and LDH(layered double hydroxide) which is reported to provide sustained protection for the dsRNA from the nuclease activity and a effective carrier of negatively charged molecules such as dsRNA. Additionally, it also facilitates sustained release of dsRNA on the leaf surface. As the construction of dsRNA and mechanism of RNAi are elaborated in other parts of wiki, here, the characteristics of LDH will be introduced.
+			</p>
+			<p class="mdc-typography--body2">
+				LDH nanosheets are set of inorganic layered materials. The general formulation of it is shown below:
+				\[ \mathrm{[(M^{2+}_{(1-x)}M^{3+}(OH)_2)^{x+} \cdot (A^{m-}_{x/m} \times nH_2O)^{x-}]} \]
+			</p>
+			<p class="mdc-typography--body2">
+				In the formulation, most divalent and trivalent metal ions can be utilized(M<sup>2+</sup> and M<sup>3+</sup>) and any forms of anions(A<sup>-</sup>) with x=0.2-0.4 and n=0.5-1.0.  
+			</p>
+			<figure>
+				<img src="http://2017.igem.org/wiki/images/f/f9/Lanzhou_wiki_Design_figure7.png" alt="" data-action="zoom">
+				<figcaption>Figure 1. Schematic illustrations of LDH</figcaption>
+			</figure>
+
+			<h1 class="mdc-typography--headline">dsRNA delivery mechanism</h1>
+			<p class="mdc-typography--body2">
+				It is basically known to all that negatively charged molecules such as dsRNA cannot easily transcend cellular membranes because the cellular membranes are also negatively charge. However, if these anionic molecules are incorporated within the inter layers of LDH, the negatively charged molecules will not be exposed to the negatively charge membranes. The positively charged platelets intercalate the dsRNA, thus masking its strong negative charge. Aside from this, the high delivery efficiency is also benefited from the innate ability of LDH to escape from endosomes which is considered a major barrier to effective delivery. Through LDH-mediated endosomal buffering, rupture of endosomal vesicles and release of intact therapeutics into the cytoplasm, the delivery efficiency is substantially enhanced. 
+			</p>
+
+			<h1 class="mdc-typography--headline">Sustained release of dsRNA</h1>
+			<p class="mdc-typography--body2">
+				It has already been proved that the stability of dsRNA will be enhance for a long period under environmental conditions. The sustained release of dsRNA is facilitated through the formation of carbonic acid on the leaf surface from CO<sub>2</sub> in the atmosphere and humidity, the reactions below have elaborated the mechanism of the degradation of Bioclay:
+				\[ CO_2+H_2O \longrightarrow H_2CO_3 \longrightarrow H^+ + HCO_3^- \]
+				\[ Mg_3Al(OH)_8 - A^- + 5H^+ \longrightarrow 3Mg^{2+} + Al'(OH)'_3 +A^- +5H_2O \]
+			</p>
+			<p class="mdc-typography--body2">
+				where A- could be bound dsRNA. Through the previous work done by other labs, they have proved that the amount of aluminum and magnesium of Bioclay will decrease 28% and 22% respectively. And the dsRNA will not be degraded completely in 30 days. While if there is no LDH, the dsRNA will be degraded completely in 20 days.
+			</p>
+			<h1 class="mdc-typography--headline">dsRNA uptake</h1>
+			<p class="mdc-typography--body2">
+				Despite of two reports of dsRNA uptake through roots and one through flower buds, the uptake of dsRNA can also be achieved through the supply on the leaf surface through some sprays onto the leaves. Besides, there is also the possibility of systemic movement of dsRNA and its RNA breakdown products from mature sprayed leaves to new leaves when they form at the shoot apex.
+			</p>
+
+			<h1 class="mdc-typography--headline">Future Application</h1>
+			<p class="mdc-typography--body2">
+				Due to the substantial advantage brought by the Bioclay, we have a strong desire to introduce it into the market along with our bio-pesticides. The appealing characteristics including protect dsRNA from degradation, sustained release of dsRNA and the dsRNA delivery into cells will expand the application of Bioclay into many fields. The future work will mainly focused on lowering the price of Bioclay and the optimizing characteristics of LDH.
+			</p>
+		</article>
+	</main>
+	
+	<footer class="footer">
+		<div class="footer__content">
+			<div class="footer__title">Lanzhou 2017</div>
+			<div class="footer__container">
+				<div class="footer__logo">
+					<a href="http://www.lzu.edu.cn"><img height="100px" src="image/sponsors/LZU.png"></a>
+					<a href="http://lifesc.lzu.edu.cn/"><img class="no_maskeed" height="118px" style="margin-left: 24px" src="image/sponsors/LZU_bio.png"></a>
+				</div>
+				<div class="footer__sponsors">
+					<a href="http://www.agilent.com"><img height="100px" src="image/sponsors/Agilent.png"></a>
+					<a href="https://www.genscript.com/"><img height="100px" src="image/sponsors/GenScript.png"></a>
+					<a href="https://www.idtdna.com/"><img height="80px" src="image/sponsors/IDT.png"></a>
+				</div>
+			</div>
+			<ul class="footer__links">
+				<li>
+					<a href="" class="footer__link">About Lanzhou 2017</a>
+				</li>
+				<!-- 需要改动 -->
+				<li>
+					<a href="" class="footer__link">copyright</a>
+				</li>
+				<li class="footer__link-container--right">
+					<a href="http://lawliet.pw" class="footer__link">
+						<span class="footer__made-with-desktop">Made by L. with Material Components for the web</span>
+						<span class="footer__made-with-mobile">Made by L.</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+
+	<button id="to-top" class="mdc-fab mdc-ripple-surface material-icons" aria-label="Favorite">
+		<span class="mdc-fab__icon">keyboard_arrow_up</span>
+	</button>
+
+</body>
+</html>

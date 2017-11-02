@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" class="mdc-typography">
+<head>
+	<meta charset="UTF-8">
+	<title>Lanzhou</title>
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="material-components-web/dist/material-components-web.css">
+	<link rel="stylesheet" href="css/Material_Icons.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+	<script src="material-components-web/dist/material-components-web.js"></script>
+	<script src="js/highcharts.js"></script>
+	<script src="js/highcharts-more.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script>window.mdc.autoInit()</script>
+	<script src="js/main.js"></script>
+</head>
+<body class="page">
+	<header class="mdc-toolbar mdc-toolbar--fixed">
+		<div class="mdc-toolbar__row">
+			<section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+				<button class="menu material-icons mdc-toolbar__icon--menu mdc-ripple-surface">menu</button>
+				<span class="mdc-toolbar__title">Lanzhou2017</span>
+			</section>
+		</div>
+	</header>
+
+	<aside class="mdc-temporary-drawer">
+		<div class="mdc-temporary-drawer__drawer">
+			<header class="mdc-temporary-drawer__header">
+				<div class="mdc-temporary-drawer__header-content mdc-theme--primary-bg mdc-theme--text-primaryon-primary">
+					<img class="logo" src="image/logo.jpg" alt="Lanzhou 2017">
+					<div class="logo-name">Lanzhou 2017</div class="logo-name">
+				</div>
+			</header>
+			<nav class="mdc-temporary-drawer__content mdc-list-group">
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i class="material-icons mdc-list-item__start-detail" >home</i>
+					Home
+				</a>
+				<a href="project.html" class="mdc-list-item mdc-ripple-surface">
+					<i class="material-icons mdc-list-item__start-detail">local_florist</i>
+					Project
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
+				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Bacground
+					</a>
+					<a href="design.html" class="mdc-list-item mdc-ripple-surface">
+						Design
+					</a>
+					<a href="application.html" class="mdc-list-item mdc-ripple-surface">
+						Application
+					</a>
+					<a href="safety.html" class="mdc-list-item mdc-ripple-surface">
+						Safety
+					</a>
+					<a href="results.html" class="mdc-list-item mdc-ripple-surface">
+						results
+					</a>
+				</nav>
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i style="font-size: 24px;" class="fa fa-flask material-icons mdc-list-item__start-detail"></i>
+					Wet Lab
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
+				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Notebook
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Protocols
+					</a>
+				</nav>
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i style="font-size: 24px;" class="fa fa-cube material-icons mdc-list-item__start-detail"></i>
+					Modelling
+				</a>
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i class="material-icons mdc-list-item__start-detail">face</i>
+					Human Pratice
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
+				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Education
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Public engagement
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Consulting
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Questionnaire  
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Handbook
+					</a>
+				</nav>
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i class="material-icons mdc-list-item__start-detail">group</i>
+					Team
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
+				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						About us
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Attributions
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Collaborations & Meet up
+					</a>
+				</nav>
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i class="material-icons mdc-list-item__start-detail">star</i>
+					Achievements
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
+				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Parts
+					</a>
+					<a href="interlab.html" class="mdc-list-item mdc-ripple-surface">
+						Interlab
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Medal requirements 
+					</a>
+				</nav>
+			</nav>
+		</div>
+	</aside>
+
+	<div class="page__header" style="background-image: url();">
+		<h1 class="mdc-typography--display2"></h1>
+	</div>
+
+	<script>
+		$('.page__header h1').text('Attributions');
+	</script>
+
+	<div id="page__drawer-mobile-container">
+		<nav id="mdc-tab-bar" class="mdc-tab-bar-scroller mdc-theme--dark page__drawer-mobile">
+			<template id="temp-page-list-mobile">
+				<a href="" class="mdc-tab mdc-ripple-surface"></a>
+			</template>
+			<span class="mdc-tab-bar__indicator"></span>
+		</nav>
+	</div>
+
+	<main class="page__content">
+		<nav class="page__drawer mdc-persistent-drawer">
+			<ul class="page__drawer-list">
+				<template id="temp-page-list-desktop">
+					<li class="page__drawer-list__item">
+						<a href="" class="page__drawer-list__link"></a>
+					</li>
+				</template>
+				<!-- Use template tag to generate these link -->
+			</ul>
+		</nav>
+
+		<article class="page__article">
+			<h1 class="mdc-typography--headline">
+				NEU-China
+				<!-- <span class="mdc-typography--caption">Caption.</span> -->
+			</h1>
+			<p class="mdc-typography--body2">
+				The cooperation with Northeastern University has begun since the summer vocation. We helped them complete a receptor and Working as a very kind and helpful team, they asked helping us in verifying one fuctional protein expression.
+			</p>
+		</article>
+	</main>
+	
+	<footer class="footer">
+		<div class="footer__content">
+			<div class="footer__title">Lanzhou 2017</div>
+			<div class="footer__container">
+				<div class="footer__logo">
+					<a href="http://www.lzu.edu.cn"><img height="100px" src="image/sponsors/LZU.png"></a>
+					<a href="http://lifesc.lzu.edu.cn/"><img class="no_maskeed" height="118px" style="margin-left: 24px" src="image/sponsors/LZU_bio.png"></a>
+				</div>
+				<div class="footer__sponsors">
+					<a href="http://www.agilent.com"><img height="100px" src="image/sponsors/Agilent.png"></a>
+					<a href="https://www.genscript.com/"><img height="100px" src="image/sponsors/GenScript.png"></a>
+					<a href="https://www.idtdna.com/"><img height="80px" src="image/sponsors/IDT.png"></a>
+				</div>
+			</div>
+			<ul class="footer__links">
+				<li>
+					<a href="" class="footer__link">About Lanzhou 2017</a>
+				</li>
+				<!-- 需要改动 -->
+				<li>
+					<a href="" class="footer__link">copyright</a>
+				</li>
+				<li class="footer__link-container--right">
+					<a href="http://lawliet.pw" class="footer__link">
+						<span class="footer__made-with-desktop">Made by L. with Material Components for the web</span>
+						<span class="footer__made-with-mobile">Made by L.</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+
+	<button id="to-top" class="mdc-fab mdc-ripple-surface material-icons" aria-label="Favorite">
+		<span class="mdc-fab__icon">keyboard_arrow_up</span>
+	</button>
+</body>
+</html>

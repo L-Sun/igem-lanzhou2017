@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en" class="mdc-typography">
+<head>
+	<meta charset="UTF-8">
+	<title>Lanzhou</title>
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="material-components-web/dist/material-components-web.css">
+	<link rel="stylesheet" href="css/Material_Icons.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+	<script src="material-components-web/dist/material-components-web.js"></script>
+	<script src="js/highcharts.js"></script>
+	<script src="js/highcharts-more.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script>window.mdc.autoInit()</script>
+	<script src="js/main.js"></script>
+</head>
+<body class="page">
+	<header class="mdc-toolbar mdc-toolbar--fixed">
+		<div class="mdc-toolbar__row">
+			<section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+				<button class="menu material-icons mdc-toolbar__icon--menu mdc-ripple-surface">menu</button>
+				<span class="mdc-toolbar__title">Lanzhou2017</span>
+			</section>
+		</div>
+	</header>
+
+	<aside class="mdc-temporary-drawer">
+		<div class="mdc-temporary-drawer__drawer">
+			<header class="mdc-temporary-drawer__header">
+				<div class="mdc-temporary-drawer__header-content mdc-theme--primary-bg mdc-theme--text-primaryon-primary">
+					<img class="logo" src="image/logo.jpg" alt="Lanzhou 2017">
+					<div class="logo-name">Lanzhou 2017</div class="logo-name">
+				</div>
+			</header>
+			<nav class="mdc-temporary-drawer__content mdc-list-group">
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i class="material-icons mdc-list-item__start-detail" >home</i>
+					Home
+				</a>
+				<a href="project.html" class="mdc-list-item mdc-ripple-surface">
+					<i class="material-icons mdc-list-item__start-detail">local_florist</i>
+					Project
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
+				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Bacground
+					</a>
+					<a href="design.html" class="mdc-list-item mdc-ripple-surface">
+						Design
+					</a>
+					<a href="application.html" class="mdc-list-item mdc-ripple-surface">
+						Application
+					</a>
+					<a href="safety.html" class="mdc-list-item mdc-ripple-surface">
+						Safety
+					</a>
+					<a href="results.html" class="mdc-list-item mdc-ripple-surface">
+						results
+					</a>
+				</nav>
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i style="font-size: 24px;" class="fa fa-flask material-icons mdc-list-item__start-detail"></i>
+					Wet Lab
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
+				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Notebook
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Protocols
+					</a>
+				</nav>
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i style="font-size: 24px;" class="fa fa-cube material-icons mdc-list-item__start-detail"></i>
+					Modelling
+				</a>
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i class="material-icons mdc-list-item__start-detail">face</i>
+					Human Pratice
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
+				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Education
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Public engagement
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Consulting
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Questionnaire  
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Handbook
+					</a>
+				</nav>
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i class="material-icons mdc-list-item__start-detail">group</i>
+					Team
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
+				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						About us
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Attributions
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Collaborations & Meet up
+					</a>
+				</nav>
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i class="material-icons mdc-list-item__start-detail">star</i>
+					Achievements
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
+				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Parts
+					</a>
+					<a href="interlab.html" class="mdc-list-item mdc-ripple-surface">
+						Interlab
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Medal requirements 
+					</a>
+				</nav>
+			</nav>
+		</div>
+	</aside>
+
+	<div class="page__header" style="background-image: url();">
+		<h1 class="mdc-typography--display2"></h1>
+	</div>
+
+	<script>
+		$('.page__header h1').text('About us');
+		let index = [5, 0];
+		let nav_list_item = $('.mdc-temporary-drawer__content:not(".sub-nav")').children('.mdc-list-item');
+		$(nav_list_item[index[0]]).children('.material-icons').eq(0).addClass('mdc-list-item__start-detail-color');
+		$(nav_list_item[index[0]]).next().find('.mdc-list-item').eq(index[1]).css('color', '#ff4081');
+	</script>
+
+	<main class="page__content team-page mdc-layout-grid">
+		<ul class="team-cards mdc-layout-grid__inner"> 
+			<li class="mdc-layout-grid__cell">
+				<div style="background-image: url(http://2017.igem.org/wiki/images/8/84/Lanzhou_wiki_Team_member_hjd.jpg);" class="mdc-card mdc-card--theme-dark">
+					<section class="mdc-card__primary">
+						<h1 class="mdc-card__title mdc-card__title--large">He Jindian</h1>
+						<h2 class="mdc-card__subtitle">Leader</h2>
+					</section>
+					<section class="mdc-card__supporting-text scroll">
+						It's a coincidence for me to attend the iGEM in 2016, and I never thought that everything could get this far. The meaning of iGEM to me is not just a competition, which is more like an adventure and a mission. As team leader, It's a great honor to fight with such excellent team members for one goal together. 
+						<br>
+						During the year, we have got over many obstacles as well challenged ourselves many times.
+						<br>
+						I believe that the battle is to the brave and persevering, the final victory belonging to us!
+					</section>
+					<section class="contacts"></section>
+				</div>
+			</li>
+			<li class="mdc-layout-grid__cell">
+				<div style="background-image: url(http://2017.igem.org/wiki/images/b/b4/Lanzhou_wiki_Team_member_lzc.jpg);" class="mdc-card mdc-card--theme-dark">
+					<section class="mdc-card__primary">
+						<h1 class="mdc-card__title mdc-card__title--large">Lin Zhicheng</h1>
+						<h2 class="mdc-card__subtitle">Experiment design / Lab</h2>
+					</section>
+					<section class="mdc-card__supporting-text">
+						Hi, I'm Lin Zhicheng. I am a third-year biological student in Cuiying Honors College of Lanzhou University. I mainly focus on technology and the design of experiment in our team. My research interests are omics technology and AI.
+					</section>
+					<section class="mdc-card__actions"></section>
+				</div>
+			</li>
+			<li class="mdc-layout-grid__cell">
+				<div style="background-image: url(http://2017.igem.org/wiki/images/a/ae/Lanzhou_wiki_Team_member_wtp.jpg);" class="mdc-card mdc-card--theme-dark">
+					<section class="mdc-card__primary">
+						<h1 class="mdc-card__title mdc-card__title--large">Wu Taoping</h1>
+						<h2 class="mdc-card__subtitle">Lab</h2>
+					</section>
+					<section class="mdc-card__supporting-text scroll">
+						"The more deep I dive into biology, the more things I don't know."
+						<br>
+						I'm a senior student of bioscience in Cuiyin Honours College of Lanzhou University. Becoming a teacher as my vocation of bioscience then having pupils everywhere is my dream, also a duty, I think. In our team, I major in experiment and give technical supports to our team to which I can give a best play.
+						<br>
+						Practicing then mastering sword is what I'd like in doing in P.E.
+					</section>
+					<section class="contacts"></section>
+				</div>
+			</li>
+			<li class="mdc-layout-grid__cell">
+				<div style="background-image: url(http://2017.igem.org/wiki/images/thumb/7/78/Lanzhou_wiki_Team_member_hzh.jpg/800px-Lanzhou_wiki_Team_member_hzh.jpg);" class="mdc-card mdc-card--theme-dark">
+					<section class="mdc-card__primary">
+						<h1 class="mdc-card__title mdc-card__title--large">Huang Zonghui</h1>
+						<h2 class="mdc-card__subtitle">Lab / Art design</h2>
+					</section>
+					<section class="mdc-card__supporting-text scroll">
+						I am Huang Zonghui, a senior student in Lanzhou University who majors in biology. In our team, I play the role of doing experiments and working on some art design.
+						<br>
+						Through preparation for iGEM I have promoted a lot, especially in experimental skills. Also, I gained a lot of knowledge of synthetic biology.
+						<br>
+						In the past year, our team has experienced regrouping and we've been through many difficulties. It's lucky for the rest of members, and I believe we will get a good result!
+					</section>
+					<section class="mdc-card__actions"></section>
+				</div>
+			</li>
+			<li class="mdc-layout-grid__cell">
+				<div style="background-image: url(http://2017.igem.org/wiki/images/4/48/Lanzhou_wiki_Team_member_ry.jpg);" class="mdc-card mdc-card--theme-dark">
+					<section class="mdc-card__primary">
+						<h1 class="mdc-card__title mdc-card__title--large">Ren Yi</h1>
+						<h2 class="mdc-card__subtitle">Lab / Art design</h2>
+					</section>
+					<section class="mdc-card__supporting-text scroll">
+						Hi, my friends. Here is Ren Yi, one of "craftsmen" in our team. In your words, I'm a experimentalist. 
+						<br>
+						Personally, what we create is a kind of Bio-weapon which can kill weeds & pests in purpose of defending cropland. And don’t be worried man, we also developed scabbard for it.
+						<br>
+						Outside of iGEM, I am keen on going camping and playing more than ten different sports. In addition, here's an advice: never listen "Hop" when you stay in lab.
+					</section>
+					<section class="contacts"></section>
+				</div>
+			</li>
+			<li class="mdc-layout-grid__cell">
+				<div style="background-image: url(http://2017.igem.org/wiki/images/7/77/Lanzhou_wiki_Team_member_wjm.jpg);" class="mdc-card mdc-card--theme-dark">
+					<section class="mdc-card__primary">
+						<h1 class="mdc-card__title mdc-card__title--large">Wang Jiaming</h1>
+						<h2 class="mdc-card__subtitle">Lab / Art design</h2>
+					</section>
+					<section class="mdc-card__supporting-text">
+						The young brave, welcome to our workshop! I am one of the technicists. We are forging a legendary weapon. However, the iron ore was used up. As a lefendary technicist, I don't understand why there is such a lack of materials. But it just happened. So, if you can bring...........
+					</section>
+					<section class="contacts"></section>
+				</div>
+			</li>
+			<li class="mdc-layout-grid__cell">
+				<div style="background-image: url(http://2017.igem.org/wiki/images/a/a4/Lanzhou_wiki_Team_member_fh.jpg);" class="mdc-card mdc-card--theme-dark">
+					<section class="mdc-card__primary">
+						<h1 class="mdc-card__title mdc-card__title--large">Feng Huan</h1>
+						<h2 class="mdc-card__subtitle">Lab / Art design</h2>
+					</section>
+					<section class="mdc-card__supporting-text">
+						I am a freshman in team Lanzhou. At first, I feel so confused when there is a team discussion or experimental operation, but I still try my best to learn and practice. During the year, I have promoted a lot.
+						<br>
+						In my daily life, I always dip myself into library and laboratory where will make me enrich and relax. And I am sure that thinking and exploring will give variety to life. 
+						<br>
+						Finally, I want to thank my teammates and the chance I gained to attend iGEM, this experience wil be the Most Precious Fortune in my college years.
+					</section>
+					<section class="contacts"></section>
+				</div>
+			</li>
+			<li class="mdc-layout-grid__cell">
+				<div style="background-image: url(http://2017.igem.org/wiki/images/thumb/8/84/Lanzhou_wiki_Team_member_zst.jpg/800px-Lanzhou_wiki_Team_member_zst.jpg);" class="mdc-card mdc-card--theme-dark">
+					<section class="mdc-card__primary">
+						<h1 class="mdc-card__title mdc-card__title--large">Zhang Shuting</h1>
+						<h2 class="mdc-card__subtitle">Lab / HP</h2>
+					</section>
+					<section class="mdc-card__supporting-text">
+						I'm Zhang Shuting, coming from Lanzhou university. It's very lucky to be a member of team Lanzhou and this is my first time to participate in iGEM where I mainly take charge of experiment. 
+						<br>
+						I learned a lot from this amazing experience, which also inspired my interest in synthetic biology. Finally, I'd like to thank my partners and iGEM competition.
+					</section>
+					<section class="mdc-card__actions"></section>
+				</div>
+			</li>
+			<li class="mdc-layout-grid__cell">
+				<div style="background-image: url(http://2017.igem.org/wiki/images/7/7d/Lanzhou_wiki_Team_member_jzc.jpg);" class="mdc-card mdc-card--theme-dark">
+					<section class="mdc-card__primary">
+						<h1 class="mdc-card__title mdc-card__title--large">Jin Zhecheng</h1>
+						<h2 class="mdc-card__subtitle">Lab / Communication</h2>
+					</section>
+					<section class="mdc-card__supporting-text scroll">
+						I'm Jin Zhecheng from Lanzhou iGEM team. Now I'm major in biology in Cuiying Honors College in Lanzhou University. In the team, I'm in charge of the experiment and English writing. In the leisure time, I'd like to keep playing basketball and table tennis as my hobby. As I'm one of the youngest team members, I still have a lot to learn from senior team members for the experimental skills. And I really gain a lot from our preparation for the competition. The course is both interesting and somewhat harsh. Pain past is pleasure!
+					</section>
+					<section class="contacts"></section>
+				</div>
+			</li>
+			<li class="mdc-layout-grid__cell">
+				<div style="background-image: url(http://2017.igem.org/wiki/images/8/81/Lanzhou_wiki_Team_member_ly.jpg);" class="mdc-card mdc-card--theme-dark">
+					<section class="mdc-card__primary">
+						<h1 class="mdc-card__title mdc-card__title--large">Liu Yan</h1>
+						<h2 class="mdc-card__subtitle">Communication / HP / Lab</h2>
+					</section>
+					<section class="mdc-card__supporting-text">
+						My name is Liu Yan, coming from School of Life Science, Lanzhou University. I’v showed a lot of interests in biology since I was a child, and I dream of being a biologist one day. It’s very attracting and exciting for me to attend iGEM this year. I hope that I could exercise and show myself on this stage!
+					</section>
+					<section class="contacts"></section>
+				</div>
+			</li>
+			<li class="mdc-layout-grid__cell">
+				<div style="background-image: url(http://2017.igem.org/wiki/images/thumb/1/15/Lanzhou_wiki_Team_member_cyf.jpg/467px-Lanzhou_wiki_Team_member_cyf.jpg);" class="mdc-card mdc-card--theme-dark">
+					<section class="mdc-card__primary">
+						<h1 class="mdc-card__title mdc-card__title--large">Chen Yifan</h1>
+						<h2 class="mdc-card__subtitle">Modelling / HP / Lab</h2>
+					</section>
+					<section class="mdc-card__supporting-text">
+						I am Chen Yifan termed “Doraemon” by my teammate, because not only can I make a lot of useful tools to simplify experiments but also come up with many novel ideas. I'm responsible for device design as well as some work of HP in our team.
+						<br>
+						In my life, I am a laugh-making star who like to communicate with people and make them laugh. Also, I'm adhering to the idea of innovation and sincerity. The biggest dream of mine is eating all delicacies in the world without repeat!
+					</section>
+					<section class="contacts"></section>
+				</div>
+			</li>
+			<li class="mdc-layout-grid__cell">
+				<div style="background-image: url(http://2017.igem.org/wiki/images/6/61/Lanzhou_wiki_Team_member_yxj.jpg);" class="mdc-card mdc-card--theme-dark">
+					<section class="mdc-card__primary">
+						<h1 class="mdc-card__title mdc-card__title--large">Xujuan Yang</h1>
+						<h2 class="mdc-card__subtitle">HP / Lab</h2>
+					</section>
+					<section class="mdc-card__supporting-text">
+						I am Xujuan Yang, a 2015 undergraduate student of clinical medicine in the First Clinical Medical College of Lanzhou University.I am mainly in charge of assisting the team leader with team matters. In prophase,I am responsible for HP and also a number of the molecular cloning group. In later period, my task is to be in charge of verification of Arabidopsis thaliana.
+					</section>
+					<section class="contacts"></section>
+				</div>
+			</li>
+			<li class="mdc-layout-grid__cell">
+				<div style="background-image: url(http://2017.igem.org/wiki/images/a/af/Lanzhou_wiki_Team_member_lt.jpg);" class="mdc-card mdc-card--theme-dark">
+					<section class="mdc-card__primary">
+						<h1 class="mdc-card__title mdc-card__title--large">Liu Tong</h1>
+						<h2 class="mdc-card__subtitle">HP / Lab</h2>
+					</section>
+					<section class="mdc-card__supporting-text scroll">
+						I'm a senior student majoring in grassland science who are curious about the unknown world and try to explore them throuh my efforts. In our team, I do some work of human practice and see to verify part of macroscopic experiments. 
+						<br>
+						It's very proud to be a member of Team Lanzhou. Now, we are moving forward!
+					</section>
+					<section class="mdc-card__actions"></section>
+				</div>
+			</li>
+			<li class="mdc-layout-grid__cell">
+				<div style="background-image: url(http://2017.igem.org/wiki/images/7/78/Lanzhou_wiki_Team_member_shw.jpg);" class="mdc-card mdc-card--theme-dark">
+					<section class="mdc-card__primary">
+						<h1 class="mdc-card__title mdc-card__title--large">Sun Haowen</h1>
+						<h2 class="mdc-card__subtitle">Wiki designer and Developer</h2>
+					</section>
+					<section class="mdc-card__supporting-text">
+						日々私たちが过ごしている日常は、実は、奇迹の连続なのかもしれない。
+						I'm Sun Haowen, wiki developer.
+					</section>
+					<section id="contacts">
+						<ul>
+							<li style="background-color: #00B5C2"><a href="https://lawliet.pw"><i class="fa fa-leaf"></i>Website</a></li>
+							<li style="background-color: #E7746F"><a href="https://lab.lawliet.pw"><i class="fa fa-flask"></i>Lab</a></li>
+							<li style="background-color: #00CFFF;"><a href="https://twitter.com/L_Zover"><i class="fa fa-twitter"></i>Twitter</a></li>
+							<li style="background-color: #24292E;"><a href="https://github.com/L-Sun"><i class="fa fa-github"></i>GitHub</a></li>
+							<li style="background-color: #0088CC"><a href="https://t.me/L_zover"><i class="fa fa-telegram"></i>Telegram</a></li>
+							<!-- <li><a href=""><i class="fa"></i></a></li> -->
+						</ul>
+					</section>
+				</div>
+			</li>
+		</ul>
+	</main>
+	<footer class="footer">
+		<div class="footer__content">
+			<div class="footer__title">Lanzhou 2017</div>
+			<div class="footer__container">
+				<div class="footer__logo">
+					<a href="http://www.lzu.edu.cn"><img height="100px" src="image/sponsors/LZU.png"></a>
+					<a href="http://lifesc.lzu.edu.cn/"><img class="no_maskeed" height="118px" style="margin-left: 24px" src="image/sponsors/LZU_bio.png"></a>
+				</div>
+				<div class="footer__sponsors">
+					<a href="http://www.agilent.com"><img height="100px" src="image/sponsors/Agilent.png"></a>
+					<a href="https://www.genscript.com/"><img height="100px" src="image/sponsors/GenScript.png"></a>
+					<a href="https://www.idtdna.com/"><img height="80px" src="image/sponsors/IDT.png"></a>
+				</div>
+			</div>
+			<ul class="footer__links">
+				<li>
+					<a href="" class="footer__link">About Lanzhou 2017</a>
+				</li>
+				<!-- 需要改动 -->
+				<li>
+					<a href="" class="footer__link">copyright</a>
+				</li>
+				<li class="footer__link-container--right">
+					<a href="http://lawliet.pw" class="footer__link">
+						<span class="footer__made-with-desktop">Made by L. with Material Components for the web</span>
+						<span class="footer__made-with-mobile">Made by L.</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+
+	<button id="to-top" class="mdc-fab mdc-ripple-surface material-icons" aria-label="Favorite">
+		<span class="mdc-fab__icon">keyboard_arrow_up</span>
+	</button>
+</body>
+</html>

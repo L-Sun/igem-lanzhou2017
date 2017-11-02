@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" class="mdc-typography">
+<head>
+	<meta charset="UTF-8">
+	<title>Lanzhou</title>
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="material-components-web/dist/material-components-web.css">
+	<link rel="stylesheet" href="css/Material_Icons.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+	<script src="material-components-web/dist/material-components-web.js"></script>
+	<script src="js/highcharts.js"></script>
+	<script src="js/highcharts-more.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script>window.mdc.autoInit()</script>
+	<script src="js/main.js"></script>
+</head>
+<body class="page">
+	<header class="mdc-toolbar mdc-toolbar--fixed">
+		<div class="mdc-toolbar__row">
+			<section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+				<button class="menu material-icons mdc-toolbar__icon--menu mdc-ripple-surface">menu</button>
+				<span class="mdc-toolbar__title">Lanzhou2017</span>
+			</section>
+		</div>
+	</header>
+
+	<aside class="mdc-temporary-drawer">
+		<div class="mdc-temporary-drawer__drawer">
+			<header class="mdc-temporary-drawer__header">
+				<div class="mdc-temporary-drawer__header-content mdc-theme--primary-bg mdc-theme--text-primaryon-primary">
+					<img class="logo" src="image/logo.jpg" alt="Lanzhou 2017">
+					<div class="logo-name">Lanzhou 2017</div class="logo-name">
+				</div>
+			</header>
+			<nav class="mdc-temporary-drawer__content mdc-list-group">
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i class="material-icons mdc-list-item__start-detail" >home</i>
+					Home
+				</a>
+				<a href="project.html" class="mdc-list-item mdc-ripple-surface">
+					<i class="material-icons mdc-list-item__start-detail">local_florist</i>
+					Project
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
+				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Bacground
+					</a>
+					<a href="design.html" class="mdc-list-item mdc-ripple-surface">
+						Design
+					</a>
+					<a href="application.html" class="mdc-list-item mdc-ripple-surface">
+						Application
+					</a>
+					<a href="safety.html" class="mdc-list-item mdc-ripple-surface">
+						Safety
+					</a>
+					<a href="results.html" class="mdc-list-item mdc-ripple-surface">
+						results
+					</a>
+				</nav>
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i style="font-size: 24px;" class="fa fa-flask material-icons mdc-list-item__start-detail"></i>
+					Wet Lab
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
+				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Notebook
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Protocols
+					</a>
+				</nav>
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i style="font-size: 24px;" class="fa fa-cube material-icons mdc-list-item__start-detail"></i>
+					Modelling
+				</a>
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i class="material-icons mdc-list-item__start-detail">face</i>
+					Human Pratice
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
+				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Education
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Public engagement
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Consulting
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Questionnaire  
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Handbook
+					</a>
+				</nav>
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i class="material-icons mdc-list-item__start-detail">group</i>
+					Team
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
+				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						About us
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Attributions
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Collaborations & Meet up
+					</a>
+				</nav>
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i class="material-icons mdc-list-item__start-detail">star</i>
+					Achievements
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
+				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Parts
+					</a>
+					<a href="interlab.html" class="mdc-list-item mdc-ripple-surface">
+						Interlab
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Medal requirements 
+					</a>
+				</nav>
+			</nav>
+		</div>
+	</aside>
+
+	<div class="page__header" style="background-image: url();">
+		<h1 class="mdc-typography--display2"></h1>
+	</div>
+
+	<script>
+		$('.page__header h1').text('Safety');
+		let index = [1, 3];
+		let nav_list_item = $('.mdc-temporary-drawer__content:not(".sub-nav")').children('.mdc-list-item');
+		$(nav_list_item[index[0]]).children('.material-icons').eq(0).addClass('mdc-list-item__start-detail-color');
+		$(nav_list_item[index[0]]).next().find('.mdc-list-item').eq(index[1]).css('color', '#ff4081');
+	</script>
+
+	<div id="page__drawer-mobile-container">
+		<nav id="mdc-tab-bar" class="mdc-tab-bar-scroller mdc-theme--dark page__drawer-mobile">
+			<template id="temp-page-list-mobile">
+				<a href="" class="mdc-tab mdc-ripple-surface"></a>
+			</template>
+			<span class="mdc-tab-bar__indicator"></span>
+		</nav>
+	</div>
+
+
+
+	<main class="page__content">
+		<nav class="page__drawer mdc-persistent-drawer">
+			<ul class="page__drawer-list">
+				<template id="temp-page-list-desktop">
+					<li class="page__drawer-list__item">
+						<a href="" class="page__drawer-list__link"></a>
+					</li>
+				</template>
+				<!-- Use template tag to generate these link -->
+			</ul>
+		</nav>
+
+		<article class="page__article">
+			<h1 class="mdc-typography--headline">Overview</h1>
+			<p class="mdc-typography--body2">
+				In 2017, Lanzhou iGEM Team aims to develop a nontoxic, eco-friendly and without resistance problem Bio-pesticides through synthetic biology. Here is our safety control.
+			</p>
+			<h1 class="mdc-typography--headline">Safe Project Design</h1>
+			<h2 class="mdc-typography--title">
+				1.	Through carefully thought, we decided to use dsRNA directly in verifying macro-experiments rather than bacterium with a suicide system. 
+			<p class="mdc-typography--body2">
+				Take the future application into consideration, genetically modified crops are currently the best approach once a plant can express the dsRNA in the appropriate tissue at the proper dose. Nevertheless, it is unlikely that all crops will be replaced by dsRNA transgenic plants. Thus, a topical, non-transgenic RNAi approach maybe more practical because it does not genetically alter the crops, which can be developed more rapidly to meet industry needs and can be completed in a shorter amount time. 
+			</p>
+			<p class="mdc-typography--body2">
+				Furthermore, we have done a domestic transgenic questionnaire. In recent years, the restrictions are a very severe problem for genetically modified foods (GMF) in China. Not only public opinion but also cognition degree of the public at present are neither hindering the development of GMF. But RNAi (one gene silencing mechanism generated by dsRNA etc.) is a new measure to improve crops or fruits ‘s character such as insect pest injury resistance, and it wouldn’t modify plant’s genome. Because of that, it would also result in public’s panic, and they would be more easily accepted by public. Many people think that if they eat GMF, their gene information will be modified as same. So, eating GMF will not be accepted absolutely by them. These opinions maybe so extreme. But RNAi is not GMF, so it may be accepted by public more easily. And being accepted by public is the most important procedure for a new technology before widely use.
+			</p>
+			<p class="mdc-typography--body2">
+				For further safety, as a kind of soil pollutant, even though engineered E.coli owns a perfect suicide system, the efficiency couldn’t up to 100 %. And bacterium will easily undergo horizontal gene transfer, which will increase RNAi off-target possibility towards non-target organisms. In contrast, dsRNA is much safer, which will gradually degrade within two months under the normal circumstance.
+			</p>
+			<h2 class="mdc-typography--title">
+				2.	Steer clear of the potential RNAi off-target risk as much as possible
+			</h2>
+			<p class="mdc-typography--body2">
+				All the gene silencing is directly guided by the small interfering RNA (siRNA), these siRNA have complementary to sequences in target gene. But if they are even complementary with nontarget gene and they would generate gene’s silencing phenomenon what is called as off-target. Off-target is a severe risk for RNAi’s uses in agriculture and crop cultivating. Off-target can occur in unintended organisms. so, if we silence target organism’s key gene for intending to kill these organisms, the off-target organism maybe also died because of RNAi.
+			</p>
+			<p class="mdc-typography--body2">
+				There is an evidence of this comes through in silico comparisons of sequence homologies between siRNAs and sequences present in the targeted organism. One <i>in silico</i> from diverse organisms revealed that off-target effects were observed in as few as 5% and up to 80% of the siRNAs assessed. Another study showed that 17% of siRNAs had complete sequence homologies with off-target binding sites in the Drosophila melanogaster genome.
+			</p>
+			<p class="mdc-typography--body2">
+				So, how to reduces the rate of off-target is very important. We use in silico comparisons of sequence homologies between target organism and nontarget organism. The main online tools we used is NCBI’s blast function. We used blast tool to alignment sequence of the key gene from target organism and nontarget organism. And we avoid the homology sequence in gene, then we pick the high specificity region to design dsRNA. But it’s not all. We also alignment dsRNA sequence with nontarget organism’s genome sequence not only key gene sequence expect to minimize the off-target rate. Please note that dsRNA is not the direct RNA molecular to bind with target mRNA. In vivo dsRNA will be cleaved into siRNA firstly. And siRNA is the direct molecular matching mRNA. It means that however we reduced the dsRNA’s homology with other nontarget organisms. There still have a small rate (around 10%) of off-target. Because the length of siRNA is only 19~21nt, it means that it has 1/4<sup>19</sup> to 1/4<sup>21</sup> probability for a 19~21nt mRNA to be identical with siRNA designed by us. This probability is not enough small to be ignore for the all environment organisms’ genome sequence information. 
+			</p>
+
+			<h1 class="mdc-typography--headline">Safe Measures</h1>
+			<p class="mdc-typography--body2">
+				In order to ensure the safety of the project, our team paid great attention to requirements of iGEM policy and we never performed any dangerous experiments in daily bench work or faced any unusual safety issues. The bench work followed some basic regulations as below:
+			</p>
+			<ul class="page__article__list">
+				<li>
+					Everyone must wear lab coat, rubber gloves, trousers and shoes before entering the laboratory.
+				</li>
+				<li>
+					All involved participants needed to understand the experiment completely, make sure team members can complete the experiment independently.
+				</li>
+				<li>
+					Food was not allowed to appear in the lab.
+				</li>
+				<li>
+					Any steps involving potential release of live microorganisms were performed in a bio-safety cabinet. 
+				</li>
+				<li>
+					All liquid and solid waste potentially containing living organism was sterilized.
+				</li>
+			</ul>
+
+			<h1 class="mdc-typography--headline">Safe Shipment</h1>
+			<p class="mdc-typography--body2">
+				Our DNA parts submitted are all safe because they encode non-hazardous proteins such as pectinase, celluse, and functional nucleus acids. The DNA parts were safely confined within PCR tubes as the Parts Registry requires.
+			</p>
+		</article>
+	</main>
+	
+	<footer class="footer">
+		<div class="footer__content">
+			<div class="footer__title">Lanzhou 2017</div>
+			<div class="footer__container">
+				<div class="footer__logo">
+					<a href="http://www.lzu.edu.cn"><img height="100px" src="image/sponsors/LZU.png"></a>
+					<a href="http://lifesc.lzu.edu.cn/"><img class="no_maskeed" height="118px" style="margin-left: 24px" src="image/sponsors/LZU_bio.png"></a>
+				</div>
+				<div class="footer__sponsors">
+					<a href="http://www.agilent.com"><img height="100px" src="image/sponsors/Agilent.png"></a>
+					<a href="https://www.genscript.com/"><img height="100px" src="image/sponsors/GenScript.png"></a>
+					<a href="https://www.idtdna.com/"><img height="80px" src="image/sponsors/IDT.png"></a>
+				</div>
+			</div>
+			<ul class="footer__links">
+				<li>
+					<a href="" class="footer__link">About Lanzhou 2017</a>
+				</li>
+				<!-- 需要改动 -->
+				<li>
+					<a href="" class="footer__link">copyright</a>
+				</li>
+				<li class="footer__link-container--right">
+					<a href="http://lawliet.pw" class="footer__link">
+						<span class="footer__made-with-desktop">Made by L. with Material Components for the web</span>
+						<span class="footer__made-with-mobile">Made by L.</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+
+	<button id="to-top" class="mdc-fab mdc-ripple-surface material-icons" aria-label="Favorite">
+		<span class="mdc-fab__icon">keyboard_arrow_up</span>
+	</button>
+</body>
+</html>

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en" class="mdc-typography">
+<head>
+	<meta charset="UTF-8">
+	<title>Lanzhou</title>
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="material-components-web/dist/material-components-web.css">
+	<link rel="stylesheet" href="css/Material_Icons.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+	<script src="material-components-web/dist/material-components-web.js"></script>
+	<script src="js/highcharts.js"></script>
+	<script src="js/highmaps.js"></script>
+	<script src="js/highcharts-more.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script>window.mdc.autoInit()</script>
+	<script src="js/main.js"></script>
+</head>
+<body class="page">
+	<header class="mdc-toolbar mdc-toolbar--fixed">
+		<div class="mdc-toolbar__row">
+			<section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+				<button class="menu material-icons mdc-toolbar__icon--menu mdc-ripple-surface">menu</button>
+				<span class="mdc-toolbar__title">Lanzhou2017</span>
+			</section>
+		</div>
+	</header>
+
+	<aside class="mdc-temporary-drawer">
+		<div class="mdc-temporary-drawer__drawer">
+			<header class="mdc-temporary-drawer__header">
+				<div class="mdc-temporary-drawer__header-content mdc-theme--primary-bg mdc-theme--text-primaryon-primary">
+					<img class="logo" src="image/logo.jpg" alt="Lanzhou 2017">
+					<div class="logo-name">Lanzhou 2017</div class="logo-name">
+				</div>
+			</header>
+			<nav class="mdc-temporary-drawer__content mdc-list-group">
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i class="material-icons mdc-list-item__start-detail" >home</i>
+					Home
+				</a>
+				<a href="project.html" class="mdc-list-item mdc-ripple-surface">
+					<i class="material-icons mdc-list-item__start-detail">local_florist</i>
+					Project
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
+				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Bacground
+					</a>
+					<a href="design.html" class="mdc-list-item mdc-ripple-surface">
+						Design
+					</a>
+					<a href="application.html" class="mdc-list-item mdc-ripple-surface">
+						Application
+					</a>
+					<a href="safety.html" class="mdc-list-item mdc-ripple-surface">
+						Safety
+					</a>
+					<a href="results.html" class="mdc-list-item mdc-ripple-surface">
+						results
+					</a>
+				</nav>
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i style="font-size: 24px;" class="fa fa-flask material-icons mdc-list-item__start-detail"></i>
+					Wet Lab
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
+				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Notebook
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Protocols
+					</a>
+				</nav>
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i style="font-size: 24px;" class="fa fa-cube material-icons mdc-list-item__start-detail"></i>
+					Modelling
+				</a>
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i class="material-icons mdc-list-item__start-detail">face</i>
+					Human Pratice
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
+				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Education
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Public engagement
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Consulting
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Questionnaire  
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Handbook
+					</a>
+				</nav>
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i class="material-icons mdc-list-item__start-detail">group</i>
+					Team
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
+				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						About us
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Attributions
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Collaborations & Meet up
+					</a>
+				</nav>
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i class="material-icons mdc-list-item__start-detail">star</i>
+					Achievements
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
+				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Parts
+					</a>
+					<a href="interlab.html" class="mdc-list-item mdc-ripple-surface">
+						Interlab
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Medal requirements 
+					</a>
+				</nav>
+			</nav>
+		</div>
+	</aside>
+
+	<div class="page__header" style="background-image: url();">
+		<h1 class="mdc-typography--display2"></h1>
+	</div>
+
+	<script>
+		$('.page__header h1').text('Protocols');
+		let index = [1, 0];
+		let nav_list_item = $('.mdc-temporary-drawer__content:not(".sub-nav")').children('.mdc-list-item');
+		$(nav_list_item[index[0]]).children('.material-icons').eq(0).addClass('mdc-list-item__start-detail-color');
+		$(nav_list_item[index[0]]).next().find('.mdc-list-item').eq(index[1]).css('color', '#ff4081');
+	</script>
+
+	<main class="page__content">
+
+		<article style="width: 100%" id="article_1" class="page__article">
+			<h1 class="mdc-typography--headline">Aphid feeding</h1>
+			<p class="mdc-typography--body2">
+				The method we used to feeding aphid is from <i>van Emden H.</i><sup>[1]</sup>
+			</p>
+			<p class="mdc-typography--body2">
+				Table 1 – Composition of the artificial diet for <i>Myzus persicae</i> (based on DADD and MITTLER, 1966). Quantities of chemicals are given as mg to be dissolved in 100ml nanopure water in the order shown.
+			</p>
+			<figure>
+				<table>
+					<thead>
+						<tr>
+							<th>Order</th>
+							<th></th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>1</th>
+							<td>sucrose (15 g)</td>
+							<td>15000.0</td>
+						</tr>
+						<tr>
+							<th>2</th>
+							<td>di-potassium hydrogen orthophosphate</td>
+							<td>750.0</td>
+						</tr>
+						<tr>
+							<th>3</th>
+							<td>magnesium sulphate</td>
+							<td>123.0</td>
+						</tr>
+						<tr>
+							<th>4</th>
+							<td>L-tyrosine</td>
+							<td>40.0</td>
+						</tr>
+						<tr>
+							<th>5</th>
+							<td>L-asparagine hydrate</td>
+							<td>550.0</td>
+						</tr>
+						<tr>
+							<th>6</th>
+							<td>L-aspartic acid</td>
+							<td>140.0</td>
+						</tr>
+						<tr>
+							<th>7</th>
+							<td>L-tryptophan</td>
+							<td>80.0</td>
+						</tr>
+						<tr>
+							<th>8</th>
+							<td>L-alanine</td>
+							<td>100.0</td>
+						</tr>
+						<tr>
+							<th>9</th>
+							<td>L-arginine monohydrochloride</td>
+							<td>270.0</td>
+						</tr>
+						<tr>
+							<th>10</th>
+							<td>L-cysteine hydrochloride. hydrate</td>
+							<td>40.0</td>
+						</tr>
+						<tr>
+							<th>11</th>
+							<td>L-glutamic acid</td>
+							<td>140.0</td>
+						</tr>
+						<tr>
+							<th>12</th>
+							<td>L-glutamine</td>
+							<td>150.0</td>
+						</tr>
+						<tr>
+							<th>13</th>
+							<td>L-glycine</td>
+							<td>80.0</td>
+						</tr>
+						<tr>
+							<th>14</th>
+							<td>L-histidine</td>
+							<td>80.0</td>
+						</tr>
+						<tr>
+							<th>15</th>
+							<td>L-isoleucine (allo free)</td>
+							<td>80.0</td>
+						</tr>
+						<tr>
+							<th>16</th>
+							<td>L-leucine</td>
+							<td>80.0</td>
+						</tr>
+						<tr>
+							<th>17</th>
+							<td>L-lysine monohydrochloride</td>
+							<td>120.0</td>
+						</tr>
+						<tr>
+							<th>18</th>
+							<td>L-methionine</td>
+							<td>40.0</td>
+						</tr>
+						<tr>
+							<th>19</th>
+							<td>L-phenylalanine</td>
+							<td>40.0</td>
+						</tr>
+						<tr>
+							<th>20</th>
+							<td>L-proline</td>
+							<td>80.0</td>
+						</tr>
+						<tr>
+							<th>21</th>
+							<td>L-serine</td>
+							<td>80.0</td>
+						</tr>
+						<tr>
+							<th>22</th>
+							<td>L-threonine</td>
+							<td>140.0</td>
+						</tr>
+						<tr>
+							<th>23</th>
+							<td>L-valine</td>
+							<td>80.0</td>
+						</tr>
+						<tr>
+							<th>24</th>
+							<td>ascorbic acid (vitamin C)</td>
+							<td>100.0</td>
+						</tr>
+						<tr>
+							<th>25</th>
+							<td>aneurine hydrochloride (vitamin B)</td>
+							<td>2.5</td>
+						</tr>
+						<tr>
+							<th>26</th>
+							<td>riboflavin</td>
+							<td>0.5</td>
+						</tr>
+						<tr>
+							<th>27</th>
+							<td>nicotinic acid</td>
+							<td>10.0</td>
+						</tr>
+						<tr>
+							<th>28</th>
+							<td>folic acid</td>
+							<td>0.5</td>
+						</tr>
+						<tr>
+							<th>29</th>
+							<td>(+)-pantothenic acid (calcium salt)</td>
+							<td>5.0</td>
+						</tr>
+						<tr>
+							<th>30</th>
+							<td>inositol (meso) active</td>
+							<td>50.0</td>
+						</tr>
+						<tr>
+							<th>31</th>
+							<td>choline chloride</td>
+							<td>50.0</td>
+						</tr>
+						<tr>
+							<th>32</th>
+							<td>EDTA Fe(III)-Na chelate pure</td>
+							<td>1.5</td>
+						</tr>
+						<tr>
+							<th>33</th>
+							<td>EDTA Zn-Na2 chelate pure</td>
+							<td>0.8</td>
+						</tr>
+						<tr>
+							<th>34</th>
+							<td>EDTA Mn-Na2 chelate pure</td>
+							<td>0.8</td>
+						</tr>
+						<tr>
+							<th>35</th>
+							<td>EDTA Cu-Na2 chelate pure</td>
+							<td>0.4</td>
+						</tr>
+						<tr>
+							<th>36</th>
+							<td>pyridoxine hydrochloride (vitamin B6)</td>
+							<td>2.5</td>
+						</tr>
+						<tr>
+							<th>37</th>
+							<td>D-biotin, crystalline</td>
+							<td>0.1</td>
+						</tr>
+					</tbody>
+				</table>
+				<figcaption>Table 1.</figcaption>
+			</figure>
+			<p class="mdc-typography--body2">
+				Once made up in quantity, the diet is not sterilised at this stage, but used to fill 75 mm x 25 mm diameter tubes which are then deep frozen. The diet is sterilised at the point of making up large numbers of Parafilm sachets on the end of 25mm x25mm diam. plastic tubes, which are then again deep frozen till required. Thawed diet in a syringe passes through a sterilised bacterial filter (Fig. 1, A) and dispensed onto a square of Parafilm stretched over the end of a tube. This Parafilm is then covered with another stretched square (Fig. 1, B) and the projecting Parafilm smoothed down onto the side of the tube. All this is done in a laminar flow cabinet, where the Parafilm squares are first surface-sterilised with UV light. In making the sachets, care has to be taken that it is the sterile upper surfaces of the Parafilm squares that enclose the diet. The sachets now have to be changed for new ones every 2-3days to prevent microbial contamination and the loss of vitamins (particularly ascorbic acid). 
+			</p>
+			<figure>
+				<img src="image/protocool/figure1.png" alt="" data-action="zoom">
+				<figcaption>Figure 1. – Making the diet sachets. A, the syringe; B, the diet tube and sachet. d, drop of diet ; f, bacterial filter; n. hypodermic needle; p1, stretched Parafilm (sterilised surface down) to cover drop of diet (d); p2, stretched Parafilm (sterilised surface up)onto which drop of diet (d) is dispensed; s, syringe containing unsterilised diet; t, diet tube.</figcaption>
+			</figure>
+			<p class="mdc-typography--body2">
+				This is done very simply by using the Parafilm on the sides of the tubes to join a new and old tube together. The upper layer of Parafilm on the old tube is then slit and the double tube placed with the slit sachet down on filter paper. The old diet leaks out and is absorbed by the filter paper and, deprived of food, the aphids take themselves upwards to settle on the new sachet.
+
+			</p>
+			<hr>
+			<h1 class="mdc-typography--headline">Reference</h1>
+			<ul class="page__article__citations">
+				<li class="page__article__citation__item">
+					[1] van Emden H.2009-Artificial diet for aphids - thirty years’ experience-REDIA, XCII, 2009: 163-167
+				</li>
+			</ul>
+		</article>
+	</main>
+
+	
+	<footer class="footer">
+		<div class="footer__content">
+			<div class="footer__title">Lanzhou 2017</div>
+			<div class="footer__container">
+				<div class="footer__logo">
+					<a href="http://www.lzu.edu.cn"><img height="100px" src="image/sponsors/LZU.png"></a>
+					<a href="http://lifesc.lzu.edu.cn/"><img class="no_maskeed" height="118px" style="margin-left: 24px" src="image/sponsors/LZU_bio.png"></a>
+				</div>
+				<div class="footer__sponsors">
+					<a href="http://www.agilent.com"><img height="100px" src="image/sponsors/Agilent.png"></a>
+					<a href="https://www.genscript.com/"><img height="100px" src="image/sponsors/GenScript.png"></a>
+					<a href="https://www.idtdna.com/"><img height="80px" src="image/sponsors/IDT.png"></a>
+				</div>
+			</div>
+			<ul class="footer__links">
+				<li>
+					<a href="" class="footer__link">About Lanzhou 2017</a>
+				</li>
+				<!-- 需要改动 -->
+				<li>
+					<a href="" class="footer__link">copyright</a>
+				</li>
+				<li class="footer__link-container--right">
+					<a href="http://lawliet.pw" class="footer__link">
+						<span class="footer__made-with-desktop">Made by L. with Material Components for the web</span>
+						<span class="footer__made-with-mobile">Made by L.</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+
+	<button id="to-top" class="mdc-fab mdc-ripple-surface material-icons" aria-label="Favorite">
+		<span class="mdc-fab__icon">keyboard_arrow_up</span>
+	</button>
+
+</body>
+</html>

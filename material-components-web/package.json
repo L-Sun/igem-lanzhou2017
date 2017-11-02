@@ -1,0 +1,103 @@
+{
+  "name": "material-components-web",
+  "description": "Modular and customizable Material Design UI components for the web",
+  "version": "0.13.0",
+  "license": "Apache-2.0",
+  "keywords": [
+    "material components",
+    "material design"
+  ],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/material-components/material-components-web.git"
+  },
+  "dependencies": {
+    "@material/animation": "^0.2.3",
+    "@material/auto-init": "^0.1.2",
+    "@material/base": "^0.2.0",
+    "@material/button": "^0.3.7",
+    "@material/card": "^0.2.3",
+    "@material/checkbox": "^0.3.6",
+    "@material/dialog": "^0.3.1",
+    "@material/drawer": "^0.5.0",
+    "@material/elevation": "^0.1.8",
+    "@material/fab": "^0.3.9",
+    "@material/form-field": "^0.2.7",
+    "@material/grid-list": "^0.2.4",
+    "@material/icon-toggle": "^0.1.12",
+    "@material/layout-grid": "^0.2.0",
+    "@material/linear-progress": "^0.1.2",
+    "@material/list": "^0.2.10",
+    "@material/menu": "^0.3.0",
+    "@material/radio": "^0.2.5",
+    "@material/ripple": "^0.6.2",
+    "@material/select": "^0.3.8",
+    "@material/slider": "^0.1.0",
+    "@material/snackbar": "^0.2.1",
+    "@material/switch": "^0.1.8",
+    "@material/tabs": "^0.2.1",
+    "@material/textfield": "^0.2.11",
+    "@material/theme": "^0.1.5",
+    "@material/toolbar": "^0.4.0",
+    "@material/typography": "^0.2.2"
+  },
+  "bugs": {
+    "url": "https://github.com/material-components/material-components-web/issues"
+  },
+  "homepage": "https://github.com/material-components/material-components-web#readme",
+  "_id": "material-components-web@0.13.0",
+  "_npmVersion": "5.0.3",
+  "_nodeVersion": "8.0.0",
+  "_npmUser": {
+    "name": "traviskaufman",
+    "email": "travis.kaufman@gmail.com"
+  },
+  "dist": {
+    "integrity": "sha512-bcxvuEqP60ziZwcoePTdHBYzX/NkWKmTPztw2zTPbHyAMqDrScNJsDVC6AJKNKcGnpMA6jhwSsWQer9fabM7+g==",
+    "shasum": "e18a2a510e07be102ca89c3b389746fe3e024dab",
+    "tarball": "https://registry.npmjs.org/material-components-web/-/material-components-web-0.13.0.tgz"
+  },
+  "maintainers": [
+    {
+      "email": "traviskaufman+npm@google.com",
+      "name": "material-admin"
+    },
+    {
+      "email": "obrien.test@gmail.com",
+      "name": "bwobrien"
+    },
+    {
+      "email": "ljepsen3541@gmail.com",
+      "name": "ljepsen3541"
+    },
+    {
+      "email": "yiranmao@gmail.com",
+      "name": "yeelan0319"
+    },
+    {
+      "email": "alex.m.sheehan@gmail.com",
+      "name": "amsheehan"
+    },
+    {
+      "email": "cchao87@gmail.com",
+      "name": "cristobalchao"
+    },
+    {
+      "email": "travis.kaufman@gmail.com",
+      "name": "traviskaufman"
+    },
+    {
+      "email": "mail@sgomes.io",
+      "name": "sgomes"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/material-components-web-0.13.0.tgz_1497282793950_0.3951288932003081"
+  },
+  "directories": {},
+  "_shasum": "e18a2a510e07be102ca89c3b389746fe3e024dab",
+  "_resolved": "https://registry.npmjs.org/material-components-web/-/material-components-web-0.13.0.tgz",
+  "_from": "material-components-web@latest"
+}

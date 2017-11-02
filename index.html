@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en" class="mdc-typography">
+<head>
+	<meta charset="UTF-8">
+	<title>Lanzhou</title>
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="material-components-web/dist/material-components-web.css">
+	<link rel="stylesheet" href="css/Material_Icons.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+
+	<script src="material-components-web/dist/material-components-web.js"></script>
+	<script src="js/highcharts.js"></script>
+	<script src="js/highmaps.js"></script>
+	<script src="js/highcharts-more.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script>window.mdc.autoInit()</script>
+	<script src="js/main.js"></script>
+</head>
+<body class="page">
+	<header class="mdc-toolbar mdc-toolbar--fixed">
+		<div class="mdc-toolbar__row">
+			<section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+				<button class="menu material-icons mdc-toolbar__icon--menu mdc-ripple-surface">menu</button>
+				<span class="mdc-toolbar__title">Lanzhou2017</span>
+			</section>
+		</div>
+	</header>
+
+	<aside class="mdc-temporary-drawer">
+		<div class="mdc-temporary-drawer__drawer">
+			<header class="mdc-temporary-drawer__header">
+				<div class="mdc-temporary-drawer__header-content mdc-theme--primary-bg mdc-theme--text-primaryon-primary">
+					<img class="logo" src="image/logo.jpg" alt="Lanzhou 2017">
+					<div class="logo-name">Lanzhou 2017</div class="logo-name">
+				</div>
+			</header>
+			<nav class="mdc-temporary-drawer__content mdc-list-group">
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i class="material-icons mdc-list-item__start-detail" >home</i>
+					Home
+				</a>
+				<a href="project.html" class="mdc-list-item mdc-ripple-surface">
+					<i class="material-icons mdc-list-item__start-detail">local_florist</i>
+					Project
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
+				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Bacground
+					</a>
+					<a href="design.html" class="mdc-list-item mdc-ripple-surface">
+						Design
+					</a>
+					<a href="application.html" class="mdc-list-item mdc-ripple-surface">
+						Application
+					</a>
+					<a href="safety.html" class="mdc-list-item mdc-ripple-surface">
+						Safety
+					</a>
+					<a href="results.html" class="mdc-list-item mdc-ripple-surface">
+						results
+					</a>
+				</nav>
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i style="font-size: 24px;" class="fa fa-flask material-icons mdc-list-item__start-detail"></i>
+					Wet Lab
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
+				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Notebook
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Protocols
+					</a>
+				</nav>
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i style="font-size: 24px;" class="fa fa-cube material-icons mdc-list-item__start-detail"></i>
+					Modelling
+				</a>
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i class="material-icons mdc-list-item__start-detail">face</i>
+					Human Pratice
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
+				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Education
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Public engagement
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Consulting
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Questionnaire  
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Handbook
+					</a>
+				</nav>
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i class="material-icons mdc-list-item__start-detail">group</i>
+					Team
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
+				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						About us
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Attributions
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Collaborations & Meet up
+					</a>
+				</nav>
+				<a href="" class="mdc-list-item mdc-ripple-surface">
+					<i class="material-icons mdc-list-item__start-detail">star</i>
+					Achievements
+					<i class="material-icons multi-nav-icon">keyboard_arrow_down</i>
+				</a>
+				<nav class="mdc-temporary-drawer__content mdc-list-group sub-nav">
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Parts
+					</a>
+					<a href="interlab.html" class="mdc-list-item mdc-ripple-surface">
+						Interlab
+					</a>
+					<a href="" class="mdc-list-item mdc-ripple-surface">
+						Medal requirements 
+					</a>
+				</nav>
+			</nav>
+		</div>
+	</aside>
+
+	<div class="page__header" style="background-position: center; background-size: cover;">
+		<h1 class="mdc-typography--display2"></h1>
+	</div>
+
+	<script>
+		$('.page__header').remove();
+		let index = [0, 0];
+		let nav_list_item = $('.mdc-temporary-drawer__content:not(".sub-nav")').children('.mdc-list-item');
+		$(nav_list_item[index[0]]).children('.material-icons').eq(0).addClass('mdc-list-item__start-detail-color');
+		$(nav_list_item[index[0]]).next().find('.mdc-list-item').eq(index[1]).css('color', '#ff4081');
+	</script>
+
+	<main class="page__content home">
+		
+		<div class="home__item">
+			<canvas id="canvas-1"></canvas>
+			<div class="home_text"></div>
+			<script>
+				$(function(){
+					let c1_WIDTH = $('#canvas-1').width()
+						c1_HEIGHT = $('#canvas-1').height()
+					let saw = new Image();
+						grass = new Image();
+					function init() {
+						saw.src = 'image/home/saw.png';
+						grass.src = 'image/home/grass.png';
+	
+						window.requestAnimationFrame(draw);
+					}
+	
+					let is_saw_right = true;
+					let saw_move = 0;
+	
+					function draw() {
+						let ctx1 = document.getElementById('canvas-1').getContext('2d');
+						ctx1.globalCompositeOperation = 'destination-over';
+						ctx1.clearRect(0,0,c1_WIDTH,c1_HEIGHT);
+	
+						ctx1.save();
+	
+						let time = new Date();
+						
+						if (saw_move >= 50) {is_saw_right = false}
+						if (saw_move <= 0)  { is_saw_right = true }
+						if (is_saw_right) {
+							saw_move++;
+						} else {
+							saw_move--;
+						}
+						ctx1.drawImage(saw, saw_move+10, 90-saw_move, 100, 100)
+						ctx1.save();
+	
+						ctx1.drawImage(grass, 50, 50, 100, 100);
+						ctx1.save();
+	
+						 window.requestAnimationFrame(draw);
+					}
+					init();
+				})
+			</script>
+		</div>
+		<div class="home__item">
+			<div class="home_text"></div>
+			<canvas id="canvas-2"></canvas>
+			<script>
+				$(function(){
+					let c2_WIDTH = $('#canvas-2').width()
+						c2_HEIGHT = $('#canvas-2').height()
+					let saw = new Image(),
+						hammer = new Image(),
+						light = new Image();
+					function init() {
+						saw.src = 'image/home/saw.png';
+						hammer.src = 'image/home/hammer.png';
+						light.src = 'image/home/light.png';
+	
+						window.requestAnimationFrame(draw);
+					}
+	
+					let is_hammer_rotate = true;
+					let hammer_degree = 10;
+					let i = 0;
+
+					function draw() {
+						let c2 = document.getElementById('canvas-2');
+						let ctx2 = c2.getContext('2d');
+						ctx2.globalCompositeOperation = 'destination-over';
+						ctx2.clearRect(0,0,c2_WIDTH,c2_HEIGHT);
+
+						if (is_hammer_rotate) {
+							hammer_degree = hammer_degree + 5;
+						} else {
+							hammer_degree = hammer_degree - 5;
+						}
+						if (hammer_degree >= 50) {
+							is_hammer_rotate = false;
+						}
+						if (hammer_degree <=0 ) {
+							is_hammer_rotate = true
+						}
+
+						i++;
+						if (i >= 100) {
+							ctx2.drawImage(saw, 50, 30, 100, 100);
+
+							ctx2.save();
+							
+							if (i%21 != 2 && i%21 != 5) {
+								ctx2.drawImage(light, 100, 30, 10, 10);
+								ctx2.drawImage(light, 70, 50, 10, 10);
+							}
+							if (i%21 != 5 && i%21 != 3){
+								ctx2.drawImage(light, 100, 30, 10, 10);
+								ctx2.drawImage(light, 70, 50, 10, 10);
+								ctx2.drawImage(light, 150, 50, 10, 10);
+							}
+							if(i%21 != 4 && i%21 != 3){
+								ctx2.drawImage(light, 120, 90, 10, 10);
+								ctx2.drawImage(light, 150, 50, 10, 10);
+							}
+							
+							
+
+							if (i > 400) {
+								i = 0;
+							}
+						} else {
+							ctx2.save();
+							ctx2.translate(150, 130)
+							ctx2.rotate(Math.PI/360*hammer_degree);
+							ctx2.translate(-150, -130)
+							ctx2.drawImage(hammer, 90, 50, 70, 70);
+							ctx2.restore();
+							ctx2.drawImage(saw, 50, 30, 100, 100)
+						}
+						window.requestAnimationFrame(draw);
+					}
+					init();
+				})
+			</script>
+		</div>
+
+		<div class="home__item">
+			<canvas id="canvas-3"></canvas>
+			<div class="home_text"></div>
+			<script>
+				$(function(){
+					let c3_WIDTH = $('#canvas-3').width(), 
+						c3_HEIGHT = $('#canvas-3').height();
+					let saw = new Image(),
+						grass = new Image(),
+						light = new Image();
+					function init() {
+						saw.src = 'image/home/saw.png';
+						grass.src = 'image/home/grass.png';
+						light.src = 'image/home/light.png';
+	
+						window.requestAnimationFrame(draw);
+					}
+	
+					let is_saw_right = true;
+					let saw_move = 0;
+					let i = 0;
+					function draw() {
+						let ctx3 = document.getElementById('canvas-3').getContext('2d');
+						ctx3.globalCompositeOperation = 'destination-over';
+						ctx3.clearRect(0,0,c3_WIDTH,c3_HEIGHT);
+						ctx3.save();
+	
+						i++;
+						let time = new Date();
+						if (i > 200) {
+							ctx3.translate(-20, 30);
+							ctx3.drawImage(saw, 50, 30, 100, 100);
+							ctx3.drawImage(light, 100, 30, 10, 10);
+							ctx3.drawImage(light, 70, 50, 10, 10);
+							ctx3.drawImage(light, 150, 50, 10, 10);
+							ctx3.drawImage(light, 120, 90, 10, 10);
+							ctx3.translate(20, -30);
+
+							ctx3.save();
+							ctx3.translate(c3_WIDTH, c3_HEIGHT);
+							ctx3.rotate((i-200)*0.4*Math.PI/360);
+							ctx3.translate(-c3_WIDTH + (i-200), -c3_HEIGHT);
+							ctx3.drawImage(grass, 50, 50, 100, 100);
+							ctx3.translate(-c3_WIDTH - (i-200), -c3_HEIGHT);
+							ctx3.restore();
+							
+
+							if (i >= 300) {
+								i = 0;
+							}
+
+						} else {
+							if (saw_move >= 20) {is_saw_right = false}
+							if (saw_move <= -40)  { is_saw_right = true }
+							if (is_saw_right) {
+								saw_move = saw_move + 3;
+							} else {
+								saw_move = saw_move - 3;
+							}
+
+							ctx3.save();
+							ctx3.translate(saw_move, -saw_move+20);
+							ctx3.drawImage(saw, 50, 30, 100, 100);
+							ctx3.drawImage(light, 100, 30, 10, 10);
+							ctx3.drawImage(light, 70, 50, 10, 10);
+							ctx3.drawImage(light, 150, 50, 10, 10);
+							ctx3.drawImage(light, 120, 90, 10, 10);
+							ctx3.restore();
+		
+							ctx3.drawImage(grass, 50, 50, 100, 100);
+						}
+
+	
+						 window.requestAnimationFrame(draw);
+					}
+					init();
+				})
+			</script>
+		</div>
+
+	</main>
+
+	
+	<footer class="footer">
+		<div class="footer__content">
+			<div class="footer__title">Lanzhou 2017</div>
+			<div class="footer__container">
+				<div class="footer__logo">
+					<a href="http://www.lzu.edu.cn"><img height="100px" src="image/sponsors/LZU.png"></a>
+					<a href="http://lifesc.lzu.edu.cn/"><img class="no_maskeed" height="118px" style="margin-left: 24px" src="image/sponsors/LZU_bio.png"></a>
+				</div>
+				<div class="footer__sponsors">
+					<a href="http://www.agilent.com"><img height="100px" src="image/sponsors/Agilent.png"></a>
+					<a href="https://www.genscript.com/"><img height="100px" src="image/sponsors/GenScript.png"></a>
+					<a href="https://www.idtdna.com/"><img height="80px" src="image/sponsors/IDT.png"></a>
+				</div>
+			</div>
+			<ul class="footer__links">
+				<li>
+					<a href="" class="footer__link">About Lanzhou 2017</a>
+				</li>
+				<!-- 需要改动 -->
+				<li>
+					<a href="" class="footer__link">copyright</a>
+				</li>
+				<li class="footer__link-container--right">
+					<a href="http://lawliet.pw" class="footer__link">
+						<span class="footer__made-with-desktop">Made by L. with Material Components for the web</span>
+						<span class="footer__made-with-mobile">Made by L.</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+
+	<button id="to-top" class="mdc-fab mdc-ripple-surface material-icons" aria-label="Favorite">
+		<span class="mdc-fab__icon">keyboard_arrow_up</span>
+	</button>
+
+</body>
+</html>
